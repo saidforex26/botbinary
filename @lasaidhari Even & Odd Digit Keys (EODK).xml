@@ -1,0 +1,102 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="XViOO76R.@P#T(J|dB@K">
+    <mutation>
+      <arg name="@lasaidhari (EODK) last digit list" varid="J0hWM+g4^]p-2b*)sK4-"></arg>
+      <arg name="@lasaidhari (EODK) number of last digit list" varid="Q$mi]Q;:2mrjR5w?GFk%"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Even &amp; Odd Digit Keys (EODK)</field>
+    <comment pinned="false" h="80" w="160">Jelaskan fungsi ini...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="~N,29kxB[Sa}Oa6hBRy{">
+        <field name="VAR" id="uVqc`JFa`@v6%t(s)sj*" variabletype="">(EODK) key list</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="WoSif?EtXmDjXF/{68X8">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="zAXqP7i|4uRse$;Ea$-(">
+            <field name="VAR" id="{6#9AIr~vWQBk^+8`Wr1" variabletype="">(EODK) count key list</field>
+            <value name="FROM">
+              <block type="math_number" id="~_FD~?N5_+M-~:=1_0Zy">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="d9TJs0nvTp71T|Lg/t-s">
+                <field name="VAR" id="Q$mi]Q;:2mrjR5w?GFk%" variabletype="">@lasaidhari (EODK) number of last digit list</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="*,}^l~wREQix8Hsa^{e{">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="lists_setIndex" id="yF6W_2y}p[F%G04[EIV=">
+                <mutation at="true"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FROM_END</field>
+                <value name="LIST">
+                  <block type="variables_get" id="2yLIv70i!Lun#%^=.!CO">
+                    <field name="VAR" id="uVqc`JFa`@v6%t(s)sj*" variabletype="">(EODK) key list</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="variables_get" id="tw{6`#9mqd4h.mF@z3-v">
+                    <field name="VAR" id="{6#9AIr~vWQBk^+8`Wr1" variabletype="">(EODK) count key list</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="logic_ternary" id="l:V:Hd8I(^1$hZ@5ng-%">
+                    <value name="IF">
+                      <block type="math_number_property" id="e[]#t/oswRvAqe?8.x7?">
+                        <mutation divisor_input="false"></mutation>
+                        <field name="PROPERTY">EVEN</field>
+                        <value name="NUMBER_TO_CHECK">
+                          <shadow type="math_number" id="ut@iPXL8;xTGo9.my*#g">
+                            <field name="NUM">0</field>
+                          </shadow>
+                          <block type="lists_getIndex" id="Np-SasSc*Dcu3p$}$De9">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="0]E+`9tqWv_VtEq1B})+">
+                                <field name="VAR" id="J0hWM+g4^]p-2b*)sK4-" variabletype="">@lasaidhari (EODK) last digit list</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id=".C-_awl;[m#+T$kAQWSv">
+                                <field name="VAR" id="{6#9AIr~vWQBk^+8`Wr1" variabletype="">(EODK) count key list</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="THEN">
+                      <block type="text" id="#D2cIv$e9x-TZ/Q*j^.g">
+                        <field name="TEXT">even</field>
+                      </block>
+                    </value>
+                    <value name="ELSE">
+                      <block type="text" id="rS5st.m[G,@XL6L_m?z`">
+                        <field name="TEXT">odd</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="1)F13eky?!lNhyLTkiY6">
+        <field name="VAR" id="uVqc`JFa`@v6%t(s)sj*" variabletype="">(EODK) key list</field>
+      </block>
+    </value>
+  </block>
+</xml>

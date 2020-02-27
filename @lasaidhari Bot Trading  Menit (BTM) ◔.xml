@@ -1,0 +1,218 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="ingtZ7N$!gF}z[4L8`}$" collapsed="true">
+    <mutation>
+      <arg name="(BTM) ◔ menit" varid="R7kV0epSh?j{?T+rR85}"></arg>
+      <arg name="(BTM) ◔ pemberitahuan benar/salah" varid="+$X6pjiOn?zdxk`;c[=!"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Bot Trading  Menit (BTM) ◔</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="controls_if" id="oF2Ex3@9X_O=p^6wvi$F">
+        <value name="IF0">
+          <block type="logic_compare" id="}Uo%w6sh:R@^[u4G[1Q4">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="X+tue{|qUk4[^.0nm{Yf">
+                <field name="VAR" id="+$X6pjiOn?zdxk`;c[=!" variabletype="">(BTM) ◔ pemberitahuan benar/salah</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean" id="^B=BOigQ0b$]qckaKB0H">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="notify" id="G6NX|;jE}=IksuwG~wC!">
+            <field name="NOTIFICATION_TYPE">warn</field>
+            <field name="NOTIFICATION_SOUND">silent</field>
+            <value name="MESSAGE">
+              <shadow type="text" id="}FU+2y37j5Bm1q3wJBJO">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block type="text_join" id="^d6yQBFuEQGxBl1+avV)">
+                <mutation items="4"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="g7hydNjZ@yhW}e{F^_(l">
+                    <field name="TEXT">Menit </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="variables_get" id="j/`GQ;1t{)FSoP_QW4:%">
+                    <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="-+/GcIc:T0TSFI)ddD,3">
+                    <field name="TEXT"> / </field>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block type="math_modulo" id="~[LLl4=[FNJP:Go?N7I[">
+                    <value name="DIVIDEND">
+                      <shadow type="math_number" id="b77ZyVR*M:]T;3/^jR=P">
+                        <field name="NUM">64</field>
+                      </shadow>
+                      <block type="epoch" id="b27zox.N8^FO/jw#h`jO"></block>
+                    </value>
+                    <value name="DIVISOR">
+                      <shadow type="math_number" id="j_FZ=_.zO6Nyr^#0o9:F">
+                        <field name="NUM">60</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="2#Mp7~W%tx|E#RK3*X?n">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <shadow type="math_number" id="Y!5HmM=M(I1khJQR/c?N">
+                            <field name="NUM">60</field>
+                          </shadow>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="DrpL!ZeAc!Z=Uyc+L!3i">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="MGeyYFw|NEz8e0TGbnEA">
+                            <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="logic_compare" id="h(sN6Cr#o|5k|WN`0qws" inline="false">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="math_modulo" id=";*7Uve.(-OMWeHYO}U,i">
+            <value name="DIVIDEND">
+              <shadow type="math_number" id="b77ZyVR*M:]T;3/^jR=P">
+                <field name="NUM">64</field>
+              </shadow>
+              <block type="epoch" id="qYi6F)J0khk80pePjbQ*"></block>
+            </value>
+            <value name="DIVISOR">
+              <shadow type="math_number" id="j_FZ=_.zO6Nyr^#0o9:F">
+                <field name="NUM">60</field>
+              </shadow>
+              <block type="math_arithmetic" id="`j,Vtkc9dj_#$#x5Hs$e">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="NV._]B=:pK5eWG$B|~Xv">
+                    <field name="NUM">60</field>
+                  </shadow>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="DrpL!ZeAc!Z=Uyc+L!3i">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="yM/Kn^k,nI9lrT]Q*lKW">
+                    <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_constrain" id="T_!O4a=yPg:Rl`%_rmt[" inline="false">
+            <value name="VALUE">
+              <shadow type="math_number" id="N@A}Q9){bSK-/uy[[@09">
+                <field name="NUM">50</field>
+              </shadow>
+              <block type="math_modulo" id=")W#{a7RYtT:]5vO*3-nT">
+                <value name="DIVIDEND">
+                  <shadow type="math_number" id="b77ZyVR*M:]T;3/^jR=P">
+                    <field name="NUM">64</field>
+                  </shadow>
+                  <block type="epoch" id=")t[bWZ~Qqs0f,$T!(HP!"></block>
+                </value>
+                <value name="DIVISOR">
+                  <shadow type="math_number" id="j_FZ=_.zO6Nyr^#0o9:F">
+                    <field name="NUM">60</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="`Y#-#Ze**!{E9Qs%E`BL">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="IlH5(FcwfWd9$2V}[7F^">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="DrpL!ZeAc!Z=Uyc+L!3i">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="tB7P=X;j_g7[ADAG/wK+">
+                        <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="LOW">
+              <shadow type="math_number" id="`pFD2Y?aMQ3L}3._HcK/">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id="Jd`x`Yq3mzw86k$P~8sR">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="H{6=EWzXPMvyq-mK9eQ9">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="ft.N(hRjdQ3$~/cDVXV;">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="@#Uas(`JMXMIZ`K[7cWH">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="DrpL!ZeAc!Z=Uyc+L!3i">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="]O=0!d3Lqp):%!G8UFK)">
+                        <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="$Q7U@7StYsadZ1hYCvN8">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="HIGH">
+              <shadow type="math_number" id="xVwO`B-d^-n{rTwdpKk|">
+                <field name="NUM">100</field>
+              </shadow>
+              <block type="math_arithmetic" id="`Mj!WhBuow!@k*^NyUG]">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="sG=SL2heupr*oAPYIBx_">
+                    <field name="NUM">60</field>
+                  </shadow>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="AkC7}APKr,JDFzrT?PY!">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="w#bg#3?/SBm:=|HNe]$4">
+                    <field name="VAR" id="R7kV0epSh?j{?T+rR85}" variabletype="">(BTM) ◔ menit</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>

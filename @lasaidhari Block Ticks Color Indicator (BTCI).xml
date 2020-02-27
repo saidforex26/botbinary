@@ -1,0 +1,498 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="8O7$A6sIzNz~)l%EJUWo" collapsed="true">
+    <mutation>
+      <arg name="@lasaidhari (BTCI) ticks list" varid="1YX3yiMl]cJr1?Zp;|gE"></arg>
+      <arg name="@lasaidhari (BTCI) number of ticks analysis" varid="j^IeqUxkY}PlE$G5z/?0"></arg>
+      <arg name="@Lasaidhari (BTCI) tick start" varid="1|AHA5xi)e!Jf;yFaAwP"></arg>
+      <arg name="@Lasaidhari (BTCI) tick backwards" varid="yBWb1Ui}zh*D^M,#)zs?"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Block Ticks Color Indicator (BTCI)</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="?DkUk!SL=#M:Xw{.Kva0">
+        <field name="VAR" id="Cm8@O/6AM1fm:]js?Frk" variabletype="">@lasaidhari (BTCI) ticks color</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="rJ.7!)#ZAjof?+nR/=%V">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="3o7wkm7eGAX5mqV6OkEk">
+            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+            <value name="FROM">
+              <block type="variables_get" id="$u$[%ozjfxBj-Dq9CcQh">
+                <field name="VAR" id="1|AHA5xi)e!Jf;yFaAwP" variabletype="">@Lasaidhari (BTCI) tick start</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="R54cyY[9.HFLC3KywlXn">
+                <field name="VAR" id="j^IeqUxkY}PlE$G5z/?0" variabletype="">@lasaidhari (BTCI) number of ticks analysis</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="=4YatDV^/_mtz@5bgD1w">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="lists_setIndex" id="d%?]U,RUm65*qE8Buj92">
+                <mutation at="false"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FIRST</field>
+                <value name="LIST">
+                  <block type="variables_get" id="hyX3m:O/u-T0vvDLE!e|">
+                    <field name="VAR" id="Cm8@O/6AM1fm:]js?Frk" variabletype="">@lasaidhari (BTCI) ticks color</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="logic_ternary" id="1;pPkZIg:hO%RAyn0.p)">
+                    <value name="IF">
+                      <block type="logic_operation" id="%3B@.tb)vzn~BTz{j3D$" inline="false">
+                        <field name="OP">AND</field>
+                        <value name="A">
+                          <block type="logic_compare" id="?Iz-J7h]v8~rhgKaxo/h" inline="false">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="(;fw]_nti=5wxRw_h|,E">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="w872g*9f=1skN{EaND*T">
+                                    <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="math_arithmetic" id="wmE=%YJu3I5ge[3`$@bU">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="$tMkC^}AGEkt:5iMQKPy">
+                                        <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="`#0$Hjb)9Dd!6%smT480">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="M?-*z;p]tzc4{`54E.C`">
+                                        <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="lists_getIndex" id="/qh#NE@wfIP[lz0AZT/T">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="5EQF@=_k]B(__F`LD^$2">
+                                    <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="math_arithmetic" id="[~e0^kIUg4,09Q*tqHf;">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="|bC{hxZ$Gsc6d8N+z:_@">
+                                        <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="#eYbMJ`a:6xA1y=T$P$^">
+                                        <field name="NUM">2</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="~Wc~sy@}}$s!`Z?laNFg">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="jP@cz^JAP)*=9x/Nlpa8">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="IKm%n0OB/)2SK)_kW^j7">
+                                            <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="+@J6rtk~[V$)dmkqG2|S">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_compare" id="Z+/ho8`f1f7sx}]-DCP6" inline="false">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="GdgUqYInNQCrCA6J}tP#">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="De)*7uIs:vaXM5QZE,~8">
+                                    <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="^{NXpA5svvLL[J}BSyi?">
+                                    <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="lists_getIndex" id="z.5BL@/MOh~J=.KxTLEb">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="Ms]C*SKwEgV[gjbNK@_0">
+                                    <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="math_arithmetic" id=":=-KQ:0[f{fiQ!`Mcy9Y">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="%s^x:VkqJlLwwjmME#Y5">
+                                        <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="B6+95EMxwK1}X-zj?*7V">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="l5i.{8x=V@/D@v^)(Y]7">
+                                        <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="THEN">
+                      <block type="text" id="C*6:@h~DJDj}99f=W[75">
+                        <field name="TEXT">=R</field>
+                      </block>
+                    </value>
+                    <value name="ELSE">
+                      <block type="logic_ternary" id="W$cWwDa2;r;pERi,(MB6">
+                        <value name="IF">
+                          <block type="logic_operation" id="NUG,eYU[`?{!tG#M.,3D" inline="false">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="logic_compare" id="F!V~OYu41GpXI%9kS,j)" inline="false">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id=":C9sKuG|]%c)}-joNV3u">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="57=cPrX!iQ=ZU8SKz08-">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="Bp}}9CW-;n1:TDjW#C!y">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="9m`):*RV+=WG(mSr33l(">
+                                            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="~2eH_gEWS)dHpJ:quO{O">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="vYBkyk}w@)*B/WNSj:5K">
+                                            <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="isU[?G:qm^gHR]/h{1a.">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="(4-_:9aUrV?Qlz5we:yV">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="fb7-~D!LQlExB-6d~A6*">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="x6WnZVTK1k2M,ihtK#aM">
+                                            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="{4jnQodLO6c5Ck/?{!eM">
+                                            <field name="NUM">2</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="%gP?NsTJiG/`TFBaM.Ev">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="jP@cz^JAP)*=9x/Nlpa8">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id=":S-U]1*J^{dtZ,q8OLdO">
+                                                <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="ib(PXrR$)3:)-2byK+9A">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_compare" id=":tp!U*6+E.l/Kg_}g-4=" inline="false">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="9H9(8#v5gjre{-~i5Ouq">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="a_2vA0{JKG(5L]#G12Ax">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="DZ9]GnHYXaoU9?Pw%M?U">
+                                        <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="LT+uM?+J]7+@RCjsi~,w">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="vw0Ts@)OKIQU3Yaq`*5W">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="F]=8#h5Y!j,B(Z!UN*3V">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="vvyFyH*f{gX93[?kWvx!">
+                                            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="9|$zFoFATRKB!Z7PrcaV">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="M#%JxrY#bTIrD5Oyqa,i">
+                                            <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="THEN">
+                          <block type="text" id="F{.(Eu-Ha)lp.9=?uW8,">
+                            <field name="TEXT">=B</field>
+                          </block>
+                        </value>
+                        <value name="ELSE">
+                          <block type="logic_ternary" id="oOSMCSX,=la+}NV*8ON1">
+                            <value name="IF">
+                              <block type="logic_compare" id="wMj}(,691EAomq^KnNNN" inline="false">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id=":PR9.;=1+Ol?(cX6+3F^">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="_Mc5fWvcPH|.$oYjk:1/">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="qkLTEaU86|f*e=`BCyVn">
+                                        <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="o^}JEzKyP;6aVKQsB0x:">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="Pj;#Nnjt6#.BKo(_bpL{">
+                                        <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="Ot.9-u~[K4-xtX_`?g1d">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="_BT,m:X@p^zX7ubl*_u~">
+                                            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id=",pwG48fPB5kiCOta!s!4">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="jx6l/Sgh~Yc%YcH?,Za4">
+                                            <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="THEN">
+                              <block type="text" id="^6hwzfW%R$Y6*H|Bo.[!">
+                                <field name="TEXT">B</field>
+                              </block>
+                            </value>
+                            <value name="ELSE">
+                              <block type="logic_ternary" id="n=1e*txiU%?@h1k)Ut=$">
+                                <value name="IF">
+                                  <block type="logic_compare" id="@q{Oh^%c/5ITws.Et+fo" inline="false">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="lists_getIndex" id="lVsl(ezXCMvi7Un(!Ad:">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="d[W#Ig;d]r+$v9*]j(N7">
+                                            <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="J[bi@gYu?c[6_w%QJ~}w">
+                                            <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="lists_getIndex" id="aoN$%{^?qXn?Ni7r1-4j">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="vOv0w|eFh=R2Hm[Gp(b4">
+                                            <field name="VAR" id="1YX3yiMl]cJr1?Zp;|gE" variabletype="">@lasaidhari (BTCI) ticks list</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="math_arithmetic" id="!heMh(xStx[AN34WmqWn">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="u}ZgvE#.G-%QwDaX:O6z">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="l[d)yXm(kFevCfkPHELy">
+                                                <field name="VAR" id="yJ%rIAGyu@8rV4$x{9R@" variabletype="">@lasaidhari (BTCI) count color ticks</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="+RKZp4s[AHSH1[dZ4:ux">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="hpik0_!6F]_=%vlVHbcP">
+                                                <field name="VAR" id="yBWb1Ui}zh*D^M,#)zs?" variabletype="">@Lasaidhari (BTCI) tick backwards</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="THEN">
+                                  <block type="text" id="Hb)`;3+AqU9Fo9c30GZL">
+                                    <field name="TEXT">R</field>
+                                  </block>
+                                </value>
+                                <value name="ELSE">
+                                  <block type="text" id="Qv4IqB+$+UBH+W~vCkpS">
+                                    <field name="TEXT">=</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="}jbyfeQT3_MAVmO3@y[D">
+        <field name="VAR" id="Cm8@O/6AM1fm:]js?Frk" variabletype="">@lasaidhari (BTCI) ticks color</field>
+      </block>
+    </value>
+  </block>
+</xml>

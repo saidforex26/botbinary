@@ -1,0 +1,418 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defnoreturn" id="^[$M2yQSU?5c%H_xrmC-">
+    <mutation>
+      <arg name="(LC) ≶ tick list" varid="-`QQQRd^G@l_5kTAJ.A2"></arg>
+      <arg name="(LC) ≶ maximum change list" varid="lJH[8T5+@`qPPWE{pE!p"></arg>
+      <arg name="(LC) ≶ MX the list of changes tick UP&amp;DOWN" varid="sv(J:R8kC%z,~_.t;quX"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari List of Changes (LC) ≶</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="7)mR60KzEMPZ]jb(}s=h">
+        <field name="VAR" id="q$xFa;_D83o,ooi}c3j-" variabletype="">(LC) ≶ change list</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="kd2wl./M!#cw~SUcqRsE">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="Wg5h-K6sgvO0O_Z]5P@k">
+            <field name="VAR" id=",fHLtr()ovLGezp_lV`b" variabletype="">(LC) ≶ the list of changes tick DOWN</field>
+            <value name="VALUE">
+              <block type="lists_create_with" id="0g6V7/%FYycFj/.L$#cd">
+                <mutation items="0"></mutation>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="L$@8oVZ0Q?4=EK_u18_%">
+                <field name="VAR" id="BtL+u?b-o=b8eA4vlKRj" variabletype="">(LC) ≶ the list of changes tick UP</field>
+                <value name="VALUE">
+                  <block type="lists_create_with" id="rSPzfI`B,70q$xv{aKZO">
+                    <mutation items="0"></mutation>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="ZjMh:b`!r-rU7!m*TK21">
+                    <field name="VAR" id="BtL+u?b-o=b8eA4vlKRj" variabletype="">(LC) ≶ the list of changes tick UP</field>
+                    <value name="VALUE">
+                      <block type="lists_repeat" id="+(`TZS(5`H:kBl7/xWR)">
+                        <value name="ITEM">
+                          <block type="math_number" id="2D?|DD;`Kuo02]2(D4q!">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <shadow type="math_number" id="M2UDjL5C:MJ$J$NIRW~P">
+                            <field name="NUM">5</field>
+                          </shadow>
+                          <block type="variables_get" id="q0r=M180:BCRM^(#rK?-">
+                            <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="F%JEtmfrh,fk^[UcZA/$">
+                        <field name="VAR" id=",fHLtr()ovLGezp_lV`b" variabletype="">(LC) ≶ the list of changes tick DOWN</field>
+                        <value name="VALUE">
+                          <block type="lists_repeat" id="0N9i!6$~4uqR;uRk#iKA">
+                            <value name="ITEM">
+                              <block type="math_number" id="t)vyF7/KDq6*)B:moWeq">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <shadow type="math_number" id="}LcBsp@cNObFv`O6X1Lb">
+                                <field name="NUM">5</field>
+                              </shadow>
+                              <block type="variables_get" id="_-3Ut^dp$BlrIu}i6N`k">
+                                <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_for" id="|_,#!kOaEm08Z}xbI7Eb">
+                            <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                            <value name="FROM">
+                              <block type="math_number" id="MWqTvMt%;bJ^0DjM*-P%">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="variables_get" id="bJB[KW67n]j@u?Q;`lYS">
+                                <field name="VAR" id="lJH[8T5+@`qPPWE{pE!p" variabletype="">(LC) ≶ maximum change list</field>
+                              </block>
+                            </value>
+                            <value name="BY">
+                              <block type="math_number" id="mk#dz88Gp4x9D635G}9K">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="lists_setIndex" id="fOw1A,Sgc6KaHmc!^|@W">
+                                <mutation at="true"></mutation>
+                                <field name="MODE">INSERT</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="q)+nrz+$!Ncl)o^=(bTq">
+                                    <field name="VAR" id="q$xFa;_D83o,ooi}c3j-" variabletype="">(LC) ≶ change list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id=";@Kdy,Dd@oUX4)Q-oQVU">
+                                    <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_arithmetic" id="0gEJ5X%Tb-$h*/Q_:hAg" inline="false">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="xL[Qbl`fp,+tTq{UwQI:">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="lists_getIndex" id="t_j[iafVI?!%RJrL@,xR">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="ZKk^+(7({t]0ET4eTkCB">
+                                            <field name="VAR" id="-`QQQRd^G@l_5kTAJ.A2" variabletype="">(LC) ≶ tick list</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="z:3mb3Y!]ItJ@89B=,Sk">
+                                            <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="cmlP%39@Kg+!LL]T{FR|">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="lists_getIndex" id="fmolA6ghn5*E9m84L/o?">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="-ze=oEs^F5MuMNJ}2z-_">
+                                            <field name="VAR" id="-`QQQRd^G@l_5kTAJ.A2" variabletype="">(LC) ≶ tick list</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="math_arithmetic" id="He?{zz$xsEs5jH~n;jbR">
+                                            <field name="OP">ADD</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="!BRy|klKo@p/XeUr9diw">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="A6C]sEUf{XsVDFQ9x[xd">
+                                                <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id=":.Meg*/9SBaGFL7{qM_i">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="{q|8{w#%v$Uy272u+7R7">
+                                    <mutation else="1"></mutation>
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="=V+lxZUaHg7)g4b%-;[$">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="lists_getIndex" id="C@4N3Hk((i9rBPd|CI4m">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_END</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="qUq]k{#r=(M}U2b]t,jT">
+                                                <field name="VAR" id="q$xFa;_D83o,ooi}c3j-" variabletype="">(LC) ≶ change list</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="O;9r`(A.qlP8UNs8%oOq">
+                                                <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="Y|sh00o5Ts}n}EY-{Q+#">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="controls_if" id="Y.,E99ByOi1!.aQcSg.S">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="S^KuTR*`yoJBTcq9VV*V">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id=";a}Ux84PYM7nj.5H!sbG">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_END</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id=",4X)un;GG.*i*lT[#C!5">
+                                                    <field name="VAR" id="BtL+u?b-o=b8eA4vlKRj" variabletype="">(LC) ≶ the list of changes tick UP</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="p]v{djs=;+B)RE{$Og$=">
+                                                    <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="M)vexVvn1bf?v#u2K:WN">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="lists_setIndex" id="i*5C4m:W`QotdBMo6dvk">
+                                            <mutation at="true"></mutation>
+                                            <field name="MODE">INSERT</field>
+                                            <field name="WHERE">FROM_END</field>
+                                            <value name="LIST">
+                                              <block type="variables_get" id="Ly1K^l_Yf/2H}Vh!?vu)">
+                                                <field name="VAR" id="BtL+u?b-o=b8eA4vlKRj" variabletype="">(LC) ≶ the list of changes tick UP</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="!aq7f0eC7,@xcC)z@Ht}">
+                                                <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                              </block>
+                                            </value>
+                                            <value name="TO">
+                                              <block type="lists_getIndex" id="Y(=d.QiSpJpowo;+_][J">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_END</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="niXhk:eU3DY`8`PP}q[3">
+                                                    <field name="VAR" id="q$xFa;_D83o,ooi}c3j-" variabletype="">(LC) ≶ change list</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="w|5jQ_46Nb_u%R{rfEyO">
+                                                    <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block type="controls_if" id="-N^!3yed$G-HA`J2B(/i">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="L3061?)oJ0*Ms9%7E##9">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id="b!L5)Kb~]Gk[P5|hV]Py">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_END</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="_F|Kvocvwls;p$OQ}EOP">
+                                                    <field name="VAR" id=",fHLtr()ovLGezp_lV`b" variabletype="">(LC) ≶ the list of changes tick DOWN</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="2.0m2i7+Hl:H0JD*oUWp">
+                                                    <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="S)l?gUEjO!u3$6Ie*XZ{">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="lists_setIndex" id="NSl{QpmuOc#_7#tQYxqG">
+                                            <mutation at="true"></mutation>
+                                            <field name="MODE">INSERT</field>
+                                            <field name="WHERE">FROM_END</field>
+                                            <value name="LIST">
+                                              <block type="variables_get" id="%qwHlrh!t/_pJ!Wo25*2">
+                                                <field name="VAR" id=",fHLtr()ovLGezp_lV`b" variabletype="">(LC) ≶ the list of changes tick DOWN</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="P:P;OMu++Qx-m{6Sl`cR">
+                                                <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                              </block>
+                                            </value>
+                                            <value name="TO">
+                                              <block type="math_single" id="vYa,=J|ZU]?/l9@=Q#zx">
+                                                <field name="OP">ABS</field>
+                                                <value name="NUM">
+                                                  <shadow type="math_number" id="1Z@9*G1l8pT*fU_@F/!v">
+                                                    <field name="NUM">9</field>
+                                                  </shadow>
+                                                  <block type="lists_getIndex" id="se.Kr0O,/z%TJ^D:pD5(">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_END</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="E|FHk4[J8*rbAevP+xVr">
+                                                        <field name="VAR" id="q$xFa;_D83o,ooi}c3j-" variabletype="">(LC) ≶ change list</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id="gDbdt^l8l9=EV!pbjS=]">
+                                                        <field name="VAR" id="F7h4v`Sz^A?hq2%]U3Y+" variabletype="">(LC) ≶ count</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="controls_if" id="ENtQ14w^rA@7qpcpC~c7">
+                                        <value name="IF0">
+                                          <block type="logic_operation" id="Yq229NJ|uN|oS[:bNO[:" inline="false">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="x5^Cn8!*Yiy:EX=Gh1Z$">
+                                                <field name="OP">EQ</field>
+                                                <value name="A">
+                                                  <block type="lists_getIndex" id="7L2y3T%w^9q{`InnPq!j">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_END</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="Ha},N?aUlglv0_(ws3{e">
+                                                        <field name="VAR" id="BtL+u?b-o=b8eA4vlKRj" variabletype="">(LC) ≶ the list of changes tick UP</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id=",(nQ.W8M2z|)/riuAGIN">
+                                                        <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="{*cz5:SXerPS#(EfK}ua">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_compare" id="[Gr[(DIk/_^Jr8fBg9r=">
+                                                <field name="OP">NEQ</field>
+                                                <value name="A">
+                                                  <block type="lists_getIndex" id="X^D3eOr:/8BGGJhvSGP3">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_END</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="BO?ayt]p5*A1KGe`j|q*">
+                                                        <field name="VAR" id=",fHLtr()ovLGezp_lV`b" variabletype="">(LC) ≶ the list of changes tick DOWN</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id="z`m#IL@}?5RfQim*(v[n">
+                                                        <field name="VAR" id="sv(J:R8kC%z,~_.t;quX" variabletype="">(LC) ≶ MX the list of changes tick UP&amp;DOWN</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="$?R@d(SuD^`EL!QaQWG:">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="controls_flow_statements" id="!y@Nz`jdUSXE;z]7#qQx">
+                                            <field name="FLOW">BREAK</field>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,297 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id=",}T3)9{uuB0CeV,N]q;Q">
+    <mutation>
+      <arg name="(DC) Daftar tick" varid="aaJQ4d@;f34(]jqM?3sN"></arg>
+      <arg name="(DC) Daftar digit" varid="(K56!)L?Jqnr42@KKQRY"></arg>
+      <arg name="(DC) maksimal Daftar digit" varid="G0n.9^3j{3?OFBS?sJy-"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Digit Change (DC)</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="S?[R.#S;/mV_^eMR^(x.">
+        <field name="VAR" id="%OmN5=SLm!rmo,4OHRGD" variabletype="">(DC) daftar digit change</field>
+        <value name="VALUE">
+          <block type="lists_repeat" id="lbpX~$]x1Uyc!;a?l[J)">
+            <value name="ITEM">
+              <block type="text" id="DJ,3M945Nl=4%2M`?ZH0">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+            <value name="NUM">
+              <shadow type="math_number" id="U-izMXb5234l[7oviUSG">
+                <field name="NUM">5</field>
+              </shadow>
+              <block type="variables_get" id="nm04H*TPZNpw|LSKE..a">
+                <field name="VAR" id="G0n.9^3j{3?OFBS?sJy-" variabletype="">(DC) maksimal Daftar digit</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="FY31UZs2ITNlG.(S/lIg">
+            <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+            <value name="FROM">
+              <block type="math_number" id=":dP$jrk,H~U!^#%mzUt6">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="dgv*qp*v=cvuEw,;-26X">
+                <field name="VAR" id="G0n.9^3j{3?OFBS?sJy-" variabletype="">(DC) maksimal Daftar digit</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="!X$J6yQM)tDNs=s@bt81">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="controls_if" id="k.4,v8C*DyGQ=F=1G/!a">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="8vefg{KH-ae28%D2;(_|" inline="false">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="lists_getIndex" id="^(cO:EdkA5{CKP`}EN#J">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="S%RB2`[*r,#|2;pc9o4Y">
+                            <field name="VAR" id="aaJQ4d@;f34(]jqM?3sN" variabletype="">(DC) Daftar tick</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="variables_get" id="$zsP1$aNs*Mx-md|JS{!">
+                            <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="lists_getIndex" id=",a^b^)16!,o!#TeKUgY)">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id=".`IcW,:D4/`%bpK4h@B6">
+                            <field name="VAR" id="aaJQ4d@;f34(]jqM?3sN" variabletype="">(DC) Daftar tick</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="math_arithmetic" id="{uOv+kY9{/-ONlzu:[Yq">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <shadow type="math_number" id="IQ~uGBvVM(igi1,`~D|M">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="79CzYclG^{{|kmOBiptn">
+                                <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="A_^AbKg.B]nZBa0:J#K-">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="lists_setIndex" id="ANP@k}lP/EGgS`|abp_,">
+                    <mutation at="true"></mutation>
+                    <field name="MODE">SET</field>
+                    <field name="WHERE">FROM_END</field>
+                    <value name="LIST">
+                      <block type="variables_get" id="7gYf+g:{Z4ZP}+qD;;hX">
+                        <field name="VAR" id="%OmN5=SLm!rmo,4OHRGD" variabletype="">(DC) daftar digit change</field>
+                      </block>
+                    </value>
+                    <value name="AT">
+                      <block type="variables_get" id="Jtv0601%w|!/NX53ci(W">
+                        <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="text_charAt" id="B|$]yV;6@Q{.t5zcqAu.">
+                        <mutation at="true"></mutation>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="text_join" id="qPw`+CZIy:As*b}tXbJN">
+                            <mutation items="1"></mutation>
+                            <value name="ADD0">
+                              <block type="math_arithmetic" id="4(y,kX#SD5|.^D?d[Le~" inline="false">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="6xL8/M:(bAXW??,pf(!k">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="UX;zZZCW?74P+nd]Cfrm">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="warxG6[i9r@q$K(p99OE">
+                                        <field name="VAR" id="(K56!)L?Jqnr42@KKQRY" variabletype="">(DC) Daftar digit</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="|GjMER![8MAQYl#*Xq*!">
+                                        <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="T!X9~VnUcbF1yPR81Pm(">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="D_EaxUB(nay/9O3+^a@?">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="y9lVEf?i]=8;Yp_]].TV">
+                                        <field name="VAR" id="(K56!)L?Jqnr42@KKQRY" variabletype="">(DC) Daftar digit</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="_CZnRY6kRM#[Or|oMx#I">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="N#18ZGKa,PY^o`AYyeYJ">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id=",s*XL!L({_A_.Hgmm,u%">
+                                            <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="X*$D74KX7WfMXUCdO@cu">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="math_number" id="7}5U2cZ.DlJ}][PIG$+i">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="lists_setIndex" id=".`S=1zJI^miadd@rJI61">
+                    <mutation at="true"></mutation>
+                    <field name="MODE">SET</field>
+                    <field name="WHERE">FROM_END</field>
+                    <value name="LIST">
+                      <block type="variables_get" id="(ArerRJV!Y@OI(cWag-0">
+                        <field name="VAR" id="%OmN5=SLm!rmo,4OHRGD" variabletype="">(DC) daftar digit change</field>
+                      </block>
+                    </value>
+                    <value name="AT">
+                      <block type="variables_get" id="GgKN,uh1;F24=jC1hM`z">
+                        <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="text_charAt" id="*vp!Yl3SS;xgLoHz?d$.">
+                        <mutation at="true"></mutation>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="text_join" id="Ixf%bHnL,[s*)uin{69`">
+                            <mutation items="1"></mutation>
+                            <value name="ADD0">
+                              <block type="math_arithmetic" id="A62{4ALG72sUxI|nB1#k" inline="false">
+                                <field name="OP">MINUS</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="6xL8/M:(bAXW??,pf(!k">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="L;,(QU,Yg;q,4[thu#kX">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="/6zwiR%;w|$j(6a%*TOR">
+                                        <field name="VAR" id="(K56!)L?Jqnr42@KKQRY" variabletype="">(DC) Daftar digit</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="!SS_QLZ4!`9l3Jq-A8k%">
+                                        <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="T!X9~VnUcbF1yPR81Pm(">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="YXT^])kJ9T`btEE(bu2M">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="pMx`oQW]{%jiE%i}4%s?">
+                                        <field name="VAR" id="(K56!)L?Jqnr42@KKQRY" variabletype="">(DC) Daftar digit</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="_%i/0%N(si3u5H,H8;:p">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="N#18ZGKa,PY^o`AYyeYJ">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="uu]44qeMNvXB~tDCZH,b">
+                                            <field name="VAR" id="asK3)!/x%9$FS]r4|jvu" variabletype="">(DC) count</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="V_]MNZy^MN}3/sef2_b%">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="math_number" id="CoyIf6v8i6;A:MEhS`K]">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="V8/$*~5lzJ7$vgzPM~=V">
+        <field name="VAR" id="%OmN5=SLm!rmo,4OHRGD" variabletype="">(DC) daftar digit change</field>
+      </block>
+    </value>
+  </block>
+</xml>

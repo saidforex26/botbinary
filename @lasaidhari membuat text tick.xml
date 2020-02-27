@@ -1,0 +1,315 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="3J|8Myi#%Z_)}yPjvw$4">
+    <mutation>
+      <arg name="@tick" varid="?JTL@!o4_rp4Y?X9F;o)"></arg>
+      <arg name="@jumlah tick" varid="[1C42A${=:G`Wr9M,.-F"></arg>
+      <arg name="@jumlah text" varid="B-WAE:ZojYrs~6}sv^Xj"></arg>
+      <arg name="@daftar nomor yang sama" varid="?I)UJ!h7|bN]mIG`UN2k"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari membuat text tick</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="!Bi#_NZatXDHXQ*EHw28">
+        <field name="VAR" id="g4XK!RM]gCS?-aLdU._:" variabletype="">lock</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="^,#^S*UfupeDWQ0*{ePj">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="Xd8pyl}U^iu(9^A/lysT">
+            <field name="VAR" id="*q,1*QFZ5ywc23sU4QXe" variabletype="">set</field>
+            <value name="VALUE">
+              <block type="lists_create_with" id="1G^=tH$Q1?2*Cw#sTnYg">
+                <mutation items="0"></mutation>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="U!m3QWaiXXU]=}e;y.p@">
+                <field name="VAR" id="1O`3k/=jY`8/{e;+wZ(p" variabletype="">ooo</field>
+                <value name="VALUE">
+                  <block type="lists_repeat" id="zS5kHrG$L]5{;~+ZqP,?">
+                    <value name="ITEM">
+                      <block type="text" id="`(yW[rledM]sR;Fl[m=g">
+                        <field name="TEXT"></field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <shadow type="math_number" id="H8i}JY%vgA:zW:+.BS|x">
+                        <field name="NUM">5</field>
+                      </shadow>
+                      <block type="variables_get" id="ZAn%6tTl{YkF@QHl$4:r">
+                        <field name="VAR" id="[1C42A${=:G`Wr9M,.-F" variabletype="">@jumlah tick</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="@Nrs_glShKr;[ky$}(49">
+                    <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                    <value name="FROM">
+                      <block type="math_number" id="|+:fYj?[;iZ59{y%o9pX">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="variables_get" id="4/(D/b{3#Wjl[#xE_RUc">
+                        <field name="VAR" id="[1C42A${=:G`Wr9M,.-F" variabletype="">@jumlah tick</field>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <block type="math_number" id="LL{oF}nj|^AONFn19Dv~">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="lists_setIndex" id="kIGNl}b:|YJ1+S)UYcW(">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">FIRST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="`[a2^428]z-E$$(JJF4q">
+                            <field name="VAR" id="*q,1*QFZ5ywc23sU4QXe" variabletype="">set</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="text_getSubstring" id=";=kq;+oP#4P$|4rE+LM#">
+                            <mutation at1="true" at2="true"></mutation>
+                            <field name="WHERE1">FROM_END</field>
+                            <field name="WHERE2">FROM_END</field>
+                            <value name="STRING">
+                              <block type="text_join" id="gVy{)ofP3c[2gv_dP_k5">
+                                <mutation items="1"></mutation>
+                                <value name="ADD0">
+                                  <block type="lists_getIndex" id="RY4LEc+kpLyN(6L(o}.%">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="+2^+!zFWA@{$bPMG2v[y">
+                                        <field name="VAR" id="?JTL@!o4_rp4Y?X9F;o)" variabletype="">@tick</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="{b:=:2#V/%M`hGlUzAb;">
+                                        <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="AT1">
+                              <block type="variables_get" id=";P#R)0q=Pk6h2|q;kmq;">
+                                <field name="VAR" id="B-WAE:ZojYrs~6}sv^Xj" variabletype="">@jumlah text</field>
+                              </block>
+                            </value>
+                            <value name="AT2">
+                              <block type="math_number" id="RGX/,v`k+:/h+K(4;+Py">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_for" id="21kW~m2OZm$LzN0PUuM]">
+                            <field name="VAR" id="EQViw:56;%X9|O6x,=zU" variabletype="">count text</field>
+                            <value name="FROM">
+                              <block type="math_number" id="U(/UNrP6|c0BmMKmA?#2">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="variables_get" id="rx{LMCp`!M@;M3=NgiT)">
+                                <field name="VAR" id="B-WAE:ZojYrs~6}sv^Xj" variabletype="">@jumlah text</field>
+                              </block>
+                            </value>
+                            <value name="BY">
+                              <block type="math_number" id="?g(Wq6v;SFd%44.;V7:x">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="controls_for" id="czbde1/c8n{c@A-*775g">
+                                <field name="VAR" id="uI]NFUJDYw{R*3k{H}f}" variabletype="">count daftar nomor yang sama</field>
+                                <value name="FROM">
+                                  <block type="math_number" id="zn)T%1V:tvmnsPIDfKeE">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_number" id="q_r!bBpV5`Ao/Uf_qz,f">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="BY">
+                                  <block type="math_number" id="6G*,@vq%dlK63IZ*r!-D">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <statement name="DO">
+                                  <block type="controls_if" id="8jP{5P7*#0}wP3UIuEjA">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="yC;A3.WN$hj]nK/{4-Pq" inline="false">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="text_charAt" id="n%euM;QOxB)n@wU,aZ81">
+                                            <mutation at="true"></mutation>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="text_join" id="OFPylLA.qyvw,G8/;06v">
+                                                <mutation items="1"></mutation>
+                                                <value name="ADD0">
+                                                  <block type="lists_getIndex" id="{sFa(rUWt]]UYmW#C+kt">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_END</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="NG{%!t9)w8em*`6l20/h">
+                                                        <field name="VAR" id="*q,1*QFZ5ywc23sU4QXe" variabletype="">set</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id="pcr;uxOM-Er$u1RZKL+3">
+                                                        <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="lF?S=bE(R)Wm[im7`:_f">
+                                                <field name="VAR" id="EQViw:56;%X9|O6x,=zU" variabletype="">count text</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="lists_getIndex" id="Ke$=8oHS+rIdRs:B1gv~">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="Y3_/~Qu_rtmO7O`FvLkD">
+                                                <field name="VAR" id="?I)UJ!h7|bN]mIG`UN2k" variabletype="">@daftar nomor yang sama</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="UZmXCC7=)v;tb~sVLA//">
+                                                <field name="VAR" id="uI]NFUJDYw{R*3k{H}f}" variabletype="">count daftar nomor yang sama</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="lists_setIndex" id="RCzg!VEe^rooW;^u4R?8">
+                                        <mutation at="true"></mutation>
+                                        <field name="MODE">SET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="LIST">
+                                          <block type="variables_get" id="{CT074G{JroW*T9s)[bG">
+                                            <field name="VAR" id="1O`3k/=jY`8/{e;+wZ(p" variabletype="">ooo</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id=",4i}s.1s61`ywel(V)Uw">
+                                            <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                                          </block>
+                                        </value>
+                                        <value name="TO">
+                                          <block type="text_join" id="=~yr=-m/4Kfp89+D({In">
+                                            <mutation items="2"></mutation>
+                                            <value name="ADD0">
+                                              <block type="lists_getIndex" id="8D|@^Q,#-:;$y7%WpiI8">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_END</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="WtkNOyXjjqZ_g-==E)A{">
+                                                    <field name="VAR" id="1O`3k/=jY`8/{e;+wZ(p" variabletype="">ooo</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="(Vn^!kSd~?G$[Fm1/]b~">
+                                                    <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ADD1">
+                                              <block type="text_charAt" id="fH|~miW~K6uJ|@mxZ:sD">
+                                                <mutation at="true"></mutation>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="text_join" id="d|cO|*boqgp_P7y(J4TG">
+                                                    <mutation items="1"></mutation>
+                                                    <value name="ADD0">
+                                                      <block type="lists_getIndex" id=".APO5G-YTg2uPLeej$G#">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_END</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="Wm!,4[oNY;xxhfUmyq^=">
+                                                            <field name="VAR" id="*q,1*QFZ5ywc23sU4QXe" variabletype="">set</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="-tY6|]Uu+A%!jt7l^51S">
+                                                            <field name="VAR" id="FN-dkZ{+~w]v?_X`:KZ)" variabletype="">count tick</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="3d/H$|g(U4a8q8OA-yWU">
+                                                    <field name="VAR" id="EQViw:56;%X9|O6x,=zU" variabletype="">count text</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="notify" id="z`Z:=I!eHxs6`DXbeRbU">
+                        <field name="NOTIFICATION_TYPE">warn</field>
+                        <field name="NOTIFICATION_SOUND">silent</field>
+                        <value name="MESSAGE">
+                          <shadow type="text" id="yvHIh5PyF?uH1c,s_`{n">
+                            <field name="TEXT">abc</field>
+                          </shadow>
+                          <block type="variables_get" id="L:qExWmoO^({N)zSDmiU">
+                            <field name="VAR" id="1O`3k/=jY`8/{e;+wZ(p" variabletype="">ooo</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="5*S9*yv]3US^K4P|mY$X">
+        <field name="VAR" id="1O`3k/=jY`8/{e;+wZ(p" variabletype="">ooo</field>
+      </block>
+    </value>
+  </block>
+</xml>

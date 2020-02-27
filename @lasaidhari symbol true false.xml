@@ -1,0 +1,24 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="text_join" id="h)Z?mTf`Q~S2}1G(o9eM">
+    <mutation items="3"></mutation>
+    <value name="ADD1">
+      <block type="logic_ternary" id="Z+inxwJ$`M=jw{X}*bwj">
+        <value name="THEN">
+          <block type="text" id="n2O85a@v+6S1#yhpNRZc">
+            <field name="TEXT">✅</field>
+          </block>
+        </value>
+        <value name="ELSE">
+          <block type="text" id="wA`ZXUFZIS^f#9kW[Hvb">
+            <field name="TEXT">❌</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="ADD2">
+      <block type="text" id="uH?5Fh;PYglwHzQq)G=z">
+        <field name="TEXT"> ⇶ </field>
+      </block>
+    </value>
+  </block>
+</xml>

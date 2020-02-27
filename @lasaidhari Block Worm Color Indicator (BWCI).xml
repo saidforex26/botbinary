@@ -1,0 +1,405 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id=";S36+J^=QC;alO~g%Dy%" collapsed="true">
+    <mutation>
+      <arg name="@lasaidhari (BWCI) ticks list" varid="(Wgg397E`RwLW:.AH}8Z"></arg>
+      <arg name="@lasaidhari (BWCI) Worm Color # from end" varid="QJdK$jenws(if?G-+)JP"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Block Worm Color Indicator (BWCI)</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="math_change" id="kqAS^ccN=T!8$#[c.=D~">
+        <field name="VAR" id="TIdvaADtb@cHMUT*,0$r" variabletype="">(BWCI)▼▲</field>
+        <value name="DELTA">
+          <shadow type="math_number" id="+FfpL:`z.BbtMrlz(L}I">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="controls_if" id=",%/Ow6WR+c~5$B7r]~v:">
+            <value name="IF0">
+              <block type="logic_compare" id=":{9OmdRYqb=R[L2gA5!$">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="#WXfol[G)@GEBid?n@F6">
+                    <field name="VAR" id="TIdvaADtb@cHMUT*,0$r" variabletype="">(BWCI)▼▲</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="dG31*{QD7#l!$o]$1rL0">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="4+z}k0#OgeK!06}uVa5;">
+                <field name="VAR" id="2+c+E^NF%aU]WhFDL30P" variabletype="">(BWCI)▲</field>
+                <value name="VALUE">
+                  <block type="lists_getIndex" id="7p0NI,-PUJKWlQ,64V]]">
+                    <mutation statement="false" at="true"></mutation>
+                    <field name="MODE">GET</field>
+                    <field name="WHERE">FROM_END</field>
+                    <value name="VALUE">
+                      <block type="variables_get" id="dZ5d.Q|ETK%c42(t~S7D">
+                        <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                      </block>
+                    </value>
+                    <value name="AT">
+                      <block type="math_number" id="%%7?E;{p:Ut%r*p/]EG*">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="5w35-rG?k}21d**nsJ_6">
+                    <field name="VAR" id="D.3/E!}q)y%QR61PZ]3I" variabletype="">(BWCI)▼</field>
+                    <value name="VALUE">
+                      <block type="lists_getIndex" id="4O7B@x`wW1G5O,$(zhK]">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="G_4a@*4?gIp%8DodUSLb">
+                            <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="math_number" id="Q(JKSxLqR#Keyr/:m!^E">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="v$-e,iLT0S.}_?N*b.R*">
+                <mutation elseif="2" else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="pE^/?Du[}ir!0cxl;,s^" inline="false">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lists_getIndex" id="1P2x+5X8r3$2br7h=9z6">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="$/-a%408)._w-/?va/sY">
+                            <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="variables_get" id="$0dlT,5hBZ?=J*SZEMci">
+                            <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_single" id="#7GNWhIV;zx}dKW7yRMw">
+                        <field name="OP">ABS</field>
+                        <value name="NUM">
+                          <shadow type="math_number" id="*=s)lH1a,r9R?ZnQOU.v">
+                            <field name="NUM">9</field>
+                          </shadow>
+                          <block type="math_on_list" id="v%[}_~-pzf|zN(@J4H$7">
+                            <mutation op="MAX"></mutation>
+                            <field name="OP">MAX</field>
+                            <value name="LIST">
+                              <block type="lists_getSublist" id="}#_gT/O~aSy9f*tG8#uQ" inline="false">
+                                <mutation at1="true" at2="true"></mutation>
+                                <field name="WHERE1">FROM_END</field>
+                                <field name="WHERE2">FROM_END</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="y4+F6Xo@5eddAqeP#o8{">
+                                    <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT1">
+                                  <block type="math_arithmetic" id="rABTlu1%N8we0|wXzh-d">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id=";IyuMmwAqo;M!Uf|!Ntz">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="Txri%eV2V04!nr5B+0=d">
+                                        <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="r5?_G@wFn8+%~XZN,z+x">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="AT2">
+                                  <block type="variables_get" id="4I#kU,3Gn1IPmV;[udu6">
+                                    <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="variables_set" id="|;{`,p7vcMze8e5CPx#I">
+                    <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                    <value name="VALUE">
+                      <block type="text" id="c+G;?#035JX[*Vf{h_5W">
+                        <field name="TEXT">▲ blue</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="!`L)AaAmcDz!)qcUc~sY" inline="false">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="lists_getIndex" id="QwQ9y#p%-o-?3bDNG;z*">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="|to9e+#aI3+zf]8Q5(;;">
+                            <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="variables_get" id="5?p8-1G:pv^v(?5mA!vZ">
+                            <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_single" id="s=/civrSwd@3Y}Cez9p6">
+                        <field name="OP">ABS</field>
+                        <value name="NUM">
+                          <shadow type="math_number" id="*=s)lH1a,r9R?ZnQOU.v">
+                            <field name="NUM">9</field>
+                          </shadow>
+                          <block type="math_on_list" id="7DOg](bEuURkSV[X#dR%">
+                            <mutation op="MIN"></mutation>
+                            <field name="OP">MIN</field>
+                            <value name="LIST">
+                              <block type="lists_getSublist" id="TBw%K/1.eF^R-4[$ELw|" inline="false">
+                                <mutation at1="true" at2="true"></mutation>
+                                <field name="WHERE1">FROM_END</field>
+                                <field name="WHERE2">FROM_END</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="d6.oXKaqyY3cm8)PIK6:">
+                                    <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                                  </block>
+                                </value>
+                                <value name="AT1">
+                                  <block type="math_arithmetic" id="5X,`j(H[Hth0a4qr{Fp:">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id=";IyuMmwAqo;M!Uf|!Ntz">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="~E6aF*NJ65LJ.2Ml?Kql">
+                                        <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="W?4%S??;;AdNP3)`9!SN">
+                                        <field name="NUM">20</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="AT2">
+                                  <block type="variables_get" id=",$kC:?=n@O(n7aZEBc{R">
+                                    <field name="VAR" id="QJdK$jenws(if?G-+)JP" variabletype="">@lasaidhari (BWCI) Worm Color # from end</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="variables_set" id="7T~C);lp1$R]|sf59gs6">
+                    <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                    <value name="VALUE">
+                      <block type="text" id="BaB9a6-UERZ5F{pot}l?">
+                        <field name="TEXT">▼ red</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="logic_compare" id="N91g01L.]^95s4T(*@pq">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="lists_getIndex" id=".xVj8-4.b*gSIQaY^vr$">
+                        <mutation statement="false" at="true"></mutation>
+                        <field name="MODE">GET</field>
+                        <field name="WHERE">FROM_END</field>
+                        <value name="VALUE">
+                          <block type="variables_get" id="]F;PtzIz1ELY:s^J1hr#">
+                            <field name="VAR" id="?Wu~|-n04FYd@s90T-(." variabletype="">@lasaidhari (BCIWL) ticks list</field>
+                          </block>
+                        </value>
+                        <value name="AT">
+                          <block type="math_number" id="_g};A1`Ln?h{=1*HF_ci">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="7-OpPa_Gm6IaMgP?/Pet">
+                        <field name="VAR" id="2+c+E^NF%aU]WhFDL30P" variabletype="">(BWCI)▲</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="variables_set" id="fMQ8F}d=1{V4-vuBE}My">
+                    <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                    <value name="VALUE">
+                      <block type="text" id="8`:xFqOS~xgu+aOasGH5">
+                        <field name="TEXT">▼</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="variables_set" id="]+43T@wfwwsgFZ(c;9nj">
+                    <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                    <value name="VALUE">
+                      <block type="text" id="K(V-xcj7o!d.kOOGd8zG">
+                        <field name="TEXT">▲ </field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="0yJM,)@CxVZ!J,{dI!Ll">
+                    <mutation elseif="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="#K2J%,I=Q0-.jf3zr]q8">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="lists_getIndex" id="tW_L)LP6zdw)0Y}6c4yA">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="h75gc#LbzLsUXCWuXJ18">
+                                <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="math_number" id="s(`w`g06Lfb,bHfTT/A|">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="Ejwtksert~]h;TiU{z^O">
+                            <field name="TEXT">▲ blue</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="variables_set" id="}jCTg}8:BsspPtf+D]hD">
+                        <field name="VAR" id="2+c+E^NF%aU]WhFDL30P" variabletype="">(BWCI)▲</field>
+                        <value name="VALUE">
+                          <block type="lists_getIndex" id="tbSyLd(.?gV8C~G)8_RQ">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="Kt/m:jg^h]c`2@en1,:+">
+                                <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="math_number" id="W[:UavB0ChDK[|4ULQYL">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="logic_compare" id="MMjG_)HNj[2L:ybmsK17">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="lists_getIndex" id="nfM2n$YN_/$pqG1I.oPo">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="P8rtF87XJj*TL?wyA9:*">
+                                <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="math_number" id=":!19]Dt+^(#(UU/;y^{%">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="P~nmxIMso#bpcgLD$L=Q">
+                            <field name="TEXT">▼ red</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="variables_set" id="/9ygmnb~eXdMKl}!x2kG">
+                        <field name="VAR" id="D.3/E!}q)y%QR61PZ]3I" variabletype="">(BWCI)▼</field>
+                        <value name="VALUE">
+                          <block type="lists_getIndex" id="]w#BwUJ{Cfs=0s;xYz:v">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_END</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="MVh@PZbLZ,.nro76#R=Y">
+                                <field name="VAR" id="(Wgg397E`RwLW:.AH}8Z" variabletype="">@lasaidhari (BWCI) ticks list</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="math_number" id="sVL8MLjqpr!Fn}(}aQ*c">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="rsu)|bB^pp`1Qo:H0um9">
+        <field name="VAR" id="gi|iGYH)zGO_F?0VVJUp" variabletype="">@lasaidhari (BWCI) Worm Color</field>
+      </block>
+    </value>
+  </block>
+</xml>

@@ -1,0 +1,417 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="2Agok.Xy-44O_N^QkUh8">(CPP) ╪ in candle list</variable>
+    <variable type="" id=".8+W@b%l8!.Pi{-5LnN~">(CPP) ╪ candle body percent</variable>
+    <variable type="" id="%`0E#*#/+g)(`%eMbp}h">(CPP) ╪ candle shadow upper percent</variable>
+    <variable type="" id="$c^GjSkrrhq9F0FwJtkw">(CPP) ╪ candle shadow lower percent</variable>
+    <variable type="" id="FnbHuzJCAUd15U]7f[5z">(CPP) ╪candle</variable>
+    <variable type="" id="mzkcst/?By|H5fJz{^KB">(CPP) ╪ candle size</variable>
+    <variable type="" id="+Hfc{AB1L^.%5+0i12?+">(CPP) ╪ candle body</variable>
+    <variable type="" id="c4kXFWFXByv{K#S?0A(P">(CPP) ╪ candle shadow upper</variable>
+    <variable type="" id="F$(,-E!0XWr@.7?/*.Oo">(CPP) ╪ candle shadow lower</variable>
+  </variables>
+  <block type="procedures_defreturn" id="n|+o0QU.c(.9I+8K@f0h" collapsed="true" x="0" y="53">
+    <field name="NAME">Candle's body %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="K$yQpAHPB$T4V7{.m8+,">
+        <field name="VAR" id=".8+W@b%l8!.Pi{-5LnN~" variabletype="">(CPP) ╪ candle body percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id=";a81DBwRk:te.h^eAs;J" collapsed="true" x="0" y="106">
+    <field name="NAME">Candle's upper shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="jSi,`OxSt,y]x4|ioJLM">
+        <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="?c(24g/1EKg*2s#Ih$G`" collapsed="true" x="0" y="159">
+    <field name="NAME">Candle's lower shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="7`GE;{sVL3]blMIl525(">
+        <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="jI!8D~S+:ysx:c6z+_94" collapsed="true" x="2" y="203">
+    <mutation>
+      <arg name="(CPP) ╪ in candle list" varid="2Agok.Xy-44O_N^QkUh8"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari Candle Parts Percentage (CPP) ╪</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="__7^JQq}b;pMtyb*T?p~">
+        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+        <value name="VALUE">
+          <block type="variables_get" id="!RJ+J!-E/{I90Z0-(+L1">
+            <field name="VAR" id="2Agok.Xy-44O_N^QkUh8" variabletype="">(CPP) ╪ in candle list</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="8bO8P7[`IxjiXtRHXQyb">
+            <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id="Wh.Aq8DNq!%X#0Nlsm,a">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="read_ohlc_obj" id="A:-%Jua{$:L=+Mcd0ebV">
+                    <field name="OHLCFIELD_LIST">high</field>
+                    <value name="OHLCOBJ">
+                      <block type="variables_get" id="UOiG8XW45r/%S*#/qgy#">
+                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="read_ohlc_obj" id="@m(lg!i!]#6o+cc[k/#v">
+                    <field name="OHLCFIELD_LIST">low</field>
+                    <value name="OHLCOBJ">
+                      <block type="variables_get" id="M:_wz+P+xx?OG9GhMH,3">
+                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="zs?DFl$P3^z{0fdaBuaw">
+                <field name="VAR" id="+Hfc{AB1L^.%5+0i12?+" variabletype="">(CPP) ╪ candle body</field>
+                <value name="VALUE">
+                  <block type="math_single" id="@4{pJ2+t`kxVyWFh]-:L">
+                    <field name="OP">ABS</field>
+                    <value name="NUM">
+                      <shadow type="math_number" id="yWkv+4}h.,ykOFxu*pr+">
+                        <field name="NUM">9</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="y~6`Z?rs]7jF-+,mTvS[">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="read_ohlc_obj" id="t.G.JkQzpzN$]3lYcip5">
+                            <field name="OHLCFIELD_LIST">open</field>
+                            <value name="OHLCOBJ">
+                              <block type="variables_get" id="/e4$aKJ;i|Kzf(nS`7,B">
+                                <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="read_ohlc_obj" id="^eE~6n|:c8Nir;Z/^%d2">
+                            <field name="OHLCFIELD_LIST">close</field>
+                            <value name="OHLCOBJ">
+                              <block type="variables_get" id="kx4hV4/2N;*{`RbJ2m-g">
+                                <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="P/rv1f_%vGantc0Pw/~l">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="is_candle_black" id=":X14PQ_@i#Uti0}C@K8|">
+                        <value name="OHLCOBJ">
+                          <block type="variables_get" id="+Z;GJ)hE]`wWZgR%C+!!">
+                            <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="variables_set" id="[1!/eXuD`-7f~p=8)81I">
+                        <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id=";+gIqq_2N]o6!,A}Cm%I">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="xDrGiaLCe3IhnfM1WvV!">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="read_ohlc_obj" id="*)vV6r4bb-o8w(~6yZ*X">
+                                <field name="OHLCFIELD_LIST">high</field>
+                                <value name="OHLCOBJ">
+                                  <block type="variables_get" id="RYdq?LMI(McxR1T6H$}E">
+                                    <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="]9alF38XG=Nk1.z|a:[9">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="read_ohlc_obj" id="Mu0-@4pd*d,olxSxgi[H">
+                                <field name="OHLCFIELD_LIST">open</field>
+                                <value name="OHLCOBJ">
+                                  <block type="variables_get" id="=A!rwBxTjPJ+`]TfU)UZ">
+                                    <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="CJ1!ss|?*zQvPG2PS:bD">
+                            <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="yM.X1v[v1=K}x}6yB#S3">
+                                <field name="OP">MINUS</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="xDrGiaLCe3IhnfM1WvV!">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="(NLbiIxDsg;tYUrGnfU6">
+                                    <field name="OHLCFIELD_LIST">close</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="variables_get" id="Rqk=]ATmWBO]!q:+we!#">
+                                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="]9alF38XG=Nk1.z|a:[9">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="_5_*{@T`!)veTZ:[lELb">
+                                    <field name="OHLCFIELD_LIST">low</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="variables_get" id="r^O%HT^p=;_*fxAS}sh%">
+                                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="variables_set" id="|D1)K(de#8b*qZXbKX[=">
+                        <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="jvD,HLHP}!Laj4u|+qG0">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="xDrGiaLCe3IhnfM1WvV!">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="read_ohlc_obj" id="TB(/;c.*Y4Fa@OSdO/u{">
+                                <field name="OHLCFIELD_LIST">high</field>
+                                <value name="OHLCOBJ">
+                                  <block type="variables_get" id="ezE_Lax][X$IPeZl}ShB">
+                                    <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="]9alF38XG=Nk1.z|a:[9">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="read_ohlc_obj" id="#WU9U(:4@Q2J%l264}M}">
+                                <field name="OHLCFIELD_LIST">close</field>
+                                <value name="OHLCOBJ">
+                                  <block type="variables_get" id="-~EGrFGYEb|Vau83%s%`">
+                                    <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="w!@c|s*DU;R|sj]BSs!b">
+                            <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="P[-i%%o~;v4T!pfZM|d3">
+                                <field name="OP">MINUS</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="xDrGiaLCe3IhnfM1WvV!">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="yEBEqC~BhXw=K*C*ob8F">
+                                    <field name="OHLCFIELD_LIST">open</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="variables_get" id="%oRK(;D]]9^2PkaZe:ca">
+                                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="]9alF38XG=Nk1.z|a:[9">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="read_ohlc_obj" id="TaP?40q!7=hqZ{}]1;3^">
+                                    <field name="OHLCFIELD_LIST">low</field>
+                                    <value name="OHLCOBJ">
+                                      <block type="variables_get" id="1=P[Z#{+`_NyDl?y0Vq*">
+                                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="variables_set" id="]j@QY@cpgCxG]s:4+0dw">
+                        <field name="VAR" id=".8+W@b%l8!.Pi{-5LnN~" variabletype="">(CPP) ╪ candle body percent</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id=".^e%Ro}b*W#tsC.))Oti">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="M!PDX`jzJ4dO7KqDD:C)">
+                                <field name="OP">DIVIDE</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="su:?B+P_-]vqZ|VG{.B.">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="p?7EpZu`4tF1})G~h{4Z">
+                                    <field name="VAR" id="+Hfc{AB1L^.%5+0i12?+" variabletype="">(CPP) ╪ candle body</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="(x~Z]jlc(hMTMR?CShHK">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="g_))m)|wS_L?5#ye643]">
+                                    <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="Y_Mg~Q?[RtGATBcJuGK$">
+                                <field name="NUM">100</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="v_AuLA0MWRDDKS^tJ@Yz">
+                            <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="d,nZ-z;Nt5}cNU4;BkV9">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="lWE@:*]QaK)`$7Yd(A~S">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="4}2MqPzq]0zbIc$x,v=)">
+                                    <field name="OP">DIVIDE</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="su:?B+P_-]vqZ|VG{.B.">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="h+*)HzXM-a+{)vM2{8Q6">
+                                        <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="(x~Z]jlc(hMTMR?CShHK">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="yM@L8HU0tD3PJ%|z2Vr/">
+                                        <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id=".+]L%QUNuhJ[EB@l2_M?">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="$A,#8IEjCd2_hu1Qe.{_">
+                                <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
+                                <value name="VALUE">
+                                  <block type="math_arithmetic" id="~TT90Pf?QmQ1_/Lp@sEV">
+                                    <field name="OP">MULTIPLY</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="%f/Fq+:$cS9~y,nE{*A}">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="{1p8Xt?iwLY4.^|p*q;h">
+                                        <field name="OP">DIVIDE</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="su:?B+P_-]vqZ|VG{.B.">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="[oUlU5A-CcuTf=0ehl4~">
+                                            <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="(x~Z]jlc(hMTMR?CShHK">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="tyw.x0vqQNZxD8Xo%!e]">
+                                            <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="r1;+BEkn*9xm%G1jHx:j">
+                                        <field name="NUM">100</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="logic_boolean" id="Z7QQb6(/,osD_-w[Emw_">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+</xml>

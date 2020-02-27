@@ -1,0 +1,183 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="-|@@]uK{nsklMoxf=h#5" collapsed="true">
+    <mutation>
+      <arg name="(NC) ✨ in canle list read open time" varid="(/`w6Ct`!Q}A^fnh^ByX"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari New Candle (NC) ✨</field>
+    <comment pinned="false" h="80" w="160">New Candle block by Fruitfella</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="_|ysK~}Z4a[71,p9zC55">
+        <field name="VAR" id="Q9;Un8V/MNu=l/4`UAcR" variabletype="">(NC) ✨new candle</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="n*fK2mjnqALV#IlG!.a6">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="=qHbdAiIjE[d?jh.CvW3">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_negate" id="HBx1=1kOd)svw6s}m0z]">
+                <value name="BOOL">
+                  <block type="variables_get" id="8~Bxsf9z{q]Y#19Gi]Zq">
+                    <field name="VAR" id="~0mceJ4zRy[?Sj1s4#^L" variabletype="">(NC) ✨ open time</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="1^Cph2=]v{CNP%0YWU8M">
+                <field name="VAR" id="~0mceJ4zRy[?Sj1s4#^L" variabletype="">(NC) ✨ open time</field>
+                <value name="VALUE">
+                  <block type="variables_get" id="]i{h)kC[2TWV=OE{P^00">
+                    <field name="VAR" id="(/`w6Ct`!Q}A^fnh^ByX" variabletype="">(NC) ✨ in canle list read open time</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="`snhup2K7-P_:NvRfqB}">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="variables_get" id="R.ze$f330JT0gwStk|AM">
+                    <field name="VAR" id="~0mceJ4zRy[?Sj1s4#^L" variabletype="">(NC) ✨ open time</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="variables_get" id="F|fdmUZh0w{0}x~,HEiL">
+                    <field name="VAR" id="(/`w6Ct`!Q}A^fnh^ByX" variabletype="">(NC) ✨ in canle list read open time</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="variables_set" id="dY,!r2`3TRP:ECaB|^GT">
+                <field name="VAR" id="~0mceJ4zRy[?Sj1s4#^L" variabletype="">(NC) ✨ open time</field>
+                <value name="VALUE">
+                  <block type="variables_get" id="^d!IJ4iC5+hGIs3@ra;+">
+                    <field name="VAR" id="(/`w6Ct`!Q}A^fnh^ByX" variabletype="">(NC) ✨ in canle list read open time</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="HKFVcuon_rp5UeDk?@(%">
+                    <field name="VAR" id="Q9;Un8V/MNu=l/4`UAcR" variabletype="">(NC) ✨new candle</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="+hZcd(lKH^u:Za4XBGKx">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="x3:vzEyp#f$0{6UyXhVP">
+                        <value name="IF0">
+                          <block type="logic_compare" id="KX#JI86.NZAt6kHF)aP%">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="variables_get" id=":.}KYX=Rsz33?_6wBI|;">
+                                <field name="VAR" id="@5!I)`)XySD.r+k3cl8`" variabletype="">(NC) ✨lock open time</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_null" id="xGvp6.}fDVCxT-~f?/2R"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="variables_set" id="dKZIQODb[b@$8n}@2a`:">
+                            <field name="VAR" id="@5!I)`)XySD.r+k3cl8`" variabletype="">(NC) ✨lock open time</field>
+                            <value name="VALUE">
+                              <block type="math_modulo" id="r-4dy_)w.1L*bc02C-3J">
+                                <value name="DIVIDEND">
+                                  <shadow type="math_number" id="YVmp;?Dndp,?8=zX}l(E">
+                                    <field name="NUM">64</field>
+                                  </shadow>
+                                  <block type="epoch" id="pfKSF#,GCfrV36.bJ!_["></block>
+                                </value>
+                                <value name="DIVISOR">
+                                  <shadow type="math_number" id="TE4ioyX1i{dBC/;4K[Qb">
+                                    <field name="NUM">60</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="logic_operation" id="C-Z|wPe2BQIrx[|gW@UU" inline="false">
+        <field name="OP">AND</field>
+        <value name="A">
+          <block type="logic_compare" id="7rZ+#$p$V=P~a/vEnCHS">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="math_modulo" id=")]/7retly::?xA|J3/8v">
+                <value name="DIVIDEND">
+                  <shadow type="math_number" id="YVmp;?Dndp,?8=zX}l(E">
+                    <field name="NUM">64</field>
+                  </shadow>
+                  <block type="epoch" id="OLT=7Rg|PF8pm~|_5ug_"></block>
+                </value>
+                <value name="DIVISOR">
+                  <shadow type="math_number" id="/43_Kd.7$Cr7K^xeFZ~u">
+                    <field name="NUM">60</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_arithmetic" id="~utq:zXVx+1E-+%mXIQM">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="-F}Xfu/[h/;WCBMI:Gww">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="9}m%x*2EYTCw+_M;#x_j">
+                    <field name="VAR" id="@5!I)`)XySD.r+k3cl8`" variabletype="">(NC) ✨lock open time</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="XMIds}ZvKvf@kL[Q)MC;">
+                    <field name="NUM">3</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <block type="logic_compare" id="s8L5TVzF,Krf4K4|xNaj">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_modulo" id="LYQz3gEnzVoTpzn1S-f5">
+                <value name="DIVIDEND">
+                  <shadow type="math_number" id="YVmp;?Dndp,?8=zX}l(E">
+                    <field name="NUM">64</field>
+                  </shadow>
+                  <block type="epoch" id="2XG};/V%l36rWFcQ:t@A"></block>
+                </value>
+                <value name="DIVISOR">
+                  <shadow type="math_number" id=";VFoa)^._?c,4`CdbWXv">
+                    <field name="NUM">60</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="variables_get" id="erP(=.[pY/;cV!eksgg3">
+                <field name="VAR" id="@5!I)`)XySD.r+k3cl8`" variabletype="">(NC) ✨lock open time</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
