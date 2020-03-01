@@ -25,25 +25,7 @@
       </block>
     </value>
   </block>
-  <block type="procedures_defreturn" id=";a81DBwRk:te.h^eAs;J" collapsed="true" x="0" y="53">
-    <field name="NAME">list Candle's upper shadow %</field>
-    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
-    <value name="RETURN">
-      <block type="variables_get" id="jSi,`OxSt,y]x4|ioJLM">
-        <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
-      </block>
-    </value>
-  </block>
-  <block type="procedures_defreturn" id="?c(24g/1EKg*2s#Ih$G`" collapsed="true" x="0" y="106">
-    <field name="NAME">list Candle's lower shadow %</field>
-    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
-    <value name="RETURN">
-      <block type="variables_get" id="7`GE;{sVL3]blMIl525(">
-        <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
-      </block>
-    </value>
-  </block>
-  <block type="procedures_defnoreturn" id="WqX(iUfsr(wOs;3@4h%l" collapsed="true" x="0" y="159">
+  <block type="procedures_defnoreturn" id="WqX(iUfsr(wOs;3@4h%l" collapsed="true" x="0" y="53">
     <mutation>
       <arg name="(CPP) ╪ candle list" varid="Her#LfqK}GLIrn!y:{TQ"></arg>
       <arg name="(CPP) ╪ jumlah candle" varid="H0ww,2o|D3(qyr@UMGeT"></arg>
@@ -284,7 +266,7 @@
                                                               </block>
                                                             </value>
                                                             <value name="TO">
-                                                              <block type="math_arithmetic" id="Wh.Aq8DNq!%X#0Nlsm,a">
+                                                              <block type="math_arithmetic" id="Wh.Aq8DNq!%X#0Nlsm,a" inline="false">
                                                                 <field name="OP">MINUS</field>
                                                                 <value name="A">
                                                                   <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -350,7 +332,7 @@
                                                                       <shadow type="math_number" id="yWkv+4}h.,ykOFxu*pr+">
                                                                         <field name="NUM">9</field>
                                                                       </shadow>
-                                                                      <block type="math_arithmetic" id="]@B#W0CIBo;hGKEmqycf">
+                                                                      <block type="math_arithmetic" id="]@B#W0CIBo;hGKEmqycf" inline="false">
                                                                         <field name="OP">MINUS</field>
                                                                         <value name="A">
                                                                           <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -401,7 +383,7 @@
                                                                     <mutation else="1"></mutation>
                                                                     <value name="IF0">
                                                                       <block type="logic_compare" id="5%X#?B_/*g7+3MxtP_Tq">
-                                                                        <field name="OP">LT</field>
+                                                                        <field name="OP">GT</field>
                                                                         <value name="A">
                                                                           <block type="lists_getIndex" id="a;fM-RY/9*{}gsbmJB_B">
                                                                             <mutation statement="false" at="true"></mutation>
@@ -413,8 +395,8 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="AT">
-                                                                              <block type="math_number" id="0hy28)[%*VN/(?@(jk8`">
-                                                                                <field name="NUM">1</field>
+                                                                              <block type="variables_get" id="DLB]B):RM8ZJ|fWh7TPL">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -430,8 +412,8 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="AT">
-                                                                              <block type="math_number" id="^Ip`iw376]k,xWfAyK1n">
-                                                                                <field name="NUM">1</field>
+                                                                              <block type="variables_get" id="guhxZLq!m|6qXGS+#;[l">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -454,7 +436,7 @@
                                                                           </block>
                                                                         </value>
                                                                         <value name="TO">
-                                                                          <block type="math_arithmetic" id="N=7l}#C%Yzo?cO_,KI]o">
+                                                                          <block type="math_arithmetic" id="N=7l}#C%Yzo?cO_,KI]o" inline="false">
                                                                             <field name="OP">MINUS</field>
                                                                             <value name="A">
                                                                               <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -514,7 +496,7 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="TO">
-                                                                              <block type="math_arithmetic" id="#AhM:KM7VG2C8PBfc_yo">
+                                                                              <block type="math_arithmetic" id="#AhM:KM7VG2C8PBfc_yo" inline="false">
                                                                                 <field name="OP">MINUS</field>
                                                                                 <value name="A">
                                                                                   <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -578,7 +560,7 @@
                                                                           </block>
                                                                         </value>
                                                                         <value name="TO">
-                                                                          <block type="math_arithmetic" id="fn!^$BT?A6Wn2N..lo[y">
+                                                                          <block type="math_arithmetic" id="fn!^$BT?A6Wn2N..lo[y" inline="false">
                                                                             <field name="OP">MINUS</field>
                                                                             <value name="A">
                                                                               <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -638,7 +620,7 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="TO">
-                                                                              <block type="math_arithmetic" id=",2TZ!^0;(QRe92/W~U0,">
+                                                                              <block type="math_arithmetic" id=",2TZ!^0;(QRe92/W~U0," inline="false">
                                                                                 <field name="OP">MINUS</field>
                                                                                 <value name="A">
                                                                                   <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -708,7 +690,7 @@
                                                                               <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
                                                                                 <field name="NUM">1</field>
                                                                               </shadow>
-                                                                              <block type="math_arithmetic" id="a}vUfc#ARaYKQ/fH81@s">
+                                                                              <block type="math_arithmetic" id="a}vUfc#ARaYKQ/fH81@s" inline="false">
                                                                                 <field name="OP">DIVIDE</field>
                                                                                 <value name="A">
                                                                                   <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -775,7 +757,7 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="TO">
-                                                                              <block type="math_arithmetic" id="k%aF]XLZ~I5,o%%FIIi4">
+                                                                              <block type="math_arithmetic" id="k%aF]XLZ~I5,o%%FIIi4" inline="false">
                                                                                 <field name="OP">MULTIPLY</field>
                                                                                 <value name="A">
                                                                                   <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
@@ -848,7 +830,7 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="TO">
-                                                                                  <block type="math_arithmetic" id="J9G2MN)Z)36xQ^JeURsP">
+                                                                                  <block type="math_arithmetic" id="J9G2MN)Z)36xQ^JeURsP" inline="false">
                                                                                     <field name="OP">MULTIPLY</field>
                                                                                     <value name="A">
                                                                                       <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
@@ -943,5 +925,23 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="procedures_defreturn" id=";a81DBwRk:te.h^eAs;J" collapsed="true" x="0" y="106">
+    <field name="NAME">list Candle's upper shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="jSi,`OxSt,y]x4|ioJLM">
+        <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="?c(24g/1EKg*2s#Ih$G`" collapsed="true" x="0" y="159">
+    <field name="NAME">list Candle's lower shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="7`GE;{sVL3]blMIl525(">
+        <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
+      </block>
+    </value>
   </block>
 </xml>
