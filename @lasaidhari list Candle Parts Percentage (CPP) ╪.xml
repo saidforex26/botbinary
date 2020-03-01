@@ -1,0 +1,947 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="Her#LfqK}GLIrn!y:{TQ">(CPP) ╪ candle list</variable>
+    <variable type="" id="H0ww,2o|D3(qyr@UMGeT">(CPP) ╪ jumlah candle</variable>
+    <variable type="" id=".8+W@b%l8!.Pi{-5LnN~">(CPP) ╪ candle body percent</variable>
+    <variable type="" id="%`0E#*#/+g)(`%eMbp}h">(CPP) ╪ candle shadow upper percent</variable>
+    <variable type="" id="$c^GjSkrrhq9F0FwJtkw">(CPP) ╪ candle shadow lower percent</variable>
+    <variable type="" id="FnbHuzJCAUd15U]7f[5z">(CPP) ╪candle</variable>
+    <variable type="" id="0hGsh)pCt[Lvx?#g/@0^">(CPP) ╪ list open</variable>
+    <variable type="" id="i/HKd3A[@?N-[8+ERHwm">(CPP) ╪ list close</variable>
+    <variable type="" id="6rb/N([HV7r[n8FKKftF">(CPP) ╪ list high</variable>
+    <variable type="" id=",=X3eYbh]TKryu?[Pc,_">(CPP) ╪ list low</variable>
+    <variable type="" id="mzkcst/?By|H5fJz{^KB">(CPP) ╪ candle size</variable>
+    <variable type="" id="+Hfc{AB1L^.%5+0i12?+">(CPP) ╪ candle body</variable>
+    <variable type="" id="c4kXFWFXByv{K#S?0A(P">(CPP) ╪ candle shadow upper</variable>
+    <variable type="" id="F$(,-E!0XWr@.7?/*.Oo">(CPP) ╪ candle shadow lower</variable>
+    <variable type="" id="H~+w/C$@!4B=R|U%=Vc)">(CPP) ╪ count</variable>
+  </variables>
+  <block type="procedures_defreturn" id="n|+o0QU.c(.9I+8K@f0h" collapsed="true" x="0" y="0">
+    <field name="NAME">list Candle's body %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="K$yQpAHPB$T4V7{.m8+,">
+        <field name="VAR" id=".8+W@b%l8!.Pi{-5LnN~" variabletype="">(CPP) ╪ candle body percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id=";a81DBwRk:te.h^eAs;J" collapsed="true" x="0" y="53">
+    <field name="NAME">list Candle's upper shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="jSi,`OxSt,y]x4|ioJLM">
+        <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="?c(24g/1EKg*2s#Ih$G`" collapsed="true" x="0" y="106">
+    <field name="NAME">list Candle's lower shadow %</field>
+    <comment pinned="false" h="80" w="160">Candle parts percentage by Fruitfella</comment>
+    <value name="RETURN">
+      <block type="variables_get" id="7`GE;{sVL3]blMIl525(">
+        <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defnoreturn" id="WqX(iUfsr(wOs;3@4h%l" collapsed="true" x="0" y="159">
+    <mutation>
+      <arg name="(CPP) ╪ candle list" varid="Her#LfqK}GLIrn!y:{TQ"></arg>
+      <arg name="(CPP) ╪ jumlah candle" varid="H0ww,2o|D3(qyr@UMGeT"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari list Candle Parts Percentage (CPP) ╪</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="__7^JQq}b;pMtyb*T?p~">
+        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+        <value name="VALUE">
+          <block type="variables_get" id="!RJ+J!-E/{I90Z0-(+L1">
+            <field name="VAR" id="Her#LfqK}GLIrn!y:{TQ" variabletype="">(CPP) ╪ candle list</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="BZ:!%x];Y|eE@B-#^SRu">
+            <field name="VAR" id="0hGsh)pCt[Lvx?#g/@0^" variabletype="">(CPP) ╪ list open</field>
+            <value name="VALUE">
+              <block type="ohlc_values_in_list" id="f$VJMWTQt:^4PmLW?6Lg">
+                <field name="OHLCFIELD_LIST">open</field>
+                <value name="OHLCLIST">
+                  <block type="variables_get" id="UOiG8XW45r/%S*#/qgy#">
+                    <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="FPvQGL_,.Ylk#*ZQCFH|">
+                <field name="VAR" id="i/HKd3A[@?N-[8+ERHwm" variabletype="">(CPP) ╪ list close</field>
+                <value name="VALUE">
+                  <block type="ohlc_values_in_list" id="?FsPr}vwZ9OlRH$Q/$KV">
+                    <field name="OHLCFIELD_LIST">close</field>
+                    <value name="OHLCLIST">
+                      <block type="variables_get" id="[3z7~oM7w[6HWdA|=JZC">
+                        <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id=",t?,(cVv5!R02:V!bG(_">
+                    <field name="VAR" id="6rb/N([HV7r[n8FKKftF" variabletype="">(CPP) ╪ list high</field>
+                    <value name="VALUE">
+                      <block type="ohlc_values_in_list" id="*5pfI2v{:SiHZ?Us0)-3">
+                        <field name="OHLCFIELD_LIST">high</field>
+                        <value name="OHLCLIST">
+                          <block type="variables_get" id="=mwN~a5:XZlArnD:2fE-">
+                            <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="H|531_*1R~E7,Fdnbb/K">
+                        <field name="VAR" id=",=X3eYbh]TKryu?[Pc,_" variabletype="">(CPP) ╪ list low</field>
+                        <value name="VALUE">
+                          <block type="ohlc_values_in_list" id="+8)9_c9cFeMpyz`,2^,)">
+                            <field name="OHLCFIELD_LIST">low</field>
+                            <value name="OHLCLIST">
+                              <block type="variables_get" id="E]sG=FsasE$W^4h7#Tvr">
+                                <field name="VAR" id="FnbHuzJCAUd15U]7f[5z" variabletype="">(CPP) ╪candle</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="~zdaWhi{o8r)a_MIsZKT">
+                            <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                            <value name="VALUE">
+                              <block type="lists_repeat" id="(vKsW:Y(W;3At?Lgg[^V">
+                                <value name="ITEM">
+                                  <block type="math_number" id="ibR27W-59H[h6SL3q]Hu">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                    <field name="NUM">5</field>
+                                  </shadow>
+                                  <block type="variables_get" id="s?zN$g*iFX;-!7}`,Dg=">
+                                    <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="h?;K%)gbnJK_K/=eiH%u">
+                                <field name="VAR" id="+Hfc{AB1L^.%5+0i12?+" variabletype="">(CPP) ╪ candle body</field>
+                                <value name="VALUE">
+                                  <block type="lists_repeat" id="y.Ulz+Bhyx_uJ;p2^NG6">
+                                    <value name="ITEM">
+                                      <block type="math_number" id="^oDm@d#!$g?$c4.@Y/1|">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                        <field name="NUM">5</field>
+                                      </shadow>
+                                      <block type="variables_get" id="N_Grtj6.huRqe*8FQTJf">
+                                        <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="r7UgVF!~V}=sm@Z~%(;W">
+                                    <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                                    <value name="VALUE">
+                                      <block type="lists_repeat" id="Eb-#`+mQ.u^0?P9~64Ug">
+                                        <value name="ITEM">
+                                          <block type="math_number" id="qrBUj6JSW*tV?~=oK=XC">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <value name="NUM">
+                                          <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                            <field name="NUM">5</field>
+                                          </shadow>
+                                          <block type="variables_get" id="4;WQ[!Xv6GjUfj)R[74%">
+                                            <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="bU6x=R5Nh$zVTGFHA|9q">
+                                        <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                                        <value name="VALUE">
+                                          <block type="lists_repeat" id="{{KOAxOxsC6t~0ddvq7`">
+                                            <value name="ITEM">
+                                              <block type="math_number" id="v+ia(lISB7Ba~D%X|hQ#">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM">
+                                              <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                                <field name="NUM">5</field>
+                                              </shadow>
+                                              <block type="variables_get" id="uNI,gl{oU$Sw5hvUOhbm">
+                                                <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="sVOS%O3!ts/0ztrWM{M;">
+                                            <field name="VAR" id=".8+W@b%l8!.Pi{-5LnN~" variabletype="">(CPP) ╪ candle body percent</field>
+                                            <value name="VALUE">
+                                              <block type="lists_repeat" id="94c04_{wKm[75mY{Bqkm">
+                                                <value name="ITEM">
+                                                  <block type="math_number" id="0)SI~a:5ieuqFFAX=s3%">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                                <value name="NUM">
+                                                  <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                                    <field name="NUM">5</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id=")@%+:!M6foES^Ev0r3x}">
+                                                    <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="variables_set" id="{]c*/?7YXHOUH.yQ6R-=">
+                                                <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
+                                                <value name="VALUE">
+                                                  <block type="lists_repeat" id="OAZsBs`z807~J8qE?hjT">
+                                                    <value name="ITEM">
+                                                      <block type="math_number" id="B5U([Q_Q6QlNJkncF3/[">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="NUM">
+                                                      <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                                        <field name="NUM">5</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="I04s$A_Aw0So=L;!8z2/">
+                                                        <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="f$66$w,elxH[Bj#VcUVA">
+                                                    <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+                                                    <value name="VALUE">
+                                                      <block type="lists_repeat" id="DyN8OHAd;Ll(LFB.M%9#">
+                                                        <value name="ITEM">
+                                                          <block type="math_number" id="37[UO2^/dn60xp!VV4Hi">
+                                                            <field name="NUM">0</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="NUM">
+                                                          <shadow type="math_number" id="}.)4BuYVa@q!s1KF3PoI">
+                                                            <field name="NUM">5</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id=";SY+QXU.#S}HBnjEKz=B">
+                                                            <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="controls_for" id="rh~P:Yg`b$t/eaz:Z;aR">
+                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                        <value name="FROM">
+                                                          <block type="math_number" id="Q4_*HV4:otMA]@B1Wfgt">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="TO">
+                                                          <block type="variables_get" id="cMUNU!;7.T=cpmSDtSxr">
+                                                            <field name="VAR" id="H0ww,2o|D3(qyr@UMGeT" variabletype="">(CPP) ╪ jumlah candle</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="BY">
+                                                          <block type="math_number" id="Y]_O]i;1y)72IIFuF]z/">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO">
+                                                          <block type="lists_setIndex" id="4lRk4?/b.e8!3#7t#t8T">
+                                                            <mutation at="true"></mutation>
+                                                            <field name="MODE">SET</field>
+                                                            <field name="WHERE">FROM_END</field>
+                                                            <value name="LIST">
+                                                              <block type="variables_get" id="t~thM7|F_[LNIM=s7=Ct">
+                                                                <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="variables_get" id="ekkqvy7Xq?Q0k2s{pZTv">
+                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="TO">
+                                                              <block type="math_arithmetic" id="Wh.Aq8DNq!%X#0Nlsm,a">
+                                                                <field name="OP">MINUS</field>
+                                                                <value name="A">
+                                                                  <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                    <field name="NUM">1</field>
+                                                                  </shadow>
+                                                                  <block type="lists_getIndex" id="hFp9Zbjj%%`ZRM/60O0`">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="U#9H7H{;-?b)*g~U,Up+">
+                                                                        <field name="VAR" id="6rb/N([HV7r[n8FKKftF" variabletype="">(CPP) ╪ list high</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="variables_get" id="G2M6KYQ*sdWl,NbM#vU5">
+                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                    <field name="NUM">1</field>
+                                                                  </shadow>
+                                                                  <block type="lists_getIndex" id="NKTi2DGq?ul*oz0eT5k[">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_END</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="7O:8+W5;!:k.:lW+LuA]">
+                                                                        <field name="VAR" id=",=X3eYbh]TKryu?[Pc,_" variabletype="">(CPP) ╪ list low</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="variables_get" id="_p0^DT0{dLWT`qQqqxw9">
+                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="lists_setIndex" id="7|4Z:D2X/3d?kzf{mV7-">
+                                                                <mutation at="true"></mutation>
+                                                                <field name="MODE">SET</field>
+                                                                <field name="WHERE">FROM_END</field>
+                                                                <value name="LIST">
+                                                                  <block type="variables_get" id="+$UCaI|CYc5sNT%aeCWk">
+                                                                    <field name="VAR" id="+Hfc{AB1L^.%5+0i12?+" variabletype="">(CPP) ╪ candle body</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="variables_get" id="rguvj[Y,|7@}.@/)ETzk">
+                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="TO">
+                                                                  <block type="math_single" id="@4{pJ2+t`kxVyWFh]-:L">
+                                                                    <field name="OP">ABS</field>
+                                                                    <value name="NUM">
+                                                                      <shadow type="math_number" id="yWkv+4}h.,ykOFxu*pr+">
+                                                                        <field name="NUM">9</field>
+                                                                      </shadow>
+                                                                      <block type="math_arithmetic" id="]@B#W0CIBo;hGKEmqycf">
+                                                                        <field name="OP">MINUS</field>
+                                                                        <value name="A">
+                                                                          <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                            <field name="NUM">1</field>
+                                                                          </shadow>
+                                                                          <block type="lists_getIndex" id="rCy$@]c^L8N0_[@@u[VF">
+                                                                            <mutation statement="false" at="true"></mutation>
+                                                                            <field name="MODE">GET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="variables_get" id="d`5FEK)5-f?_~S#cEtm%">
+                                                                                <field name="VAR" id="0hGsh)pCt[Lvx?#g/@0^" variabletype="">(CPP) ╪ list open</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="variables_get" id="2mPk%52U1}9hcu~fmr8D">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                            <field name="NUM">1</field>
+                                                                          </shadow>
+                                                                          <block type="lists_getIndex" id="cj:F}k7Y6V*#{Z]8UEG{">
+                                                                            <mutation statement="false" at="true"></mutation>
+                                                                            <field name="MODE">GET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="variables_get" id="N!?IQsLm{E?WC76*~nsH">
+                                                                                <field name="VAR" id="i/HKd3A[@?N-[8+ERHwm" variabletype="">(CPP) ╪ list close</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="variables_get" id="|_4-BbKW5vJTj?1KY%gH">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="controls_if" id="P/rv1f_%vGantc0Pw/~l">
+                                                                    <mutation else="1"></mutation>
+                                                                    <value name="IF0">
+                                                                      <block type="logic_compare" id="5%X#?B_/*g7+3MxtP_Tq">
+                                                                        <field name="OP">LT</field>
+                                                                        <value name="A">
+                                                                          <block type="lists_getIndex" id="a;fM-RY/9*{}gsbmJB_B">
+                                                                            <mutation statement="false" at="true"></mutation>
+                                                                            <field name="MODE">GET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="variables_get" id="aY2s{~6zDdu$H##eFu%a">
+                                                                                <field name="VAR" id="0hGsh)pCt[Lvx?#g/@0^" variabletype="">(CPP) ╪ list open</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="math_number" id="0hy28)[%*VN/(?@(jk8`">
+                                                                                <field name="NUM">1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="lists_getIndex" id="~1^([+jD4yEfZtV}/7_=">
+                                                                            <mutation statement="false" at="true"></mutation>
+                                                                            <field name="MODE">GET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="variables_get" id="!]HxH~l-(flXt9E-}(qs">
+                                                                                <field name="VAR" id="i/HKd3A[@?N-[8+ERHwm" variabletype="">(CPP) ╪ list close</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="math_number" id="^Ip`iw376]k,xWfAyK1n">
+                                                                                <field name="NUM">1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <statement name="DO0">
+                                                                      <block type="lists_setIndex" id="pP5oMg3Ha9|}u+/(4a2.">
+                                                                        <mutation at="true"></mutation>
+                                                                        <field name="MODE">SET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="LIST">
+                                                                          <block type="variables_get" id="o;Gh%/wGAE+eWq3kSIhx">
+                                                                            <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="variables_get" id="qT@_d(JXse1!q$g/cq.4">
+                                                                            <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="TO">
+                                                                          <block type="math_arithmetic" id="N=7l}#C%Yzo?cO_,KI]o">
+                                                                            <field name="OP">MINUS</field>
+                                                                            <value name="A">
+                                                                              <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="lists_getIndex" id="Cxoqr3=*o8L-iod]Krdg">
+                                                                                <mutation statement="false" at="true"></mutation>
+                                                                                <field name="MODE">GET</field>
+                                                                                <field name="WHERE">FROM_END</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="variables_get" id="u58M`qr4a`XYF*[!b.|8">
+                                                                                    <field name="VAR" id="6rb/N([HV7r[n8FKKftF" variabletype="">(CPP) ╪ list high</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="AT">
+                                                                                  <block type="variables_get" id="$7Y|QF!G1y|TGlmD;#5[">
+                                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="lists_getIndex" id="EwInGOolLZekfvfCD:Lf">
+                                                                                <mutation statement="false" at="true"></mutation>
+                                                                                <field name="MODE">GET</field>
+                                                                                <field name="WHERE">FROM_END</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="variables_get" id="8Mjo5J*VQB%=(peA2r*q">
+                                                                                    <field name="VAR" id="0hGsh)pCt[Lvx?#g/@0^" variabletype="">(CPP) ╪ list open</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="AT">
+                                                                                  <block type="variables_get" id="ZK#~-x}!GF]09_pCb,H1">
+                                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="lists_setIndex" id="D!$n(42ZC6D#U%ZHc+J9">
+                                                                            <mutation at="true"></mutation>
+                                                                            <field name="MODE">SET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="LIST">
+                                                                              <block type="variables_get" id="LV7:V|Xlb/76|{83[HXi">
+                                                                                <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="variables_get" id="nqKTV|]qnp[;52O-O8n2">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="TO">
+                                                                              <block type="math_arithmetic" id="#AhM:KM7VG2C8PBfc_yo">
+                                                                                <field name="OP">MINUS</field>
+                                                                                <value name="A">
+                                                                                  <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id=";$wqhm/6VPYm#G`(83P!">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="L[?l!{*N!K`BDFePQ[E/">
+                                                                                        <field name="VAR" id="i/HKd3A[@?N-[8+ERHwm" variabletype="">(CPP) ╪ list close</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="2WdonKk0zI@!}ovnxea%">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id=")C;UqA8:petb8,W,Ss8I">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="[WMEm7RFOaPZ6:C*fOVW">
+                                                                                        <field name="VAR" id=",=X3eYbh]TKryu?[Pc,_" variabletype="">(CPP) ╪ list low</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id=".{#_k$77-t~^_iiFi]yX">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <statement name="ELSE">
+                                                                      <block type="lists_setIndex" id="~elSDx*zsUi[ze:lQ?5`">
+                                                                        <mutation at="true"></mutation>
+                                                                        <field name="MODE">SET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="LIST">
+                                                                          <block type="variables_get" id="_gd/F#_`$WFIc,)src}D">
+                                                                            <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="variables_get" id=")s17=WazIn4EvB7f:hrZ">
+                                                                            <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="TO">
+                                                                          <block type="math_arithmetic" id="fn!^$BT?A6Wn2N..lo[y">
+                                                                            <field name="OP">MINUS</field>
+                                                                            <value name="A">
+                                                                              <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="lists_getIndex" id="x|%;Ud^*o`]4Ur+a$Hs`">
+                                                                                <mutation statement="false" at="true"></mutation>
+                                                                                <field name="MODE">GET</field>
+                                                                                <field name="WHERE">FROM_END</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="variables_get" id="RHh?OAZj_JQKVQO/S4{I">
+                                                                                    <field name="VAR" id="6rb/N([HV7r[n8FKKftF" variabletype="">(CPP) ╪ list high</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="AT">
+                                                                                  <block type="variables_get" id="D.pY8*/KHkz6m,c?uK~;">
+                                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="lists_getIndex" id="c7XQv97#v2vzej0:bBvu">
+                                                                                <mutation statement="false" at="true"></mutation>
+                                                                                <field name="MODE">GET</field>
+                                                                                <field name="WHERE">FROM_END</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="variables_get" id="!fu~3lpak/E%Yl2/j5sQ">
+                                                                                    <field name="VAR" id="i/HKd3A[@?N-[8+ERHwm" variabletype="">(CPP) ╪ list close</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="AT">
+                                                                                  <block type="variables_get" id="q^l#P?8HTCWd##YLn?f5">
+                                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="lists_setIndex" id="{e;,j~B-w%!G1LQ/ra*=">
+                                                                            <mutation at="true"></mutation>
+                                                                            <field name="MODE">SET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="LIST">
+                                                                              <block type="variables_get" id="n,Vs]lJMjyj3GMy|6Ed=">
+                                                                                <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="variables_get" id="slY3-ABfBVPrNs%T%BE|">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="TO">
+                                                                              <block type="math_arithmetic" id=",2TZ!^0;(QRe92/W~U0,">
+                                                                                <field name="OP">MINUS</field>
+                                                                                <value name="A">
+                                                                                  <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id="8{SsLP{a:OsxroYKbWhS">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="kV=@RIcTUr)5r7YWW;kX">
+                                                                                        <field name="VAR" id="0hGsh)pCt[Lvx?#g/@0^" variabletype="">(CPP) ╪ list open</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="E7NY~=l]|3n@4NgaKM|q">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id="[/txhRf`njr2K=-Cz_JT">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="[mxsl]8GB?r@Tm(Ol{H8">
+                                                                                        <field name="VAR" id=",=X3eYbh]TKryu?[Pc,_" variabletype="">(CPP) ╪ list low</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="8ToTOy9[BEmj%uI[QIz@">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </statement>
+                                                                    <next>
+                                                                      <block type="lists_setIndex" id="U1X`!CCq9zMbz-Oy!HwS">
+                                                                        <mutation at="true"></mutation>
+                                                                        <field name="MODE">SET</field>
+                                                                        <field name="WHERE">FROM_END</field>
+                                                                        <value name="LIST">
+                                                                          <block type="variables_get" id="%RT3Va{;S1/rbO.KC%Mi">
+                                                                            <field name="VAR" id=".8+W@b%l8!.Pi{-5LnN~" variabletype="">(CPP) ╪ candle body percent</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="variables_get" id="C6(m8QkTvif+|Yz^a{EY">
+                                                                            <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="TO">
+                                                                          <block type="math_arithmetic" id=".^e%Ro}b*W#tsC.))Oti">
+                                                                            <field name="OP">MULTIPLY</field>
+                                                                            <value name="A">
+                                                                              <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="math_arithmetic" id="a}vUfc#ARaYKQ/fH81@s">
+                                                                                <field name="OP">DIVIDE</field>
+                                                                                <value name="A">
+                                                                                  <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id="4^vm[la-c9YOpatCl%(m">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="k%DM/Y%n9%L6]U#-/w99">
+                                                                                        <field name="VAR" id="+Hfc{AB1L^.%5+0i12?+" variabletype="">(CPP) ╪ candle body</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="[Sq[!*ujZmOU@tB2+=Pm">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="lists_getIndex" id="+tIMpGBMTbLw5l?t{jy5">
+                                                                                    <mutation statement="false" at="true"></mutation>
+                                                                                    <field name="MODE">GET</field>
+                                                                                    <field name="WHERE">FROM_END</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block type="variables_get" id="TmW9Q3dmMolz39b_$$pj">
+                                                                                        <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="AT">
+                                                                                      <block type="variables_get" id="%Am2A=Boz~23`^r)}kRP">
+                                                                                        <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <shadow type="math_number" id="Y_Mg~Q?[RtGATBcJuGK$">
+                                                                                <field name="NUM">100</field>
+                                                                              </shadow>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="lists_setIndex" id="{XYSAmU,b|hzj-onoj!0">
+                                                                            <mutation at="true"></mutation>
+                                                                            <field name="MODE">SET</field>
+                                                                            <field name="WHERE">FROM_END</field>
+                                                                            <value name="LIST">
+                                                                              <block type="variables_get" id="EZ*Bd,uR?+pmL}G%#V?b">
+                                                                                <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="AT">
+                                                                              <block type="variables_get" id="1hOxjkvB*=IoiX(($zK-">
+                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="TO">
+                                                                              <block type="math_arithmetic" id="k%aF]XLZ~I5,o%%FIIi4">
+                                                                                <field name="OP">MULTIPLY</field>
+                                                                                <value name="A">
+                                                                                  <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </shadow>
+                                                                                  <block type="math_arithmetic" id="|FF++R:C;diKnnG}qcsM">
+                                                                                    <field name="OP">DIVIDE</field>
+                                                                                    <value name="A">
+                                                                                      <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                        <field name="NUM">1</field>
+                                                                                      </shadow>
+                                                                                      <block type="lists_getIndex" id="[rvb1_l;2*u.LehS5gjD">
+                                                                                        <mutation statement="false" at="true"></mutation>
+                                                                                        <field name="MODE">GET</field>
+                                                                                        <field name="WHERE">FROM_END</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="variables_get" id="jr,%Hz3FK/2A;xQSwiz:">
+                                                                                            <field name="VAR" id="c4kXFWFXByv{K#S?0A(P" variabletype="">(CPP) ╪ candle shadow upper</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="AT">
+                                                                                          <block type="variables_get" id="!jvVFmUFvtGSkx[XaGNi">
+                                                                                            <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                        <field name="NUM">1</field>
+                                                                                      </shadow>
+                                                                                      <block type="lists_getIndex" id="iAF]0gH^b67KYNs53r%S">
+                                                                                        <mutation statement="false" at="true"></mutation>
+                                                                                        <field name="MODE">GET</field>
+                                                                                        <field name="WHERE">FROM_END</field>
+                                                                                        <value name="VALUE">
+                                                                                          <block type="variables_get" id="[M6M9PFy#!ix6803ZI}9">
+                                                                                            <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="AT">
+                                                                                          <block type="variables_get" id=";ne$$G|xzq%Dn^R!w7n)">
+                                                                                            <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <shadow type="math_number" id=")[t|,MgC^8MrSQ[%x}Ga">
+                                                                                    <field name="NUM">100</field>
+                                                                                  </shadow>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="lists_setIndex" id="C$`Y_0XZ[W17BbK+=a0~">
+                                                                                <mutation at="true"></mutation>
+                                                                                <field name="MODE">SET</field>
+                                                                                <field name="WHERE">FROM_END</field>
+                                                                                <value name="LIST">
+                                                                                  <block type="variables_get" id="|Bl?jgU,~kMHi^%Dqx+|">
+                                                                                    <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="AT">
+                                                                                  <block type="variables_get" id="}MJ0*z#UR2gxhlbXX^f;">
+                                                                                    <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="TO">
+                                                                                  <block type="math_arithmetic" id="J9G2MN)Z)36xQ^JeURsP">
+                                                                                    <field name="OP">MULTIPLY</field>
+                                                                                    <value name="A">
+                                                                                      <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
+                                                                                        <field name="NUM">1</field>
+                                                                                      </shadow>
+                                                                                      <block type="math_arithmetic" id="W`X;OF2GT[tDY8ve#;:t">
+                                                                                        <field name="OP">DIVIDE</field>
+                                                                                        <value name="A">
+                                                                                          <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </shadow>
+                                                                                          <block type="lists_getIndex" id="+:XDlxR)`dNT[i?I-WT!">
+                                                                                            <mutation statement="false" at="true"></mutation>
+                                                                                            <field name="MODE">GET</field>
+                                                                                            <field name="WHERE">FROM_END</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="variables_get" id="ZD*WCt3s,ph]|z:r2pjy">
+                                                                                                <field name="VAR" id="F$(,-E!0XWr@.7?/*.Oo" variabletype="">(CPP) ╪ candle shadow lower</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="AT">
+                                                                                              <block type="variables_get" id="Q0RO8={5BX-`n]gqW?{q">
+                                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <shadow type="math_number" id=";-xKj!}te5*7yK(E,LOb">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </shadow>
+                                                                                          <block type="lists_getIndex" id="HF#(EvgTk+i#Mw@*3kk-">
+                                                                                            <mutation statement="false" at="true"></mutation>
+                                                                                            <field name="MODE">GET</field>
+                                                                                            <field name="WHERE">FROM_END</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="variables_get" id="k!*R`jZEOEuXp[w]]OQ.">
+                                                                                                <field name="VAR" id="mzkcst/?By|H5fJz{^KB" variabletype="">(CPP) ╪ candle size</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="AT">
+                                                                                              <block type="variables_get" id="4pYO}{ghw!yD10KY{}|h">
+                                                                                                <field name="VAR" id="H~+w/C$@!4B=R|U%=Vc)" variabletype="">(CPP) ╪ count</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <shadow type="math_number" id="c/QN*#MT37v;MZrMkKx5">
+                                                                                        <field name="NUM">100</field>
+                                                                                      </shadow>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
