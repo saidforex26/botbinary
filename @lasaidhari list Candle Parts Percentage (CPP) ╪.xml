@@ -757,13 +757,13 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="TO">
-                                                                              <block type="math_arithmetic" id="k%aF]XLZ~I5,o%%FIIi4" inline="false">
+                                                                              <block type="math_arithmetic" id="k%aF]XLZ~I5,o%%FIIi4">
                                                                                 <field name="OP">MULTIPLY</field>
                                                                                 <value name="A">
                                                                                   <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
                                                                                     <field name="NUM">1</field>
                                                                                   </shadow>
-                                                                                  <block type="math_arithmetic" id="|FF++R:C;diKnnG}qcsM">
+                                                                                  <block type="math_arithmetic" id="|FF++R:C;diKnnG}qcsM" inline="false">
                                                                                     <field name="OP">DIVIDE</field>
                                                                                     <value name="A">
                                                                                       <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
@@ -821,7 +821,7 @@
                                                                                 <field name="WHERE">FROM_END</field>
                                                                                 <value name="LIST">
                                                                                   <block type="variables_get" id="|Bl?jgU,~kMHi^%Dqx+|">
-                                                                                    <field name="VAR" id="%`0E#*#/+g)(`%eMbp}h" variabletype="">(CPP) ╪ candle shadow upper percent</field>
+                                                                                    <field name="VAR" id="$c^GjSkrrhq9F0FwJtkw" variabletype="">(CPP) ╪ candle shadow lower percent</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="AT">
@@ -830,13 +830,13 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="TO">
-                                                                                  <block type="math_arithmetic" id="J9G2MN)Z)36xQ^JeURsP" inline="false">
+                                                                                  <block type="math_arithmetic" id="J9G2MN)Z)36xQ^JeURsP">
                                                                                     <field name="OP">MULTIPLY</field>
                                                                                     <value name="A">
                                                                                       <shadow type="math_number" id="xq#,P05/?}h`${Y=i@+M">
                                                                                         <field name="NUM">1</field>
                                                                                       </shadow>
-                                                                                      <block type="math_arithmetic" id="W`X;OF2GT[tDY8ve#;:t">
+                                                                                      <block type="math_arithmetic" id="W`X;OF2GT[tDY8ve#;:t" inline="false">
                                                                                         <field name="OP">DIVIDE</field>
                                                                                         <value name="A">
                                                                                           <shadow type="math_number" id=":u[nCRZO%QwT=o6:^0-Z">
