@@ -1,0 +1,1258 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defnoreturn" id=",hzsJnJVv$x$!@AcSoVN" collapsed="true">
+    <mutation>
+      <arg name="(M&amp;MD) daftar digit" varid=",vkdw%M7A{-0dhSV:m3f"></arg>
+      <arg name="(M&amp;MD) maksimal" varid="0:ve6v{^[|Zxo$KKB#*s"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari MAX &amp; MIN DIGIT (M&amp;MD)</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="#3Ul1o3L6:5[_v_NfT5q">
+        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+        <value name="VALUE">
+          <block type="lists_repeat" id="`azqp^HFwo[h}j/:_4W8">
+            <value name="ITEM">
+              <block type="math_number" id="Hhicp-@b1QV!/8:/xF]2">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="NUM">
+              <shadow type="math_number" id=";$sWGtgXZrn/73e*6rCx">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="z~QD)}K8e()?BJ*u=2M:">
+            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+            <value name="FROM">
+              <block type="math_number" id="A@jfxAoAV@eYkt;[?mGU">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="*f-9yH6V@f4{aBVt$T*{">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="qM11qHoAcn__|a!kXALn">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="controls_for" id="7=UhWt9ex$VR7#@rAZXH">
+                <field name="VAR" id="Omu0E#xV81yoTOZXsrCr" variabletype="">(M&amp;MD) count daftar digit</field>
+                <value name="FROM">
+                  <block type="math_number" id="RV:sxvJ)wl|rqfL}8Z#m">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id="=B@RG}r}dU+t75SS9h#,">
+                    <field name="VAR" id="0:ve6v{^[|Zxo$KKB#*s" variabletype="">(M&amp;MD) maksimal</field>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="p=(KpV@?v[kP6lf270f`">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="controls_if" id="jlbfa5j$AtC5rS5+)qBR">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="4({lG9I$l)yR5O7B#ia(">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="GS)OC!T-9iZMfp/mZSHD">
+                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="a5C3|[bsLvSa3fqotlx*">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="JC!Pl]Bq]F05KbZtwo8u">
+                        <value name="IF0">
+                          <block type="logic_compare" id="h`V89sKyL9M_Z7T4^bpo">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="d)@.5]UN*x6!Sr$~Fa%}">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="oAEFYI!gF.:WnM}a-J/E">
+                                    <field name="VAR" id=",vkdw%M7A{-0dhSV:m3f" variabletype="">(M&amp;MD) daftar digit</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="9cs_g|ncl;KBPs4G[f|X">
+                                    <field name="VAR" id="Omu0E#xV81yoTOZXsrCr" variabletype="">(M&amp;MD) count daftar digit</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="n`~9)$@N-]$H3_C8KI#Z">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="lists_setIndex" id="h#VLaE[c$`dpOJn5_I7N">
+                            <mutation at="true"></mutation>
+                            <field name="MODE">SET</field>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="j-.UaMY3^55wUl5ZX*}Q">
+                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="1!6!T374Q$pre[7qp$uW">
+                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_arithmetic" id="+j+Gy+a(3ooApRgmp677">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="BFh@)cy-%%F_4K{|4MkX">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="C%,$qjeAF6eq4x|Lwh30">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_START</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="q=`44:fRR4L)ZN_6(xmf">
+                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="!6M.YZd,X{i)Nb40#N|Y">
+                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="(5/7D37vo]-2G;_.9E^P">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="controls_if" id="aoV{WZM~-wAXS4b`02e*">
+                        <value name="IF0">
+                          <block type="logic_compare" id="!Z4cWGobj#s2uRRYr,=)">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="#.VJ9:=`6`H1jRaZz?l8">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="00oqqrW*av1{^Y9Qye~k">
+                                    <field name="VAR" id=",vkdw%M7A{-0dhSV:m3f" variabletype="">(M&amp;MD) daftar digit</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="0$h_Zp7|-ogHwi4LTb=B">
+                                    <field name="VAR" id="Omu0E#xV81yoTOZXsrCr" variabletype="">(M&amp;MD) count daftar digit</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="variables_get" id="~oqWh!Cnbhk#26aJL74t">
+                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="lists_setIndex" id="rl)g5B;FA.BmuZ?:?=?D">
+                            <mutation at="true"></mutation>
+                            <field name="MODE">SET</field>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="]Tyw-;^@py,cZ|rX2Fn4">
+                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="%|Ga|P[aS/CwJa0]#7-H">
+                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_arithmetic" id="_bvkGF}Zz9*Tf#6oP5c=">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="BFh@)cy-%%F_4K{|4MkX">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id=")7BE)s2I||J1K49YpvC*">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_START</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="{:9:q0iZxOG%T*Oj*FKO">
+                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="XMZsC8C?zA7h?Ty#!@{#">
+                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="Dpw?q./+d,z*I]loBI!y">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_for" id="E@Z=OY{:uAh1:NX1U8SF">
+                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                <value name="FROM">
+                  <block type="math_number" id="YKE9,}EUH0HM2FV[(uy@">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="dG!wEAsjI}$!/B129LR+">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="Io@RK%etCB?0=EQtIGfg">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="controls_if" id="M9[jVYFvD(8)koZ)5?U]">
+                    <value name="IF0">
+                      <block type="logic_compare" id="vnS4d$t$5^)5`8_9x!Rh">
+                        <field name="OP">NEQ</field>
+                        <value name="A">
+                          <block type="lists_getIndex" id="3X6sP=*`Y}bwwinu{~nz">
+                            <mutation statement="false" at="true"></mutation>
+                            <field name="MODE">GET</field>
+                            <field name="WHERE">FROM_START</field>
+                            <value name="VALUE">
+                              <block type="variables_get" id="whJ%Jo91X#_8kxkLqMrs">
+                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block type="variables_get" id="`N#wyvdK_2JA-AF+HZag">
+                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="Va-vV]o[Hu)4,?KI?M)7">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="mL*gj|8qdftBhrA{9WrD">
+                        <value name="IF0">
+                          <block type="logic_operation" id="$80Z%`Sdw0ImmW.O0^EQ" inline="false" collapsed="true">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="logic_compare" id="|,2qR@+9ca-;f0YN$VX{">
+                                <field name="OP">GTE</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="?PJG_nlPJ-hLwpe-;g0/">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_START</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="uk.m+Ne;XbMeC^#1OE+t">
+                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="n`XiI@#4/,3(;3FO!*ex">
+                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="56d(Hx{mO]8:tIRbQ4|c">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_START</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="(n*}Hjj}$l{,y9rYC|Z2">
+                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_number" id="?0EIxHHY+y-anZ$v.{3r">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_operation" id="kAR`)CN)?=ZS2Zt.ehav" inline="false">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="logic_compare" id="}*BXHPNvsQpn-^FQBGq:">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lists_getIndex" id="I=tbl8$_P/y~^0Szm!=B">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_START</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="eDTrk}Yq_moSywOjJ$hS">
+                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="k+=Ypn]zx7cDJt8osUCX">
+                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="lists_getIndex" id="Q5@[]xu:]DeF#v2vVk-d">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_START</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="4YUjbWdqO*_a%O0ym:~p">
+                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="math_number" id="O2:?t,F#*#,RCp.|qFqL">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_operation" id="8w,8?JE,}/qA{wmXzvf8" inline="false">
+                                    <field name="OP">AND</field>
+                                    <value name="A">
+                                      <block type="logic_compare" id="oW*xu6|S(2r0ma1`~|n7">
+                                        <field name="OP">GTE</field>
+                                        <value name="A">
+                                          <block type="lists_getIndex" id="*TL+r+H.@}DH!_^Bh,y#">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="MY5Y$,a-`bbPZ+z(hH.I">
+                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="$m9+PwUVLcpd,PMYf=q$">
+                                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="lists_getIndex" id="IFdUdh{4xc~~Ack9P=r/">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="A6{@dY#QmyBv=oGRmL07">
+                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="math_number" id="t;|{9v`r5W*axdCat1bf">
+                                                <field name="NUM">3</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_operation" id="@sY~D[v^[z|7?}O%QlQ7" inline="false">
+                                        <field name="OP">AND</field>
+                                        <value name="A">
+                                          <block type="logic_compare" id="hdRu%rR-XKO2b*h4|Kv1">
+                                            <field name="OP">GTE</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id=",Zvxf|p$m*#Gm43eH6$O">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="ZwLSGQ[A*9noHOp].R@s">
+                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="y3`ChpLi_`@_Ne4c1{Gx">
+                                                    <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="lists_getIndex" id="#|w{=vgXO~d,8M9Csi+S">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="@vQAmk^h0}O~^!+`#-V@">
+                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="0xRK/l4`HEJ%PA(=@d}[">
+                                                    <field name="NUM">4</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="logic_operation" id="s|gr;8J/3-w9A;y`S(NZ" inline="false">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="J`.{UZy/ZGF(+3yhPunb">
+                                                <field name="OP">GTE</field>
+                                                <value name="A">
+                                                  <block type="lists_getIndex" id="#4:/ALS;_(;Q3wYdD-`{">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="!;g{+gc!A`dURRkZ87O*">
+                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id="A/IcS-}`tAFV@8!*V47i">
+                                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="lists_getIndex" id="SNMj7R*~tn!pF)1A=6IB">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="-O6B#TLU5-Y0u,o[hEh/">
+                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="n$(hVHo-^H1B[cMnQwHc">
+                                                        <field name="NUM">5</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_operation" id="BIcioMSmAMt(@=i{M7u{" inline="false">
+                                                <field name="OP">AND</field>
+                                                <value name="A">
+                                                  <block type="logic_compare" id=";:{PGTp7s^TW@kfLc*d5">
+                                                    <field name="OP">GTE</field>
+                                                    <value name="A">
+                                                      <block type="lists_getIndex" id="_.@-}F]{n|@Tl.[]v}j^">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="Xq_^?%D(D?GCMCWn7N=L">
+                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="eD/,4ZA`KyQ(3T5-cpr0">
+                                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="lists_getIndex" id="qrRyMB{hG_/?V-}e)U]i">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="X~Fazo*)$*^:p(O`*(}Y">
+                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="math_number" id="R5,I(Mb=61rCJ}I@PGz{">
+                                                            <field name="NUM">6</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_operation" id="Oj%#XgwlmS}WkCizd=s_" inline="false">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="logic_compare" id="R4l^@RQaeCf@tr#EUSbN">
+                                                        <field name="OP">GTE</field>
+                                                        <value name="A">
+                                                          <block type="lists_getIndex" id="wz#7o4iePf^]o?W[08p0">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="K=q+`V]7U[-~:er}vohV">
+                                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="variables_get" id="E:X_1ac!5p()4z!@-==d">
+                                                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="lists_getIndex" id="Kgd)cuz.8Gr,QkD;G]%0">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="|3o78bOd`i0,lMt%f^fB">
+                                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="math_number" id="zcxhgQtBos/?f:/guCx@">
+                                                                <field name="NUM">7</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_operation" id="]Bk/Pc%2l3?tkk0^X?^3" inline="false">
+                                                        <field name="OP">AND</field>
+                                                        <value name="A">
+                                                          <block type="logic_compare" id="vYK4AO$L}M^iv{Im,k,s">
+                                                            <field name="OP">GTE</field>
+                                                            <value name="A">
+                                                              <block type="lists_getIndex" id="9xm9$jd_E2V~z%zYYp63">
+                                                                <mutation statement="false" at="true"></mutation>
+                                                                <field name="MODE">GET</field>
+                                                                <field name="WHERE">FROM_START</field>
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id="Ted]$?oFUhm^yykc0u^@">
+                                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="variables_get" id="OH?K]rHq`1;%b;mte/,p">
+                                                                    <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="lists_getIndex" id="A%[SVZyDhSlG^}h7V,^P">
+                                                                <mutation statement="false" at="true"></mutation>
+                                                                <field name="MODE">GET</field>
+                                                                <field name="WHERE">FROM_START</field>
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id="a[vAfW}L;L$(qO(ut=d0">
+                                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="math_number" id="sOT^?r{]`}gsLP11ur)A">
+                                                                    <field name="NUM">8</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="logic_operation" id="7M,dH,6jiFDk#Q.O,zLX" inline="false">
+                                                            <field name="OP">AND</field>
+                                                            <value name="A">
+                                                              <block type="logic_compare" id="pGMX5dXY:nAa-1~FD~iS">
+                                                                <field name="OP">GTE</field>
+                                                                <value name="A">
+                                                                  <block type="lists_getIndex" id="8f]OD;H/4|7Xdn3pd%Bl">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="1wQxl)YKu)[f3lp~F%z`">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="variables_get" id="E)8~*y[)2;#_G1!NtoXg">
+                                                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="lists_getIndex" id="O88soa!NmR~%OLJ]g0)+">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="*bavcoj6IU,RkwFg}7H)">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="amtwz^qqIE(ui3^Z^j3*">
+                                                                        <field name="NUM">9</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="logic_compare" id="y!(1IB-Ze6Zse//ss={k">
+                                                                <field name="OP">GTE</field>
+                                                                <value name="A">
+                                                                  <block type="lists_getIndex" id="%u._D/tE+H#50YL]sjox">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="9UvSntoXc=lWPP^?{/10">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="variables_get" id="_`.!fnySV{w[C:ITCMR%">
+                                                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="lists_getIndex" id="S(uA=C)R[L@v8.AKGMH}">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="F;y^IMt+;yGv5HxA1T#-">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="oPEpXP@_@m1FO(E$ILd4">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="variables_set" id="JjUyv,U`j?gSjB}@5@j*">
+                            <field name="VAR" id="X^bkAt9ivr]#8uqUSaA_" variabletype="">(M&amp;MD) hing</field>
+                            <value name="VALUE">
+                              <block type="logic_ternary" id="jPc0_:/MLXfDnn]g,F8x">
+                                <value name="IF">
+                                  <block type="logic_compare" id="t?S,m*y0=k[Y6UMTS@yR">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="r3d3ZWjTlab8TL+x4pKY">
+                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="[VJC|PQGu{OERtv3AkE3">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="THEN">
+                                  <block type="math_single" id="EeawEDh?uiN1Duam6J,L">
+                                    <field name="OP">ABS</field>
+                                    <value name="NUM">
+                                      <shadow type="math_number" id="Q%;+)-wL7d4L5^-y-1Tc">
+                                        <field name="NUM">9</field>
+                                      </shadow>
+                                      <block type="math_number" id="tVDMz9In4SEZZ|{Q?m5l">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ELSE">
+                                  <block type="variables_get" id="a:R$b)SZESWo}wk)Mqy(">
+                                    <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="y4QyuP,vH#=qf{/4TV9m">
+                            <value name="IF0">
+                              <block type="logic_operation" id="D?jkP;yry(2kX,H=-OIb" inline="false" collapsed="true">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="logic_compare" id="?)JO8KJJUdf`Gbyr`Ah5">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lists_getIndex" id="v8A+DH;lps9h}4S27I~z">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_START</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id=".PDFSC!QCMGq$98`:;Et">
+                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="cT9;8+ynFpf;aeHHq!Tc">
+                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="lists_getIndex" id="V[$*Y@x#:FJU/Seejq-!">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_START</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="YNXp+jE|eeD,a3ai,qUS">
+                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                          </block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="math_number" id="9|t1L[/x#YL4.(KN9M^3">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_operation" id="^6Y1%2_[n5jyrd@9EWO_" inline="false">
+                                    <field name="OP">AND</field>
+                                    <value name="A">
+                                      <block type="logic_compare" id=",0F*}g=n/J^ia3tv/gCn">
+                                        <field name="OP">LTE</field>
+                                        <value name="A">
+                                          <block type="lists_getIndex" id="@U(,M!9itt28F1?Rh3tJ">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="[{kYG}bJ^;-Gw]1i,;y:">
+                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="variables_get" id="#_PA)D-*$JDzATAx;8nw">
+                                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="lists_getIndex" id="7i%G%dC;!/yyiU[Ps8L6">
+                                            <mutation statement="false" at="true"></mutation>
+                                            <field name="MODE">GET</field>
+                                            <field name="WHERE">FROM_START</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="oyGVn2?n%mSS:IgH;rFB">
+                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                              </block>
+                                            </value>
+                                            <value name="AT">
+                                              <block type="math_number" id="sgJEYK7BWVlqr5DzEGjt">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_operation" id="eOy1xU$BLA=Va.WQO~mx" inline="false">
+                                        <field name="OP">AND</field>
+                                        <value name="A">
+                                          <block type="logic_compare" id="i:JqJ:zuV6!QP6I9WRx^">
+                                            <field name="OP">LTE</field>
+                                            <value name="A">
+                                              <block type="lists_getIndex" id="e+4Je`JY5]dC^Dcm$n^D">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="s%w]h)g8/@rVb;D@Ne%X">
+                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="variables_get" id="#~yCWJtwt@kVyQh%F^XK">
+                                                    <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="lists_getIndex" id="uj4l^J)0b7E~!/8vYyUQ">
+                                                <mutation statement="false" at="true"></mutation>
+                                                <field name="MODE">GET</field>
+                                                <field name="WHERE">FROM_START</field>
+                                                <value name="VALUE">
+                                                  <block type="variables_get" id="_W:,I;bHQVJ;/G1VZo{n">
+                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                  </block>
+                                                </value>
+                                                <value name="AT">
+                                                  <block type="math_number" id="3@ze.Hj39_T-3|wtAQG1">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="logic_operation" id="y5U_PD8)lsI,frPo~Hd$" inline="false">
+                                            <field name="OP">AND</field>
+                                            <value name="A">
+                                              <block type="logic_compare" id="DtgB!AZty,L~#EhfY3cI">
+                                                <field name="OP">LTE</field>
+                                                <value name="A">
+                                                  <block type="lists_getIndex" id="}Ek{R49k|zx.wATEg1d}">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id=":U,qdox{)V.mppGyS2hr">
+                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="variables_get" id="$mV{hJ9K7v[f*QSj}ITd">
+                                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="lists_getIndex" id="ZMkm98)Uiw(Kcw.DfSK0">
+                                                    <mutation statement="false" at="true"></mutation>
+                                                    <field name="MODE">GET</field>
+                                                    <field name="WHERE">FROM_START</field>
+                                                    <value name="VALUE">
+                                                      <block type="variables_get" id="@x#5=6.fZ3YfJk7i*Y#d">
+                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="AT">
+                                                      <block type="math_number" id="C6ps~EH5bq]v_VO_;Z__">
+                                                        <field name="NUM">4</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_operation" id="Q`hX#uf?52MERV`}C+Ta" inline="false">
+                                                <field name="OP">AND</field>
+                                                <value name="A">
+                                                  <block type="logic_compare" id="dNb-nIqL^Ad2!}U#/EWM">
+                                                    <field name="OP">LTE</field>
+                                                    <value name="A">
+                                                      <block type="lists_getIndex" id="q/~2hTBU?BZ#puWUj30$">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="VWlXp$o$%Az$^cGYjlTj">
+                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="variables_get" id="U+fu)0L5/Ra~I)+dUl[@">
+                                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="lists_getIndex" id="*KC2a.{w=T`WUFC_zb8%">
+                                                        <mutation statement="false" at="true"></mutation>
+                                                        <field name="MODE">GET</field>
+                                                        <field name="WHERE">FROM_START</field>
+                                                        <value name="VALUE">
+                                                          <block type="variables_get" id="DebCO1VuTFd5ndDhXWtD">
+                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="AT">
+                                                          <block type="math_number" id="nB%hSNU%pGG27OY?XT|x">
+                                                            <field name="NUM">5</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_operation" id="6SyEx)3yk{,WRc28nu{P" inline="false">
+                                                    <field name="OP">AND</field>
+                                                    <value name="A">
+                                                      <block type="logic_compare" id="LsL^`mi}~K#B0V#=Htas">
+                                                        <field name="OP">LTE</field>
+                                                        <value name="A">
+                                                          <block type="lists_getIndex" id="lOzxh4PTWo+|YUKuR[VT">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="%VT!PxTKz7Tan}f6k1Me">
+                                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="variables_get" id="J3BvU;[$i9b^JlGD8X~y">
+                                                                <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="lists_getIndex" id="Gw@4/^1ALMW=J^Y.942j">
+                                                            <mutation statement="false" at="true"></mutation>
+                                                            <field name="MODE">GET</field>
+                                                            <field name="WHERE">FROM_START</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="_,[))J20L#dRSXGAC{s3">
+                                                                <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="AT">
+                                                              <block type="math_number" id="#Z%XJm/U?-ta*PR:_~qA">
+                                                                <field name="NUM">6</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_operation" id="6p:G:KOmw.UBf|8o=H+M" inline="false">
+                                                        <field name="OP">AND</field>
+                                                        <value name="A">
+                                                          <block type="logic_compare" id="Vk$3^(;FrsfFtp4oTb:1">
+                                                            <field name="OP">LTE</field>
+                                                            <value name="A">
+                                                              <block type="lists_getIndex" id="4q+(qz)r(by6%U4^vpU-">
+                                                                <mutation statement="false" at="true"></mutation>
+                                                                <field name="MODE">GET</field>
+                                                                <field name="WHERE">FROM_START</field>
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id="}=!ql$L!.F|Z~F~ZNm7D">
+                                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="variables_get" id="sx^_eK*wS=_9.r`kQd/I">
+                                                                    <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="lists_getIndex" id="L*wcVPEMS-B.Ru~GWeFc">
+                                                                <mutation statement="false" at="true"></mutation>
+                                                                <field name="MODE">GET</field>
+                                                                <field name="WHERE">FROM_START</field>
+                                                                <value name="VALUE">
+                                                                  <block type="variables_get" id="r~o7i4BO{c~F3851UuDi">
+                                                                    <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="AT">
+                                                                  <block type="math_number" id="=.?7CCgpx3mC)@p@*=We">
+                                                                    <field name="NUM">7</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="logic_operation" id="Ynb5C#cmqq]-uhuEMS]s" inline="false">
+                                                            <field name="OP">AND</field>
+                                                            <value name="A">
+                                                              <block type="logic_compare" id="vh;PDdFWkntIaEk28pW?">
+                                                                <field name="OP">LTE</field>
+                                                                <value name="A">
+                                                                  <block type="lists_getIndex" id="J}|+0US-ME0if#B.Tj9|">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="it{JplQG{vkBdR:jh8#Q">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="variables_get" id="uE:1[0h(t~I@PqWHb$n0">
+                                                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="lists_getIndex" id="1teMYvlmBR=^+-Coa7qZ">
+                                                                    <mutation statement="false" at="true"></mutation>
+                                                                    <field name="MODE">GET</field>
+                                                                    <field name="WHERE">FROM_START</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="variables_get" id="CW#$|$9FRBz.lnJnIqM~">
+                                                                        <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="AT">
+                                                                      <block type="math_number" id="Oge$R;]!3R^Ah|c${KwM">
+                                                                        <field name="NUM">8</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="logic_operation" id="X?ST[f5tbg^eiPc|Z:i2" inline="false">
+                                                                <field name="OP">AND</field>
+                                                                <value name="A">
+                                                                  <block type="logic_compare" id="6O3+-@8|Qcg-cu!fm!xS">
+                                                                    <field name="OP">LTE</field>
+                                                                    <value name="A">
+                                                                      <block type="lists_getIndex" id="]8bYx+pz4%1Ng61Nsl,O">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_START</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="ODVAeBJ8l{*-#NQUhv4P">
+                                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="variables_get" id="?i0/A1@m^g{T;stZ_K92">
+                                                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="lists_getIndex" id="JzRn^[CWHz{l0%$B@Rb%">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_START</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="mrNtzcKV_*J!3ce.6!Cj">
+                                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id=")jAEOFgJO/][a6N*D#nA">
+                                                                            <field name="NUM">9</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="logic_compare" id="702aWQNgz|v_^S,#hG4B">
+                                                                    <field name="OP">LTE</field>
+                                                                    <value name="A">
+                                                                      <block type="lists_getIndex" id="Snr{Gfv4wyZzK/6RM|#C">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_START</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="`Emp{oh-4_+#Bx#Pa7;O">
+                                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="variables_get" id="rZ+AERy#gzCftOZ`*#WL">
+                                                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="lists_getIndex" id="h,arv+l%}8PI82T~#!yp">
+                                                                        <mutation statement="false" at="true"></mutation>
+                                                                        <field name="MODE">GET</field>
+                                                                        <field name="WHERE">FROM_START</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="variables_get" id="P6(#ittO+x+sAh6gV?Kg">
+                                                                            <field name="VAR" id="-ma,::yc|LXuhZ46XqX~" variabletype="">(M&amp;MD) daftar</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="AT">
+                                                                          <block type="math_number" id="fqE,Gd~0U:$uz.?`qXc8">
+                                                                            <field name="NUM">10</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="variables_set" id="Q~nM[P_,D|_kVx}0=D9.">
+                                <field name="VAR" id="`ZsFfIM(a6WCVIDm)F9~" variabletype="">(M&amp;MD) low</field>
+                                <value name="VALUE">
+                                  <block type="logic_ternary" id="2{7^K4R!4R_Hf^1nKoej">
+                                    <value name="IF">
+                                      <block type="logic_compare" id="}oaSfGWqZ!_WqJYFHb0!">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="KpzleX)rn?f[b])@GRt)">
+                                            <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id=".T(q5E![TU1aG|BrUz1$">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="THEN">
+                                      <block type="math_single" id="}$:mz~YW(nJWy8=K}T3+">
+                                        <field name="OP">ABS</field>
+                                        <value name="NUM">
+                                          <shadow type="math_number" id="Q%;+)-wL7d4L5^-y-1Tc">
+                                            <field name="NUM">9</field>
+                                          </shadow>
+                                          <block type="math_number" id="4PTWhcN]`DSXB!fbg$CU">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="ELSE">
+                                      <block type="variables_get" id="YT,o}hZ.S[.2DPUy],ZT">
+                                        <field name="VAR" id="32JMMV^=Fg^cNQ:$@h?@" variabletype="">(M&amp;MD) count 10</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
