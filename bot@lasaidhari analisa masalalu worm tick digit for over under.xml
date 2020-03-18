@@ -1,10 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
   <variables>
     <variable type="" id="N7otrbQWh^+XkIY=;~j$">@daftar tik</variable>
-    <variable type="" id="Vu`~DLT/$RcGA|U6+Q)q">@untuk call jika</variable>
-    <variable type="" id="@,`x`*^=fA]MAY)2^vn@">@untuk put jika</variable>
-    <variable type="" id="uu$[6_!T(vVJ(jOo-DmZ">@durasi tick</variable>
-    <variable type="" id="Kxuck9Lh3BKwawIWcW}s">@JUMLAH</variable>
+    <variable type="" id="GO0`(P5@Xgp;KFU/v1/(">@untuk over jika digit&gt;</variable>
+    <variable type="" id="8Thx9;G?HJ*WG{fExCD%">@untuk under jika digit&lt;</variable>
+    <variable type="" id="Ng@+Z4wn1*+36[B.Il}c">@durasi tick trading</variable>
+    <variable type="" id="|w!^Z_V798xiucj+2fSf">@JUMLAH tick analisa</variable>
+    <variable type="" id=",1lHl)O8p_:maxnVU-VF">@jumlah digit analisa</variable>
     <variable type="" id="1YX3yiMl]cJr1?Zp;|gE">@lasaidhari (BTCI) ticks list</variable>
     <variable type="" id="j^IeqUxkY}PlE$G5z/?0">@lasaidhari (BTCI) number of ticks analysis</variable>
     <variable type="" id="1|AHA5xi)e!Jf;yFaAwP">@Lasaidhari (BTCI) tick start</variable>
@@ -17,58 +18,60 @@
     <variable type="" id="[1C42A${=:G`Wr9M,.-F">@jumlah tick</variable>
     <variable type="" id="B-WAE:ZojYrs~6}sv^Xj">@jumlah text</variable>
     <variable type="" id="?I)UJ!h7|bN]mIG`UN2k">@daftar nomor yang sama</variable>
-    <variable type="" id="YAv!zM[4@Ey9rGQ_t;MM">opsi put okey</variable>
+    <variable type="" id="YAv!zM[4@Ey9rGQ_t;MM">opsi under okey</variable>
     <variable type="" id="Cm8@O/6AM1fm:]js?Frk">@lasaidhari (BTCI) ticks color</variable>
     <variable type="" id="UxlP+ljK9q$OmwzMkfTq">(BCIWL)▼▲</variable>
     <variable type="" id="-96|(TRiob2n}hNjaiSg">@lasaidhari (BCIWL) worm color</variable>
     <variable type="" id="g4XK!RM]gCS?-aLdU._:">lock</variable>
     <variable type="" id="1O`3k/=jY`8/{e;+wZ(p">ooo</variable>
-    <variable type="" id="Z[?|VTNON~d.`Nb+:m+r">opsi call okey</variable>
-    <variable type="" id="[K33N`h01xZ9Y~nt(?,1">opsi call yang win</variable>
+    <variable type="" id="Z[?|VTNON~d.`Nb+:m+r">opsi over okey</variable>
+    <variable type="" id="[K33N`h01xZ9Y~nt(?,1">opsi over win</variable>
     <variable type="" id="yJ%rIAGyu@8rV4$x{9R@">@lasaidhari (BTCI) count color ticks</variable>
     <variable type="" id="J6V;$X+UI{tWtnUN?5:K">@ticklist</variable>
     <variable type="" id="q=db?_)AoftKEoTJmE7!">@worm</variable>
-    <variable type="" id=":~%@X!8@dc7K?1m.y@l/">opsi call yang los</variable>
+    <variable type="" id=":~%@X!8@dc7K?1m.y@l/">opsi over los</variable>
     <variable type="" id="+M}Q08TlZmDUu]!FUn:^">(BCIWL)▲</variable>
     <variable type="" id="*q,1*QFZ5ywc23sU4QXe">set</variable>
-    <variable type="" id="2|7?}oK$x#o]88=u9P)?">opsi put yang los</variable>
     <variable type="" id="6jy0t6Yn|d;%ZI%l6UJc">@warna tik</variable>
+    <variable type="" id="2|7?}oK$x#o]88=u9P)?">opsi under los</variable>
     <variable type="" id=":GH^!qG.?`smv-L90@L7">(BCIWL)▼</variable>
     <variable type="" id="o?HNaQ1gA`O2=b7aOumB">@lasaidhari (BCIWL) count worm color</variable>
     <variable type="" id="%P2k-$o%n#FQ-v5Sq:Yy">lock analisa</variable>
-    <variable type="" id="|8Iko0O(,Q^:)GjgY^vp">opsi put yang win</variable>
+    <variable type="" id="|8Iko0O(,Q^:)GjgY^vp">opsi under win</variable>
     <variable type="" id="E`|dlx8f668l.A*XsmE=">@daftar digit</variable>
     <variable type="" id="FN-dkZ{+~w]v?_X`:KZ)">count tick</variable>
-    <variable type="" id="2{PrN]6/GUj?LJ5x#o!1">daftar opsi call</variable>
     <variable type="" id="Sao-/Yb2=_1LT-._#,24">(BCIWL)⇗⇘</variable>
     <variable type="" id="DAblbWei5bz=|Y*5xAB{">lock.</variable>
     <variable type="" id="QXSX@8n@?VNbP5$?4(3r">LOCKANALISA2</variable>
-    <variable type="" id="U.7Eu-D[w8`dM${UYqyn">daftar opsi put</variable>
     <variable type="" id=":C95_Wl.:5(Y3uqWj.F9">@lasaidhari (BCIWL)</variable>
     <variable type="" id="D?3]7lRfAx_6b${^|Iti">count.</variable>
-    <variable type="" id="4YtuGf/i*2XSz{kR#u^!">lock warnatick</variable>
-    <variable type="" id="(#iEQX)A0t[mtGIaa:j`">@@@call</variable>
-    <variable type="" id="8hr9(2eWo%]Xi+vH)2vP">@@@put</variable>
+    <variable type="" id="2{PrN]6/GUj?LJ5x#o!1">daftar opsi over</variable>
+    <variable type="" id="4YtuGf/i*2XSz{kR#u^!">@lock tick analisa</variable>
+    <variable type="" id="U.7Eu-D[w8`dM${UYqyn">daftar opsi under</variable>
+    <variable type="" id="(#iEQX)A0t[mtGIaa:j`">@@@over</variable>
+    <variable type="" id="8hr9(2eWo%]Xi+vH)2vP">@@@under</variable>
     <variable type="" id="EQViw:56;%X9|O6x,=zU">count text</variable>
     <variable type="" id="GVFN^?5-rfydA,G$5n@T">@@@cacah</variable>
     <variable type="" id="uI]NFUJDYw{R*3k{H}f}">count daftar nomor yang sama</variable>
+    <variable type="" id="sPsyKT(hoKgh[6)TPuMN">@@@lockdigit</variable>
     <variable type="" id="0Dwxdl+uC9mhLi]_kz#E">@cacah</variable>
-    <variable type="" id="gpnO3*1upWrNlBoDMj=O">call lock</variable>
-    <variable type="" id="9%($RREsrDnU$XVBuO2G">put lock</variable>
+    <variable type="" id="gpnO3*1upWrNlBoDMj=O">over lock</variable>
+    <variable type="" id="9%($RREsrDnU$XVBuO2G">under lock</variable>
   </variables>
-  <block type="procedures_defnoreturn" id="uwH^5bu}lx+HEs9^n/G_" x="1168" y="-601">
+  <block type="procedures_defnoreturn" id="uwH^5bu}lx+HEs9^n/G_" collapsed="true" x="860" y="-95">
     <mutation>
       <arg name="@daftar tik" varid="N7otrbQWh^+XkIY=;~j$"></arg>
-      <arg name="@untuk call jika" varid="Vu`~DLT/$RcGA|U6+Q)q"></arg>
-      <arg name="@untuk put jika" varid="@,`x`*^=fA]MAY)2^vn@"></arg>
-      <arg name="@durasi tick" varid="uu$[6_!T(vVJ(jOo-DmZ"></arg>
-      <arg name="@JUMLAH" varid="Kxuck9Lh3BKwawIWcW}s"></arg>
+      <arg name="@untuk over jika digit&gt;" varid="GO0`(P5@Xgp;KFU/v1/("></arg>
+      <arg name="@untuk under jika digit&lt;" varid="8Thx9;G?HJ*WG{fExCD%"></arg>
+      <arg name="@durasi tick trading" varid="Ng@+Z4wn1*+36[B.Il}c"></arg>
+      <arg name="@JUMLAH tick analisa" varid="|w!^Z_V798xiucj+2fSf"></arg>
+      <arg name="@jumlah digit analisa" varid=",1lHl)O8p_:maxnVU-VF"></arg>
     </mutation>
-    <field name="NAME">@lasaidhari analisa masalalu worm tick digit</field>
+    <field name="NAME">@lasaidhari analisa masalalu worm tick digit over under</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
     <statement name="STACK">
       <block type="variables_set" id="!sKADT/N%5TUgGFC%ay8">
-        <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi put okey</field>
+        <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi under okey</field>
         <value name="VALUE">
           <block type="logic_boolean" id="EOuCv[(!Ihi_gpKo,zf%">
             <field name="BOOL">FALSE</field>
@@ -76,7 +79,7 @@
         </value>
         <next>
           <block type="variables_set" id="#A8!DDva#w:BG%nKWhlG">
-            <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi call okey</field>
+            <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi over okey</field>
             <value name="VALUE">
               <block type="logic_boolean" id="53Np:hgNVW=heTduwj98">
                 <field name="BOOL">FALSE</field>
@@ -170,8 +173,8 @@
                               </block>
                             </value>
                             <value name="ARG3">
-                              <block type="math_number" id=")uaG^Gc7Rm:1EKDVKlCH">
-                                <field name="NUM">1</field>
+                              <block type="variables_get" id="tcH^Nw|[68[f{`3jm_$D">
+                                <field name="VAR" id=",1lHl)O8p_:maxnVU-VF" variabletype="">@jumlah digit analisa</field>
                               </block>
                             </value>
                             <value name="ARG4">
@@ -430,7 +433,7 @@
                               </block>
                             </value>
                             <next>
-                              <block type="variables_set" id="[4z0u0W#[.os!M5]l$:;" collapsed="true">
+                              <block type="variables_set" id="[4z0u0W#[.os!M5]l$:;">
                                 <field name="VAR" id="QXSX@8n@?VNbP5$?4(3r" variabletype="">LOCKANALISA2</field>
                                 <value name="VALUE">
                                   <block type="text_join" id="4Dz{,^UBc=t94cN}#!`2">
@@ -461,7 +464,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="CVP2DzEz?n^pJ:JP?GJO">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -491,7 +494,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="MTx@TtS/gQrF4S.sHnub">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -521,7 +524,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="w1efQWhR|~lKM%0{bOWZ">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -551,7 +554,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="6Ixgn7m9OxXY|Ze-u`Wz">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -591,7 +594,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="PQmRhLiD66o^vuvw!ERU">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -621,7 +624,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="zv|7,?:#zt$?[j^NO[6J">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -651,7 +654,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="}K?mC.-@nkU1I5zm93}V">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -681,7 +684,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="n(%59Ei[Q90WDp7[aH8=">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -711,7 +714,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="H~VwRbEF0#tW.[yllr+$">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -741,7 +744,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="EZuU`f9A?ib86qKSFOd_">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -771,7 +774,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="y0=UZ@ik5a6ip~kPM@.=">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -801,7 +804,7 @@
                                                     <field name="NUM">1</field>
                                                   </shadow>
                                                   <block type="variables_get" id="{H~/rhTz-DTKmY~v2XbA">
-                                                    <field name="VAR" id="uu$[6_!T(vVJ(jOo-DmZ" variabletype="">@durasi tick</field>
+                                                    <field name="VAR" id="Ng@+Z4wn1*+36[B.Il}c" variabletype="">@durasi tick trading</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -832,7 +835,7 @@
                                             <field name="OP">EQ</field>
                                             <value name="A">
                                               <block type="variables_get" id="n[QW75v@W]t}KqR|C9QJ">
-                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                               </block>
                                             </value>
                                             <value name="B">
@@ -845,7 +848,7 @@
                                             <field name="OP">EQ</field>
                                             <value name="A">
                                               <block type="variables_get" id="!aFsE#RG}+tXL)5!=Id@">
-                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                               </block>
                                             </value>
                                             <value name="B">
@@ -857,7 +860,7 @@
                                     </value>
                                     <statement name="DO0">
                                       <block type="variables_set" id="c[?em:Jb~nVLY|IuVda%">
-                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                         <value name="VALUE">
                                           <block type="lists_create_with" id=":y:f2w#R1T${+kr^JZcr" collapsed="true">
                                             <mutation items="0"></mutation>
@@ -865,7 +868,7 @@
                                         </value>
                                         <next>
                                           <block type="variables_set" id="Hx}Z2b}vuYBOcOV3*u{p">
-                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                             <value name="VALUE">
                                               <block type="lists_create_with" id="p!G=^mp^1g_uXgT7c(.n">
                                                 <mutation items="0"></mutation>
@@ -877,7 +880,7 @@
                                     </statement>
                                     <next>
                                       <block type="variables_set" id="Mp0uCNGjqZ.;6%pet:ew">
-                                        <field name="VAR" id="4YtuGf/i*2XSz{kR#u^!" variabletype="">lock warnatick</field>
+                                        <field name="VAR" id="4YtuGf/i*2XSz{kR#u^!" variabletype="">@lock tick analisa</field>
                                         <value name="VALUE">
                                           <block type="procedures_callreturn" id="cYsay#Nv{RWart:L|byV">
                                             <mutation name="@lasaidhari membuat text tick">
@@ -899,12 +902,12 @@
                                             </value>
                                             <value name="ARG2">
                                               <block type="variables_get" id="TFj.BodMA9C-,uW$!zl9">
-                                                <field name="VAR" id="Kxuck9Lh3BKwawIWcW}s" variabletype="">@JUMLAH</field>
+                                                <field name="VAR" id="|w!^Z_V798xiucj+2fSf" variabletype="">@JUMLAH tick analisa</field>
                                               </block>
                                             </value>
                                             <value name="ARG3">
-                                              <block type="math_number" id="iLl2I-8|enIVI@zSsP9z">
-                                                <field name="NUM">1</field>
+                                              <block type="variables_get" id="}jdtxxlUtIBnh{DXB5/N">
+                                                <field name="VAR" id=",1lHl)O8p_:maxnVU-VF" variabletype="">@jumlah digit analisa</field>
                                               </block>
                                             </value>
                                             <value name="ARG4">
@@ -927,7 +930,7 @@
                                         </value>
                                         <next>
                                           <block type="variables_set" id="|+uEOSCez0%no_hQJG;L">
-                                            <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@call</field>
+                                            <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@over</field>
                                             <value name="VALUE">
                                               <block type="math_number" id="/?rGh*hCE1L47iYT8/N=">
                                                 <field name="NUM">0</field>
@@ -935,7 +938,7 @@
                                             </value>
                                             <next>
                                               <block type="variables_set" id="JBCI,,u@DHLS]lN{!RO~">
-                                                <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@put</field>
+                                                <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@under</field>
                                                 <value name="VALUE">
                                                   <block type="math_number" id="Htxzzw):qM%hyf?[wCwv">
                                                     <field name="NUM">0</field>
@@ -951,7 +954,7 @@
                                                     </value>
                                                     <value name="TO">
                                                       <block type="variables_get" id="+=@b/rTq5Pj:KT[iO]YH">
-                                                        <field name="VAR" id="Kxuck9Lh3BKwawIWcW}s" variabletype="">@JUMLAH</field>
+                                                        <field name="VAR" id="|w!^Z_V798xiucj+2fSf" variabletype="">@JUMLAH tick analisa</field>
                                                       </block>
                                                     </value>
                                                     <value name="BY">
@@ -960,83 +963,108 @@
                                                       </block>
                                                     </value>
                                                     <statement name="DO">
-                                                      <block type="controls_if" id="|/6Hl((nt:(@Lz:aw:%i">
-                                                        <value name="IF0">
-                                                          <block type="logic_compare" id="ac9GnVeU,gYk:E^W!NnR">
-                                                            <field name="OP">GT</field>
-                                                            <value name="A">
-                                                              <block type="lists_getIndex" id="mIIE:XjQS!/[x^g`xy)I">
-                                                                <mutation statement="false" at="true"></mutation>
-                                                                <field name="MODE">GET</field>
-                                                                <field name="WHERE">FROM_START</field>
-                                                                <value name="VALUE">
-                                                                  <block type="variables_get" id="R)%Sxg|4!10sSFopc#`m">
-                                                                    <field name="VAR" id="4YtuGf/i*2XSz{kR#u^!" variabletype="">lock warnatick</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="AT">
-                                                                  <block type="variables_get" id="RPw`Bw0R:S[DZ5.d@ORE">
-                                                                    <field name="VAR" id="GVFN^?5-rfydA,G$5n@T" variabletype="">@@@cacah</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="variables_get" id="B1AZIG-x{-s|,AV2YY8e">
-                                                                <field name="VAR" id="Vu`~DLT/$RcGA|U6+Q)q" variabletype="">@untuk call jika</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <statement name="DO0">
-                                                          <block type="math_change" id="fBTYSR_,(~DVSq7{N3,*">
-                                                            <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@call</field>
-                                                            <value name="DELTA">
-                                                              <shadow type="math_number" id="QhIIw??v0TY2Ze|-{.Hp">
-                                                                <field name="NUM">1</field>
-                                                              </shadow>
-                                                            </value>
-                                                          </block>
-                                                        </statement>
-                                                        <next>
-                                                          <block type="controls_if" id="4Nue!mm7xZD-yG]m[8r~">
-                                                            <value name="IF0">
-                                                              <block type="logic_compare" id="XhABxTCUV{e:F%hRSq7_">
-                                                                <field name="OP">LT</field>
-                                                                <value name="A">
-                                                                  <block type="lists_getIndex" id="0*Y]C{T|C;n!;kGj5CCa">
+                                                      <block type="variables_set" id="d;V,JDzs?:!QWxoalm?-">
+                                                        <field name="VAR" id="sPsyKT(hoKgh[6)TPuMN" variabletype="">@@@lockdigit</field>
+                                                        <value name="VALUE">
+                                                          <block type="text_charAt" id="fy%Y-,/EAEXzVMlhEiE7">
+                                                            <mutation at="false"></mutation>
+                                                            <field name="WHERE">LAST</field>
+                                                            <value name="VALUE">
+                                                              <block type="text_join" id="gwNv#G@=Yglh/#Ae;){)">
+                                                                <mutation items="1"></mutation>
+                                                                <value name="ADD0">
+                                                                  <block type="lists_getIndex" id="%%c#wyf^MD]W$=6b0ip0">
                                                                     <mutation statement="false" at="true"></mutation>
                                                                     <field name="MODE">GET</field>
                                                                     <field name="WHERE">FROM_START</field>
                                                                     <value name="VALUE">
-                                                                      <block type="variables_get" id="Ky1N2[#CXTxxzAqdky^m">
-                                                                        <field name="VAR" id="4YtuGf/i*2XSz{kR#u^!" variabletype="">lock warnatick</field>
+                                                                      <block type="variables_get" id="Xq63~M$3R9T/:LF33pcS">
+                                                                        <field name="VAR" id="4YtuGf/i*2XSz{kR#u^!" variabletype="">@lock tick analisa</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="AT">
-                                                                      <block type="variables_get" id="C12};`(HY~hxuA.5ri)e">
+                                                                      <block type="variables_get" id="RPw`Bw0R:S[DZ5.d@ORE">
                                                                         <field name="VAR" id="GVFN^?5-rfydA,G$5n@T" variabletype="">@@@cacah</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="controls_if" id="|/6Hl((nt:(@Lz:aw:%i">
+                                                            <value name="IF0">
+                                                              <block type="logic_compare" id="ac9GnVeU,gYk:E^W!NnR">
+                                                                <field name="OP">GT</field>
+                                                                <value name="A">
+                                                                  <block type="math_single" id="@AWT^7!u0*:wjGjps)Py">
+                                                                    <field name="OP">ABS</field>
+                                                                    <value name="NUM">
+                                                                      <shadow type="math_number" id="jcj{2j.XP$%lPcweas?h">
+                                                                        <field name="NUM">9</field>
+                                                                      </shadow>
+                                                                      <block type="variables_get" id="9dq}hW+lv2Q5vj[PHo2I">
+                                                                        <field name="VAR" id="sPsyKT(hoKgh[6)TPuMN" variabletype="">@@@lockdigit</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
                                                                 <value name="B">
-                                                                  <block type="variables_get" id="A)1:$-66{/E^+QgJEn#x">
-                                                                    <field name="VAR" id="@,`x`*^=fA]MAY)2^vn@" variabletype="">@untuk put jika</field>
+                                                                  <block type="variables_get" id="B1AZIG-x{-s|,AV2YY8e">
+                                                                    <field name="VAR" id="GO0`(P5@Xgp;KFU/v1/(" variabletype="">@untuk over jika digit&gt;</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
                                                             <statement name="DO0">
-                                                              <block type="math_change" id="rbJG{UrEvu~TBo?WUz.m">
-                                                                <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@put</field>
+                                                              <block type="math_change" id="fBTYSR_,(~DVSq7{N3,*">
+                                                                <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@over</field>
                                                                 <value name="DELTA">
-                                                                  <shadow type="math_number" id="nIt6:Tn5eHCb#fev#Gdm">
+                                                                  <shadow type="math_number" id="QhIIw??v0TY2Ze|-{.Hp">
                                                                     <field name="NUM">1</field>
                                                                   </shadow>
                                                                 </value>
                                                               </block>
                                                             </statement>
+                                                            <next>
+                                                              <block type="controls_if" id="4Nue!mm7xZD-yG]m[8r~">
+                                                                <value name="IF0">
+                                                                  <block type="logic_compare" id="XhABxTCUV{e:F%hRSq7_">
+                                                                    <field name="OP">LT</field>
+                                                                    <value name="A">
+                                                                      <block type="math_single" id="Ky+6#whXA7p*eRGSc/oW">
+                                                                        <field name="OP">ABS</field>
+                                                                        <value name="NUM">
+                                                                          <shadow type="math_number" id="jcj{2j.XP$%lPcweas?h">
+                                                                            <field name="NUM">9</field>
+                                                                          </shadow>
+                                                                          <block type="variables_get" id="Ky8c$y,To-1{}0V_wXZp">
+                                                                            <field name="VAR" id="sPsyKT(hoKgh[6)TPuMN" variabletype="">@@@lockdigit</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="variables_get" id="A)1:$-66{/E^+QgJEn#x">
+                                                                        <field name="VAR" id="8Thx9;G?HJ*WG{fExCD%" variabletype="">@untuk under jika digit&lt;</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <statement name="DO0">
+                                                                  <block type="math_change" id="rbJG{UrEvu~TBo?WUz.m">
+                                                                    <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@under</field>
+                                                                    <value name="DELTA">
+                                                                      <shadow type="math_number" id="nIt6:Tn5eHCb#fev#Gdm">
+                                                                        <field name="NUM">1</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
@@ -1048,12 +1076,12 @@
                                                             <field name="OP">EQ</field>
                                                             <value name="A">
                                                               <block type="variables_get" id="l/YM9+Sn;^t20]m((N--">
-                                                                <field name="VAR" id="Kxuck9Lh3BKwawIWcW}s" variabletype="">@JUMLAH</field>
+                                                                <field name="VAR" id="|w!^Z_V798xiucj+2fSf" variabletype="">@JUMLAH tick analisa</field>
                                                               </block>
                                                             </value>
                                                             <value name="B">
                                                               <block type="variables_get" id="|5Sv1=Yj5:0erPjH/Mz^">
-                                                                <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@call</field>
+                                                                <field name="VAR" id="(#iEQX)A0t[mtGIaa:j`" variabletype="">@@@over</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -1088,7 +1116,7 @@
                                                                         <field name="WHERE">FROM_START</field>
                                                                         <value name="VALUE">
                                                                           <block type="variables_get" id="kh9V-%lOBz=+!Lf3keGl">
-                                                                            <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                            <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="AT">
@@ -1112,7 +1140,7 @@
                                                                     <field name="WHERE">FIRST</field>
                                                                     <value name="LIST">
                                                                       <block type="variables_get" id="hKm!qobgNRFJ,75D6jmz">
-                                                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="TO">
@@ -1131,14 +1159,14 @@
                                                             </statement>
                                                             <next>
                                                               <block type="variables_set" id="TT#d$3!yl)%!N?qrQ[_j">
-                                                                <field name="VAR" id="gpnO3*1upWrNlBoDMj=O" variabletype="">call lock</field>
+                                                                <field name="VAR" id="gpnO3*1upWrNlBoDMj=O" variabletype="">over lock</field>
                                                                 <value name="VALUE">
                                                                   <block type="lists_split" id="uUBZ2,pVHQh5$Ejj4d!v">
                                                                     <mutation mode="JOIN"></mutation>
                                                                     <field name="MODE">JOIN</field>
                                                                     <value name="INPUT">
                                                                       <block type="variables_get" id="Z4yE]Ce,!7:=mv?g%vh{">
-                                                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                        <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="DELIM">
@@ -1150,14 +1178,14 @@
                                                                 </value>
                                                                 <next>
                                                                   <block type="variables_set" id="P4))4.lu4/SYumnSbO[r">
-                                                                    <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                    <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                     <value name="VALUE">
                                                                       <block type="lists_split" id="p_EvZgbpixcR$~aOJhrA">
                                                                         <mutation mode="SPLIT"></mutation>
                                                                         <field name="MODE">SPLIT</field>
                                                                         <value name="INPUT">
                                                                           <block type="variables_get" id="JB:^wj9ZUS7LgUAvE#N]">
-                                                                            <field name="VAR" id="gpnO3*1upWrNlBoDMj=O" variabletype="">call lock</field>
+                                                                            <field name="VAR" id="gpnO3*1upWrNlBoDMj=O" variabletype="">over lock</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="DELIM">
@@ -1180,12 +1208,12 @@
                                                                 <field name="OP">EQ</field>
                                                                 <value name="A">
                                                                   <block type="variables_get" id="v]vcMu]s4JVzB5w018tc">
-                                                                    <field name="VAR" id="Kxuck9Lh3BKwawIWcW}s" variabletype="">@JUMLAH</field>
+                                                                    <field name="VAR" id="|w!^Z_V798xiucj+2fSf" variabletype="">@JUMLAH tick analisa</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="B">
                                                                   <block type="variables_get" id="+ABy+EwLT!D8[#L.HenU">
-                                                                    <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@put</field>
+                                                                    <field name="VAR" id="8hr9(2eWo%]Xi+vH)2vP" variabletype="">@@@under</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -1220,7 +1248,7 @@
                                                                             <field name="WHERE">FROM_START</field>
                                                                             <value name="VALUE">
                                                                               <block type="variables_get" id="E{+pM`f]#GEo.FdtQ[0^">
-                                                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="AT">
@@ -1244,7 +1272,7 @@
                                                                         <field name="WHERE">FIRST</field>
                                                                         <value name="LIST">
                                                                           <block type="variables_get" id="|t!5t^sF!4$!FLP|)qGg">
-                                                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="TO">
@@ -1263,14 +1291,14 @@
                                                                 </statement>
                                                                 <next>
                                                                   <block type="variables_set" id="h))s*p].)Y]l^1~:G-a]">
-                                                                    <field name="VAR" id="9%($RREsrDnU$XVBuO2G" variabletype="">put lock</field>
+                                                                    <field name="VAR" id="9%($RREsrDnU$XVBuO2G" variabletype="">under lock</field>
                                                                     <value name="VALUE">
                                                                       <block type="lists_split" id="GH+0Vi`}.rOoL*=fp^}{">
                                                                         <mutation mode="JOIN"></mutation>
                                                                         <field name="MODE">JOIN</field>
                                                                         <value name="INPUT">
                                                                           <block type="variables_get" id="?+{^E9`T+N=IoRQBc-X/">
-                                                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                            <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="DELIM">
@@ -1282,14 +1310,14 @@
                                                                     </value>
                                                                     <next>
                                                                       <block type="variables_set" id="*ra{/|3U?/lxiP%W8}Cu">
-                                                                        <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                        <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                         <value name="VALUE">
                                                                           <block type="lists_split" id="W4W4y@JvDvG7Q9Ibdh^B">
                                                                             <mutation mode="SPLIT"></mutation>
                                                                             <field name="MODE">SPLIT</field>
                                                                             <value name="INPUT">
                                                                               <block type="variables_get" id="fDgY=,0jXR9lW5:y3dwV">
-                                                                                <field name="VAR" id="9%($RREsrDnU$XVBuO2G" variabletype="">put lock</field>
+                                                                                <field name="VAR" id="9%($RREsrDnU$XVBuO2G" variabletype="">under lock</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="DELIM">
@@ -1336,7 +1364,7 @@
                                                                             <field name="WHERE">FROM_START</field>
                                                                             <value name="VALUE">
                                                                               <block type="variables_get" id="cwHf`/2HNC~`hHS)u/~A">
-                                                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="AT">
@@ -1355,7 +1383,7 @@
                                                                     </value>
                                                                     <statement name="DO0">
                                                                       <block type="variables_set" id="aG]8Km;P!18^c)q%Eu_$">
-                                                                        <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi call okey</field>
+                                                                        <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi over okey</field>
                                                                         <value name="VALUE">
                                                                           <block type="logic_boolean" id="VYa6@GMc`w$}qVbm@n%i">
                                                                             <field name="BOOL">TRUE</field>
@@ -1373,7 +1401,7 @@
                                                                                 <mutation items="2"></mutation>
                                                                                 <value name="ADD0">
                                                                                   <block type="text" id="4oR#t4K~l+(hMEu`*I92">
-                                                                                    <field name="TEXT">OPSI CALL OKEY</field>
+                                                                                    <field name="TEXT">OPSI OVER OKEY</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="ADD1">
@@ -1402,7 +1430,7 @@
                                                                             <field name="WHERE">FROM_START</field>
                                                                             <value name="VALUE">
                                                                               <block type="variables_get" id="x24a#@:M+P62~b5K~zJ|">
-                                                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="AT">
@@ -1421,7 +1449,7 @@
                                                                     </value>
                                                                     <statement name="DO1">
                                                                       <block type="variables_set" id="|IgB$79iz{R/K+_+6gPb">
-                                                                        <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi put okey</field>
+                                                                        <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi under okey</field>
                                                                         <value name="VALUE">
                                                                           <block type="logic_boolean" id=":?3/v5Pm^I3o!Yr6Wrnd">
                                                                             <field name="BOOL">TRUE</field>
@@ -1439,7 +1467,7 @@
                                                                                 <mutation items="2"></mutation>
                                                                                 <value name="ADD0">
                                                                                   <block type="text" id="HLoiOmFc/8p56n6oYfBL">
-                                                                                    <field name="TEXT">OPSI PUT OKEY</field>
+                                                                                    <field name="TEXT">OPSI UNDER OKEY</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="ADD1">
@@ -1504,7 +1532,7 @@
                                                                             </value>
                                                                             <value name="ADD1">
                                                                               <block type="variables_get" id="@18+L#Gw)CPP,:%=Z{~z">
-                                                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
+                                                                                <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi over</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -1526,7 +1554,7 @@
                                                                                 </value>
                                                                                 <value name="ADD1">
                                                                                   <block type="variables_get" id="aA$T|Q[}ANyTYV0sh[Jw">
-                                                                                    <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
+                                                                                    <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi under</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
@@ -1568,7 +1596,7 @@
       </block>
     </statement>
   </block>
-  <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="256" y="29">
+  <block type="trade" id="xgH69|xFn9=70w.*3Vo@" x="0" y="0">
     <field name="MARKET_LIST">synthetic_index</field>
     <field name="SUBMARKET_LIST">random_index</field>
     <field name="SYMBOL_LIST">R_100</field>
@@ -1589,7 +1617,7 @@
         </value>
         <next>
           <block type="variables_set" id="X{)vr}T5e0W7O38yXu;L">
-            <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi call yang win</field>
+            <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi over win</field>
             <value name="VALUE">
               <block type="lists_create_with" id="M?pdwm^Y=%mtb8FyTr/$">
                 <mutation items="0"></mutation>
@@ -1597,7 +1625,7 @@
             </value>
             <next>
               <block type="variables_set" id="GzMlD~vV*73=oKo+q(PR">
-                <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi call yang los</field>
+                <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi over los</field>
                 <value name="VALUE">
                   <block type="lists_create_with" id="ngky2R8Rna?Z(SR}zL7t">
                     <mutation items="0"></mutation>
@@ -1605,7 +1633,7 @@
                 </value>
                 <next>
                   <block type="variables_set" id="(qBf:$Aa=bJEE[t;QX*a">
-                    <field name="VAR" id="2|7?}oK$x#o]88=u9P)?" variabletype="">opsi put yang los</field>
+                    <field name="VAR" id="2|7?}oK$x#o]88=u9P)?" variabletype="">opsi under los</field>
                     <value name="VALUE">
                       <block type="lists_create_with" id="_T/pkq1=lIsRJa%C)-Hp">
                         <mutation items="0"></mutation>
@@ -1613,54 +1641,12 @@
                     </value>
                     <next>
                       <block type="variables_set" id="t:)U.39XFX]n4QgCurg{">
-                        <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi put yang win</field>
+                        <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi under win</field>
                         <value name="VALUE">
                           <block type="lists_create_with" id="%42p-~_Q0ZB|yizmoMgo">
                             <mutation items="0"></mutation>
                           </block>
                         </value>
-                        <next>
-                          <block type="variables_set" id="*1@f7%Wl~)%hTsI,7]Q%">
-                            <field name="VAR" id="2{PrN]6/GUj?LJ5x#o!1" variabletype="">daftar opsi call</field>
-                            <value name="VALUE">
-                              <block type="lists_split" id="9KrjQ0I@%v6*~^/A-@/y">
-                                <mutation mode="SPLIT"></mutation>
-                                <field name="MODE">SPLIT</field>
-                                <value name="INPUT">
-                                  <block type="text" id="yRB@{Fsa,v`PujAy87JD">
-                                    <field name="TEXT"></field>
-                                  </block>
-                                </value>
-                                <value name="DELIM">
-                                  <shadow type="text" id="QlG+x[Y[=,tHS`Tgt*ki">
-                                    <field name="TEXT">,</field>
-                                  </shadow>
-                                </value>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="variables_set" id="}]ndkliX#gyasVO|$%lB">
-                                <field name="VAR" id="U.7Eu-D[w8`dM${UYqyn" variabletype="">daftar opsi put</field>
-                                <value name="VALUE">
-                                  <block type="lists_split" id="]JTP{AqmFV;~8M!Lsx}Y">
-                                    <mutation mode="SPLIT"></mutation>
-                                    <field name="MODE">SPLIT</field>
-                                    <value name="INPUT">
-                                      <block type="text" id="4h}gQ$?2jtcNUQl}v|Nd">
-                                        <field name="TEXT"></field>
-                                      </block>
-                                    </value>
-                                    <value name="DELIM">
-                                      <shadow type="text" id="@Qj)q6alHM#`(qm))@:Y">
-                                        <field name="TEXT">,</field>
-                                      </shadow>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -1695,7 +1681,114 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_defreturn" id="8O7$A6sIzNz~)l%EJUWo" collapsed="true" x="0" y="53">
+  <block type="before_purchase" id="i-CIx.(Onm4?ihxzA}Y]" x="0" y="629">
+    <statement name="BEFOREPURCHASE_STACK">
+      <block type="procedures_callnoreturn" id="K5pqBZA=3}VR3m/th9~b">
+        <mutation name="@lasaidhari analisa masalalu worm tick digit over under">
+          <arg name="@daftar tik"></arg>
+          <arg name="@untuk over jika digit&gt;"></arg>
+          <arg name="@untuk under jika digit&lt;"></arg>
+          <arg name="@durasi tick trading"></arg>
+          <arg name="@JUMLAH tick analisa"></arg>
+          <arg name="@jumlah digit analisa"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="ticks" id="V$h|)IzetmExyIy+#(c5"></block>
+        </value>
+        <value name="ARG1">
+          <block type="math_number" id="Ot9rxo.CTgb}mrYxHv~V">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="math_number" id="?RBp+?43])~cwX!zoGUW">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="math_number" id="T}s|G3[i*,@go_4OK)D6">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="math_number" id="5QW*uh)Hbg8cZi(rGj4c">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ARG5">
+          <block type="math_number" id="iLl2I-8|enIVI@zSsP9z">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="-+)0AY9=C10_Qr@ZmhHw">
+            <mutation elseif="1" else="1"></mutation>
+            <value name="IF0">
+              <block type="variables_get" id="Josm+/)6):-pYk(x.yg:">
+                <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi over okey</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="purchase" id=")5(X,9r^9TN*HGiZ60@s">
+                <field name="PURCHASE_LIST">DIGITOVER</field>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="variables_get" id="E7l6.v}(,lhNCgYI!if.">
+                <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi under okey</field>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="purchase" id="h8?emySgFP4Ltb/WsVdP">
+                <field name="PURCHASE_LIST">DIGITUNDER</field>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="controls_if" id="T/V{?|tc:;?LIf=/KjYO">
+                <value name="IF0">
+                  <block type="logic_compare" id="xFb2Zep3CL.+tH.bZB%}">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="math_modulo" id="59U1z.A%;QT`iSlF.v%F">
+                        <value name="DIVIDEND">
+                          <shadow type="math_number" id="Pt`K~VW9xY[.=.K#PMX#">
+                            <field name="NUM">64</field>
+                          </shadow>
+                          <block type="epoch" id="QJc|_f*l+rV1//JE?OK~"></block>
+                        </value>
+                        <value name="DIVISOR">
+                          <shadow type="math_number" id="FCGse52fZls0kq)i((!Q">
+                            <field name="NUM">60</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="(964zG-aI?^-@7cJFMW7">
+                        <field name="NUM">57</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="notify" id="pNGFB=[RsMV,XxG?K:8e">
+                    <field name="NOTIFICATION_TYPE">success</field>
+                    <field name="NOTIFICATION_SOUND">silent</field>
+                    <value name="MESSAGE">
+                      <shadow type="text" id="IzyuFXh.LV=)i=H1$)Zz">
+                        <field name="TEXT">wait analisa</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defreturn" id="8O7$A6sIzNz~)l%EJUWo" collapsed="true" x="0" y="1160">
     <mutation>
       <arg name="@lasaidhari (BTCI) ticks list" varid="1YX3yiMl]cJr1?Zp;|gE"></arg>
       <arg name="@lasaidhari (BTCI) number of ticks analysis" varid="j^IeqUxkY}PlE$G5z/?0"></arg>
@@ -2191,7 +2284,7 @@
       </block>
     </value>
   </block>
-  <block type="procedures_defreturn" id="9{Sp|/nL#%/;0]qe.H9;" collapsed="true" x="0" y="106">
+  <block type="procedures_defreturn" id="9{Sp|/nL#%/;0]qe.H9;" collapsed="true" x="0" y="1213">
     <mutation>
       <arg name="@lasaidhari (BCIWL) ticks list" varid="?Wu~|-n04FYd@s90T-(."></arg>
       <arg name="@lasaidhari (BCIWL) number of worm color lists" varid="eGXi,GJPe5N,Ri_kDh/H"></arg>
@@ -2777,108 +2870,7 @@
       </block>
     </value>
   </block>
-  <block type="before_purchase" id="i-CIx.(Onm4?ihxzA}Y]" x="256" y="674">
-    <statement name="BEFOREPURCHASE_STACK">
-      <block type="procedures_callnoreturn" id="K5pqBZA=3}VR3m/th9~b">
-        <mutation name="@lasaidhari analisa masalalu worm tick digit">
-          <arg name="@daftar tik"></arg>
-          <arg name="@untuk call jika"></arg>
-          <arg name="@untuk put jika"></arg>
-          <arg name="@durasi tick"></arg>
-          <arg name="@JUMLAH"></arg>
-        </mutation>
-        <value name="ARG0">
-          <block type="ticks" id="V$h|)IzetmExyIy+#(c5"></block>
-        </value>
-        <value name="ARG1">
-          <block type="math_number" id="Ot9rxo.CTgb}mrYxHv~V">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <value name="ARG2">
-          <block type="math_number" id="?RBp+?43])~cwX!zoGUW">
-            <field name="NUM">4</field>
-          </block>
-        </value>
-        <value name="ARG3">
-          <block type="math_number" id="T}s|G3[i*,@go_4OK)D6">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <value name="ARG4">
-          <block type="math_number" id="5QW*uh)Hbg8cZi(rGj4c">
-            <field name="NUM">2</field>
-          </block>
-        </value>
-        <next>
-          <block type="controls_if" id="-+)0AY9=C10_Qr@ZmhHw">
-            <mutation elseif="1" else="1"></mutation>
-            <value name="IF0">
-              <block type="variables_get" id="Josm+/)6):-pYk(x.yg:">
-                <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi call okey</field>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="purchase" id=")5(X,9r^9TN*HGiZ60@s">
-                <field name="PURCHASE_LIST">DIGITOVER</field>
-              </block>
-            </statement>
-            <value name="IF1">
-              <block type="variables_get" id="E7l6.v}(,lhNCgYI!if.">
-                <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi put okey</field>
-              </block>
-            </value>
-            <statement name="DO1">
-              <block type="purchase" id="h8?emySgFP4Ltb/WsVdP">
-                <field name="PURCHASE_LIST">DIGITUNDER</field>
-              </block>
-            </statement>
-            <statement name="ELSE">
-              <block type="controls_if" id="T/V{?|tc:;?LIf=/KjYO">
-                <value name="IF0">
-                  <block type="logic_compare" id="xFb2Zep3CL.+tH.bZB%}">
-                    <field name="OP">GT</field>
-                    <value name="A">
-                      <block type="math_modulo" id="59U1z.A%;QT`iSlF.v%F">
-                        <value name="DIVIDEND">
-                          <shadow type="math_number" id="Pt`K~VW9xY[.=.K#PMX#">
-                            <field name="NUM">64</field>
-                          </shadow>
-                          <block type="epoch" id="QJc|_f*l+rV1//JE?OK~"></block>
-                        </value>
-                        <value name="DIVISOR">
-                          <shadow type="math_number" id="FCGse52fZls0kq)i((!Q">
-                            <field name="NUM">60</field>
-                          </shadow>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="(964zG-aI?^-@7cJFMW7">
-                        <field name="NUM">57</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <statement name="DO0">
-                  <block type="notify" id="pNGFB=[RsMV,XxG?K:8e">
-                    <field name="NOTIFICATION_TYPE">success</field>
-                    <field name="NOTIFICATION_SOUND">silent</field>
-                    <value name="MESSAGE">
-                      <shadow type="text" id="IzyuFXh.LV=)i=H1$)Zz">
-                        <field name="TEXT">wait analisa</field>
-                      </shadow>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="procedures_defreturn" id="3J|8Myi#%Z_)}yPjvw$4" collapsed="true" x="0" y="1304">
+  <block type="procedures_defreturn" id="3J|8Myi#%Z_)}yPjvw$4" collapsed="true" x="0" y="1266">
     <mutation>
       <arg name="@tick" varid="?JTL@!o4_rp4Y?X9F;o)"></arg>
       <arg name="@ . dari akhir" varid="ro:%]gsiUOtGTO{hNkrF"></arg>
@@ -3795,7 +3787,7 @@
       </block>
     </value>
   </block>
-  <block type="during_purchase" id="(4;NieXd}j|Bn!c-YiC|" x="0" y="1357">
+  <block type="during_purchase" id="(4;NieXd}j|Bn!c-YiC|" x="0" y="1319">
     <statement name="DURING_PURCHASE_STACK">
       <block type="controls_if" id="8?eYKAW%VczmRXQ-ou3r">
         <value name="IF0">
@@ -3804,7 +3796,7 @@
       </block>
     </statement>
   </block>
-  <block type="after_purchase" id="D^Jz1^n=2vtZku1vBN@;" x="0" y="1497">
+  <block type="after_purchase" id="D^Jz1^n=2vtZku1vBN@;" x="0" y="1459">
     <statement name="AFTERPURCHASE_STACK">
       <block type="controls_if" id="2%Q(w*rYo=t,OO4VSU#{">
         <mutation else="1"></mutation>
@@ -3818,7 +3810,7 @@
             <mutation elseif="1"></mutation>
             <value name="IF0">
               <block type="variables_get" id="^ixX~2T}X(8~-Zx[dqrz">
-                <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi call okey</field>
+                <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi over okey</field>
               </block>
             </value>
             <statement name="DO0">
@@ -3828,7 +3820,7 @@
                 <field name="WHERE">FIRST</field>
                 <value name="LIST">
                   <block type="variables_get" id="RK6Z5dz6P-YhLxbwg=M9">
-                    <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi call yang win</field>
+                    <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi over win</field>
                   </block>
                 </value>
                 <value name="TO">
@@ -3853,7 +3845,7 @@
                         </value>
                         <value name="ADD1">
                           <block type="variables_get" id="86b68UKWJbt/k,}7K4(8">
-                            <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi call yang win</field>
+                            <field name="VAR" id="[K33N`h01xZ9Y~nt(?,1" variabletype="">opsi over win</field>
                           </block>
                         </value>
                       </block>
@@ -3864,7 +3856,7 @@
             </statement>
             <value name="IF1">
               <block type="variables_get" id="1uW|OlV97iRD88dAdPHT">
-                <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi put okey</field>
+                <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi under okey</field>
               </block>
             </value>
             <statement name="DO1">
@@ -3874,7 +3866,7 @@
                 <field name="WHERE">FIRST</field>
                 <value name="LIST">
                   <block type="variables_get" id="oLPL!P~VtZ2oZLSiYG#S">
-                    <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi put yang win</field>
+                    <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi under win</field>
                   </block>
                 </value>
                 <value name="TO">
@@ -3899,7 +3891,7 @@
                         </value>
                         <value name="ADD1">
                           <block type="variables_get" id="UJWgqg6[(Nlf]*M{GC3F">
-                            <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi put yang win</field>
+                            <field name="VAR" id="|8Iko0O(,Q^:)GjgY^vp" variabletype="">opsi under win</field>
                           </block>
                         </value>
                       </block>
@@ -3914,8 +3906,8 @@
           <block type="controls_if" id="U!%HcCr6v`MUCr2UhHw/">
             <mutation elseif="1"></mutation>
             <value name="IF0">
-              <block type="variables_get" id="*r5I$[cjVOPX](fZ]vX`">
-                <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi call yang los</field>
+              <block type="variables_get" id="U?k/7CbeJh3J!QP}$G4h">
+                <field name="VAR" id="Z[?|VTNON~d.`Nb+:m+r" variabletype="">opsi over okey</field>
               </block>
             </value>
             <statement name="DO0">
@@ -3925,7 +3917,7 @@
                 <field name="WHERE">FIRST</field>
                 <value name="LIST">
                   <block type="variables_get" id="BGDlIE!w+qKFq65Gl0`2">
-                    <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi call yang los</field>
+                    <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi over los</field>
                   </block>
                 </value>
                 <value name="TO">
@@ -3945,12 +3937,12 @@
                         <mutation items="2"></mutation>
                         <value name="ADD0">
                           <block type="text" id="h!!?;1ZEUkD-x:a%hYHd">
-                            <field name="TEXT">opsi over yang win= </field>
+                            <field name="TEXT">opsi over yang los= </field>
                           </block>
                         </value>
                         <value name="ADD1">
                           <block type="variables_get" id="NSC2I(5V;iRv8t|J0/k!">
-                            <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi call yang los</field>
+                            <field name="VAR" id=":~%@X!8@dc7K?1m.y@l/" variabletype="">opsi over los</field>
                           </block>
                         </value>
                       </block>
@@ -3960,13 +3952,60 @@
               </block>
             </statement>
             <value name="IF1">
-              <block type="variables_get" id="A3zjbBzUSUPaFPmm=M.F">
-                <field name="VAR" id="2|7?}oK$x#o]88=u9P)?" variabletype="">opsi put yang los</field>
+              <block type="variables_get" id="z|hamLMw_^oPK);+;`Pt">
+                <field name="VAR" id="YAv!zM[4@Ey9rGQ_t;MM" variabletype="">opsi under okey</field>
               </block>
             </value>
             <statement name="DO1">
               <block type="lists_setIndex" id=";Z?GFs+GDR@C8dbi;)Lv">
                 <mutation at="false"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">FIRST</field>
+                <value name="LIST">
+                  <block type="variables_get" id="S)~Grnn^c.Oj8u)p9V)N">
+                    <field name="VAR" id="2|7?}oK$x#o]88=u9P)?" variabletype="">opsi under los</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id="@F6VAa!@%e!$]2GPJ!qx">
+                    <field name="VAR" id="%P2k-$o%n#FQ-v5Sq:Yy" variabletype="">lock analisa</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="notify" id="~r{ZXP@eo$IP{Us!wSB0">
+                    <field name="NOTIFICATION_TYPE">error</field>
+                    <field name="NOTIFICATION_SOUND">silent</field>
+                    <value name="MESSAGE">
+                      <shadow type="text" id="hPr1{+:FKBK8DjtLwA)*">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block type="text_join" id="O^Q~i(9t3rvM)/|*JQOr">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="aC|33mSE@2?PCzG5!sEH">
+                            <field name="TEXT">opsi under yang los= </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="variables_get" id="Z|#mH}J*qo%%dZUCGx.s">
+                            <field name="VAR" id="2|7?}oK$x#o]88=u9P)?" variabletype="">opsi under los</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="trade_again" id="c)S|KjoQdXc8l#J@5z3P"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>"></mutation>
                 <field name="MODE">INSERT</field>
                 <field name="WHERE">FIRST</field>
                 <value name="LIST">
