@@ -16,34 +16,34 @@
           </block>
         </value>
         <next>
-          <block type="variables_set" id="k8-~agaOSg`c}):/!x7F">
-            <field name="VAR" id="f;.PFTdU#x{7q-*XC}w[" variabletype="">(DC) min list</field>
+          <block type="variables_set" id="+pH?N0n?0C[+z[e*nss~">
+            <field name="VAR" id="MRH1.h#Tj[PnCjr[sJ@2" variabletype="">(DC) mode list</field>
             <value name="VALUE">
-              <block type="lists_create_with" id="fR^6e;,)6s1zo@RN#=uB">
+              <block type="lists_create_with" id=":B+cGv3L%K$2dA$eRW|L">
                 <mutation items="0"></mutation>
               </block>
             </value>
             <next>
               <block type="variables_set" id="NK=Qljxer-JWyLXX%n3~">
-                <field name="VAR" id="_-Y3c+=K@Ox(*]zuw.:u" variabletype="">(DC) middle list</field>
+                <field name="VAR" id="2}?V.K6SxKqZ*N+G[t;4" variabletype="">(DC) median list</field>
                 <value name="VALUE">
                   <block type="lists_create_with" id="?)0_4sgch,VO+D{1!U6#">
                     <mutation items="0"></mutation>
                   </block>
                 </value>
                 <next>
-                  <block type="variables_set" id="+pH?N0n?0C[+z[e*nss~">
-                    <field name="VAR" id="MRH1.h#Tj[PnCjr[sJ@2" variabletype="">(DC) mode list</field>
+                  <block type="variables_set" id="6g+S/ZBg@(_^rgJ|)iT:">
+                    <field name="VAR" id="G:~v.G/BR2%vhG+E_|V!" variabletype="">(DC) average list</field>
                     <value name="VALUE">
-                      <block type="lists_create_with" id=":B+cGv3L%K$2dA$eRW|L">
+                      <block type="lists_create_with" id="R{KzK,`/-Rb,vb1i_6Ns">
                         <mutation items="0"></mutation>
                       </block>
                     </value>
                     <next>
-                      <block type="variables_set" id="6g+S/ZBg@(_^rgJ|)iT:">
-                        <field name="VAR" id="G:~v.G/BR2%vhG+E_|V!" variabletype="">(DC) average list</field>
+                      <block type="variables_set" id="k8-~agaOSg`c}):/!x7F">
+                        <field name="VAR" id="f;.PFTdU#x{7q-*XC}w[" variabletype="">(DC) min list</field>
                         <value name="VALUE">
-                          <block type="lists_create_with" id="R{KzK,`/-Rb,vb1i_6Ns">
+                          <block type="lists_create_with" id="fR^6e;,)6s1zo@RN#=uB">
                             <mutation items="0"></mutation>
                           </block>
                         </value>
@@ -131,7 +131,7 @@
                                     <field name="WHERE">FROM_END</field>
                                     <value name="LIST">
                                       <block type="variables_get" id="f(0PW)Yw(L)?7MqgyJ%i">
-                                        <field name="VAR" id="_-Y3c+=K@Ox(*]zuw.:u" variabletype="">(DC) middle list</field>
+                                        <field name="VAR" id="MRH1.h#Tj[PnCjr[sJ@2" variabletype="">(DC) mode list</field>
                                       </block>
                                     </value>
                                     <value name="AT">
