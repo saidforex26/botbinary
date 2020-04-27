@@ -1,0 +1,415 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defreturn" id="Sv:f8iE/wmp/`3g/@Mc@">
+    <mutation>
+      <arg name="nilai high" varid="D4W_#@FDP[=4Nt.%q4Y{"></arg>
+      <arg name="nilai low" varid="!g,7D4*`2ysg)_tDOt$o"></arg>
+      <arg name="nilai close" varid="VNhgTIAt5*kNl/v)`Pe#"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari list Fibonacci Retracement</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="hiK=nP-v[{(aY;HG~rG^">
+        <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="g)|h~T1(asa,45e[V^=h">
+            <mutation items="0"></mutation>
+          </block>
+        </value>
+        <next>
+          <block type="lists_setIndex" id="YzeG$=XRlh+mC5U2X.(X">
+            <mutation at="false"></mutation>
+            <field name="MODE">INSERT</field>
+            <field name="WHERE">LAST</field>
+            <value name="LIST">
+              <block type="variables_get" id="6vp-lf_p9.aQiV*CP9Z*">
+                <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="variables_get" id="gU)(@R]Z0qPuao4FVuXz">
+                <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+              </block>
+            </value>
+            <next>
+              <block type="lists_setIndex" id="@[q5RT0q*Z-ha|An.i/y">
+                <mutation at="false"></mutation>
+                <field name="MODE">INSERT</field>
+                <field name="WHERE">LAST</field>
+                <value name="LIST">
+                  <block type="variables_get" id="yuVD]y|H0#GUy)?r/(3b">
+                    <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_arithmetic" id="_D$pwKR%}-V$G0f(nO(C">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="M]qhN*lC/%`nm.$EQdyp">
+                        <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="P*rS+/fYBXBxdObngs#C">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                            <field name="NUM">0.236</field>
+                          </shadow>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="e_3o{]S1m?AXD=`jYo]M">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="JIV?h;x(`)KK@2d|X0O9">
+                                <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="|^~RHS[;liQ61+xxa1HK">
+                                <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lists_setIndex" id="G-Iu`qVrJY0%3GRQx/T:">
+                    <mutation at="false"></mutation>
+                    <field name="MODE">INSERT</field>
+                    <field name="WHERE">LAST</field>
+                    <value name="LIST">
+                      <block type="variables_get" id=")rjx+#566_rDs%T+lVkl">
+                        <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_arithmetic" id="Sq[B^fb_=Q+wjzx11VE4">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="a{B_U:4JnJ_*_u{/aYn[">
+                            <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="iemu|vC~Flus$6Dj4J78">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="Xu9Y_H}i]f}c%D6/-$it">
+                                <field name="NUM">0.382</field>
+                              </shadow>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="F[)wCDuUXtZmz$j6J!yy">
+                                <field name="OP">MINUS</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="gF0bIWDQs`whzsIGaQ)E">
+                                    <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="qXXiL,ksl.a~@_OH^xqg">
+                                    <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lists_setIndex" id="x#ZK;E9N:m#3A8U/p)hO">
+                        <mutation at="false"></mutation>
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">LAST</field>
+                        <value name="LIST">
+                          <block type="variables_get" id="Lt=v?eto6kP,MxylpzEa">
+                            <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_arithmetic" id="!sw9Y{yWTSd#nv6Q!Hg=">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id=":P3|#cVx~}pY[M8zq[v#">
+                                <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="ASy2;M_:*-4GLIj%+l*X">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="e*NdrrOSwr|9,0.~:x|0">
+                                    <field name="NUM">0.5</field>
+                                  </shadow>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id=".-ObMAdk@*O,`;PW)Kj7">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="6d|k4xDKa8AQDNE1BNDp">
+                                        <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="m?4IQ@Nx0]K3R`V[lsXT">
+                                        <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lists_setIndex" id="VUi0wZ4CPRV-,APE[nib">
+                            <mutation at="false"></mutation>
+                            <field name="MODE">INSERT</field>
+                            <field name="WHERE">LAST</field>
+                            <value name="LIST">
+                              <block type="variables_get" id="j|/zqHM=Ct,)MR]:|l:7">
+                                <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_arithmetic" id="~IRPM[]9ZYXk$vncRp~s">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="-Dl#DB4#0#jN5DGNE=Lm">
+                                    <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="math_arithmetic" id="^YkDFP|NB*k4-]%dqdk1">
+                                    <field name="OP">MULTIPLY</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="0o_3nAG+It2wrqvN_9r~">
+                                        <field name="NUM">0.618</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="??/iOw(L3+L_AcSJwoe7">
+                                        <field name="OP">MINUS</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id=":i!jH{:v,hs#D5JK4p9$">
+                                            <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="Y8JP8xB(K{Npf5z+(^,_">
+                                            <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="lists_setIndex" id="N{t{MJeazr:/Zis@`2mZ">
+                                <mutation at="false"></mutation>
+                                <field name="MODE">INSERT</field>
+                                <field name="WHERE">LAST</field>
+                                <value name="LIST">
+                                  <block type="variables_get" id="L?$VnT*JeYKmq2hPKZ%/">
+                                    <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_arithmetic" id="r|]$n_F7ojvY(P.~4fAy">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="?bCw9obgHC$P..WMTH)Y">
+                                        <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_arithmetic" id="o2kZ;Vs**u=Ova4T:$Ee">
+                                        <field name="OP">MULTIPLY</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="pV1(57]FF3D(]ucAJke~">
+                                            <field name="NUM">0.764</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="Tc{*K5A{%z=^%gjz]SK.">
+                                            <field name="OP">MINUS</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="hv+YFCF-(l=as{H5+UIN">
+                                                <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="ron_v}Lp_gekS-v`B$3n">
+                                                <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="lists_setIndex" id="D$EB=?(q}|{ie)sDN]S`">
+                                    <mutation at="false"></mutation>
+                                    <field name="MODE">INSERT</field>
+                                    <field name="WHERE">LAST</field>
+                                    <value name="LIST">
+                                      <block type="variables_get" id="P?wb$$is*]@+sc3V(hku">
+                                        <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+                                      </block>
+                                    </value>
+                                    <value name="TO">
+                                      <block type="math_arithmetic" id="G1pSX~a.J{SaPfb{%0s#">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="@r:L)r|oz23P[R;]9vY#">
+                                            <field name="VAR" id="VNhgTIAt5*kNl/v)`Pe#" variabletype="">nilai close</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="yk(8#r;zhIXSlikOVmoX">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="math_arithmetic" id="ZVWOXh^zux:m#0DfuQ(~">
+                                            <field name="OP">MULTIPLY</field>
+                                            <value name="A">
+                                              <shadow type="math_number" id="yHyg1#7?@3oFvkc-NN[%">
+                                                <field name="NUM">100</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="B">
+                                              <shadow type="math_number" id="3Km4i)lr,wGJ{j)]l52u">
+                                                <field name="NUM">1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="z521tTazoiX#t*llgY84">
+                                                <field name="OP">MINUS</field>
+                                                <value name="A">
+                                                  <shadow type="math_number" id="J}8dM,V~pX?No/V@?[|z">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="Bg.$)A-r(Y==M]Ey*ps5">
+                                                    <field name="VAR" id="D4W_#@FDP[=4Nt.%q4Y{" variabletype="">nilai high</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number" id="GKp}%GZTLaDlZ;Vy}qZh">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="L5bp-WV7:]%VX}Y2INUl">
+                                                    <field name="VAR" id="!g,7D4*`2ysg)_tDOt$o" variabletype="">nilai low</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="y=:JC77?B@jH!5,H4i0s">
+        <field name="VAR" id="XG]zcQEr1I(^bb!kN6w|" variabletype="">@@list Fibonacci Retracement</field>
+      </block>
+    </value>
+  </block>
+</xml>

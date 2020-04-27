@@ -1,0 +1,511 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="procedures_defnoreturn" id="4bb0E}YCDGyrDE00g4[N">
+    <mutation>
+      <arg name="tick list" varid="O)g0$d2m6l6,Dhvwz*vW"></arg>
+      <arg name="how many tick" varid="$*fGCSZJCzn5?HW}%wMf"></arg>
+    </mutation>
+    <field name="NAME">@lasaidhari percentage tick</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="X6Z9k)G,+/?h4aaG4v)I">
+        <field name="VAR" id="5Suzhl1q65#~`tI[kr#D" variabletype="">@percentange blue</field>
+        <value name="VALUE">
+          <block type="math_number" id="u~RwrQn/~#3E1KN:@$$?">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="=u|Q}:`=pI)aA)-o+pNc">
+            <field name="VAR" id="%|y0wU|QSAhQHo`,VU6z" variabletype="">@percentange red</field>
+            <value name="VALUE">
+              <block type="math_number" id="vtFgHCm}M=+Uec+n,b1m">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_for" id="^,|c:DM?WKO%v?zH?3_s">
+                <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                <value name="FROM">
+                  <block type="math_number" id="/64yn[k#dGICI*KeCQs.">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="variables_get" id="r:kDy2p=XNR[?6T`EKKh">
+                    <field name="VAR" id="$*fGCSZJCzn5?HW}%wMf" variabletype="">how many tick</field>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="{PN:?^BJri@kt_7k:HqV">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="controls_if" id="Yq$AhNj_[%docG8,^HtY">
+                    <mutation elseif="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_operation" id="r:^Z|S@TNc]]1?@?h^.Y" inline="false">
+                        <field name="OP">OR</field>
+                        <value name="A">
+                          <block type="logic_compare" id="/j/.t~4an*$hOg-uSh-%">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="pu@Zxl0htsZ@T4|2[;06">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="A=Q9|?Rm9~xA`HKOdXy8">
+                                    <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="v_LCP!,POx,fS7O08cT,">
+                                    <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="lists_getIndex" id="w[*!w}5V|XppB3|W70QG">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="9s95Ipxo3L+m4_K`2KJI">
+                                    <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="math_arithmetic" id="}cC;zYHbab(yo`P[XDt[">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="?aKDo1fJ%;CECXhE=fuM">
+                                        <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="P{0A*Wqs)w[EKIiJdzcC">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_operation" id="4i1C)8y7?3ys4{VUZ;6:" inline="false">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="logic_compare" id="q298Z,vXD7Q7mhkA8-ef">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="AFG,kCPrV{r@xOgU-.*}">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="y6#Y;n;a0jdBvokfv^Di">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="b_y8j4!PwzFh_mEirU#J">
+                                        <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="Q6#l2w-3zk=5Zv*s_JwQ">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="PJDwGMk3cMz.*h3y|:e;">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="c#A99oom)9B8mI]huZ}:">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="Ko/]*]#3;76NVsxCw3-m">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="lLN)HXax08poP,nkcWzQ">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_compare" id="3=TWg0CE9]Lq(c.,/J;y">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="Q5%AmeXCb{;#3GUANBFp">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="z-Ffr^|^M]xIw4Vu.rkg">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="WDKIOH%J4f(*e@F*q`zt">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="(mrhST@H,cD{UHx{692#">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="Y,;`Nz*4pxLRf3f,XS;0">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="A7HI.Fuv5ggg@z;=d./+">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="|6z6gXlyx/!i;+8O;mVA">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="Z^V*X{xfg|}w]f,q{ILW">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="=$k`.DSAyz.$dwIm_(o7">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="j:@EBjuN[5ln^j|!88VR">
+                                            <field name="NUM">2</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="math_change" id="wGJ?E~oM.qgB1utVb.._">
+                        <field name="VAR" id="5Suzhl1q65#~`tI[kr#D" variabletype="">@percentange blue</field>
+                        <value name="DELTA">
+                          <shadow type="math_number" id="SDuF{B0nEhYSX%)^Q#Sv">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="logic_operation" id="i4t5Wj%Jla`B{.yk3z+J" inline="false">
+                        <field name="OP">OR</field>
+                        <value name="A">
+                          <block type="logic_compare" id="G170]}~(cH|3wDkncd?G">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="lists_getIndex" id="^c/if0|cv.q3^4LC5_EG">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="F0=Xa/}rf?m;nt,v5a:;">
+                                    <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="variables_get" id="dlgK{#khfl{$vP6mA1Is">
+                                    <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="lists_getIndex" id="E9~CG)Fq;dj~uyNdvBX!">
+                                <mutation statement="false" at="true"></mutation>
+                                <field name="MODE">GET</field>
+                                <field name="WHERE">FROM_END</field>
+                                <value name="VALUE">
+                                  <block type="variables_get" id="n*VbJXQj!]#6,L:QIQ^G">
+                                    <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block type="math_arithmetic" id="gfRKYMNpu8~FE/SH+K=!">
+                                    <field name="OP">ADD</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="aK3XIysP*Vj[gc?HLV?$">
+                                        <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="O78qX+R3iM%wN-l[s8jZ">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_operation" id="u_$9xFM#sT610^}7=`aH" inline="false">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="logic_compare" id="lxa^Fj{g{QRkNfqQ^gGO">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="Mo=}d25*9Ua$L]U6)E3*">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="G+a]YaX1l|+z%VGE49@y">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="xh/dzq$-MJ8kZqUr)2ks">
+                                        <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="*$Q!(dz#wTyPnag{yb]W">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id=",3AS^%mQ}$7617f.PUKc">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="xvofw#8-xbk#Gl24oYei">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="RvprBJ0;CoM4)[4CdCu+">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="_Vhs_w=?k!I)@,/:UIkq">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_compare" id="S!VDQC~{|}o7Rxamuy3C">
+                                <field name="OP">LT</field>
+                                <value name="A">
+                                  <block type="lists_getIndex" id="Nw^r4;SG]HIINZ_ETUGl">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="*5FTYsv%!H]|uG5lvyBg">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="%OnDRJ8k}YWQS]}8g:)@">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="q3a%a[;#]KsAI^UY31{7">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="@VajhA87iSCJx+![[)Yd">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="lists_getIndex" id="Yvr{eLgp6zyx2I*}unI-">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="variables_get" id="Wj`jbZIP.SQoQ;WqOlt=">
+                                        <field name="VAR" id="O)g0$d2m6l6,Dhvwz*vW" variabletype="">tick list</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="math_arithmetic" id="3Q?7To9`=;*-kEx}WpJm">
+                                        <field name="OP">ADD</field>
+                                        <value name="A">
+                                          <shadow type="math_number" id="C)Fjt23cgNUlKhm.[w[M">
+                                            <field name="NUM">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="Ghv6,QthCuKp:L4R$8D%">
+                                            <field name="VAR" id="k@N-=$sF}KiJID#78-TK" variabletype="">cacahpercentange</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <shadow type="math_number" id="EizJFiY![u~f/,^kD9Wa">
+                                            <field name="NUM">2</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="math_change" id="ky+S)R6!2Gmp*0`?Jr;I">
+                        <field name="VAR" id="%|y0wU|QSAhQHo`,VU6z" variabletype="">@percentange red</field>
+                        <value name="DELTA">
+                          <shadow type="math_number" id="9]XHpp@n:FQS(uHS:oXA">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <next>
+                  <block type="variables_set" id="}!WNy(0];c?PWs%HPfs9">
+                    <field name="VAR" id="5Suzhl1q65#~`tI[kr#D" variabletype="">@percentange blue</field>
+                    <value name="VALUE">
+                      <block type="math_arithmetic" id="GqhKZd6JSKyeB9B}[72v">
+                        <field name="OP">DIVIDE</field>
+                        <value name="A">
+                          <shadow type="math_number" id="H$LQ{{+yxN51flsc.X?#">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="NOx::|mJ=~8Ja/!]%cjr">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <shadow type="math_number" id="3aAZL|6`KLIeU[r^fE4u">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="09SteNRZt`l3=#|jd+s_">
+                                <field name="VAR" id="5Suzhl1q65#~`tI[kr#D" variabletype="">@percentange blue</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="Jg5hx#.F94w*yBtD`?Mr">
+                                <field name="NUM">100</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="c;.zvsy7.IEKA?c[;my#">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="$32BPa*b_Y6.~;Fndhe1">
+                            <field name="VAR" id="$*fGCSZJCzn5?HW}%wMf" variabletype="">how many tick</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="8S*ud){R(^OsiYQY=lSj">
+                        <field name="VAR" id="%|y0wU|QSAhQHo`,VU6z" variabletype="">@percentange red</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="r[T%fUM-!gR^)?r1l)S,">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow type="math_number" id="H$LQ{{+yxN51flsc.X?#">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_arithmetic" id=".D]h*clnnn;(O`vw;W:5">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <shadow type="math_number" id="3aAZL|6`KLIeU[r^fE4u">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                  <block type="variables_get" id="||-mx4t)EwvWiYdOq55h">
+                                    <field name="VAR" id="%|y0wU|QSAhQHo`,VU6z" variabletype="">@percentange red</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="Kn9aX(bQ*D6)cHGj^dbI">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="c;.zvsy7.IEKA?c[;my#">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id=")jb1Vh-edi73OLLFKDnK">
+                                <field name="VAR" id="$*fGCSZJCzn5?HW}%wMf" variabletype="">how many tick</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
